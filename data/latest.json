@@ -1,0 +1,174 @@
+{
+ "generado_en": "2026-09-08T18:09:37.968681+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [],
+ "candidatos": 15,
+ "destacados": 9,
+ "items": [
+  {
+   "id": "276c6225db64ba2e",
+   "url": "https://simonwillison.net/2026/Sep/7/llm/",
+   "titulo": "llm 0.35",
+   "fuente": "Simon Willison",
+   "publicado": "2026-09-07T23:54:54+00:00",
+   "resumen": "Release: llm 0.35 New OpenAI model: gpt-6-astra for GPT-6 Astra . Tags: openai , llm , gpt-6-astra",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true
+  },
+  {
+   "id": "394fcc6daf9ee6bb",
+   "url": "https://simonwillison.net/2026/Sep/7/video-compressor/",
+   "titulo": "Video compressor",
+   "fuente": "Simon Willison",
+   "publicado": "2026-09-07T18:29:07+00:00",
+   "resumen": "Tool: Video compressor I recorded a short demo video of my Equal Earth animation on my phone and wanted to publish an optimized version of that video (using FFMPEG) on my blog, so I had Claude Fable 5.1 in Claude Code for web build me this tool using the WebAssembly build of FFMPEG. Tags: ffmpeg , video , webassembly , claude , claude-code , claude-mythos-fable",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true
+  },
+  {
+   "id": "edfb48bd8fe5ce90",
+   "url": "https://simonwillison.net/2026/Sep/7/equal-earth/",
+   "titulo": "Mercator ↔ Equal Earth",
+   "fuente": "Simon Willison",
+   "publicado": "2026-09-07T16:24:16+00:00",
+   "resumen": "Tool: Mercator ↔ Equal Earth I got curious about the Equal Earth map projection that was recently voted on at the UN so I had GPT-6 Astra (medium) in ChatGPT Work build me this animated transition between Mercator and Equal Earth using D3. Tags: geospatial , d3 , vibe-coding , gpt-6-astra",
+   "categoria": "herramientas",
+   "posicion": 3,
+   "destacado": true
+  },
+  {
+   "id": "315af994e13a7fe4",
+   "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
+   "titulo": "Creepy crawlies",
+   "fuente": "Simon Willison",
+   "publicado": "2026-09-07T23:08:58+00:00",
+   "resumen": "Creepy crawlies Konstantin Ryabitsev discusses how bad the \"background radiation\" of abusive crawlers has become from the perspective of git.kernel.org , the official Git repository for the Linux kernel: TL;DR: we spend more CPU cycles rendering commits for scrapers than we spend on all other kinds of legitimate access, including git clones. At any one time, across 5 geo-distributed nodes, there are 14 CPU cores doing nothing but rendering git commits as html. I worry about this a lot from the p",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true
+  },
+  {
+   "id": "fbb79928f7d9c051",
+   "url": "https://openai.com/index/navier-stokes-solution",
+   "titulo": "On the Navier–Stokes Millennium Prize Problem",
+   "fuente": "OpenAI News",
+   "publicado": "2026-09-08T10:00:00+00:00",
+   "resumen": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true
+  },
+  {
+   "id": "80d284f58871ce28",
+   "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+   "titulo": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+   "fuente": "Google DeepMind Blog",
+   "publicado": "2026-09-08T14:00:15+00:00",
+   "resumen": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
+   "categoria": "investigacion",
+   "posicion": 2,
+   "destacado": true
+  },
+  {
+   "id": "2089fa5ad760cf48",
+   "url": "https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3",
+   "titulo": "Latest open artifacts (#24): Motif-3, GLM-5.3, Hy4-preview and open model licenses",
+   "fuente": "Interconnects",
+   "publicado": "2026-09-08T14:15:25+00:00",
+   "resumen": "The open model ecosystem continues to expand in its breadth",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true
+  },
+  {
+   "id": "b392e0204486327f",
+   "url": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
+   "titulo": "Quoting Jakub Pachocki",
+   "fuente": "Simon Willison",
+   "publicado": "2026-09-07T22:26:25+00:00",
+   "resumen": "The strongest argument I see for continuing to train much smarter models quickly is the need to build defensive systems against the dangers posed by other AI. [...] We will need powerful, aligned AI for defense; to secure infrastructure, to protect against rogue agents in real time, and to invent entirely new protective measures. This will be a primary focus of OpenAI’s deployment efforts. At the same time, even with the uncertainty that comes from anticipated broad AI progress and the need to b",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true
+  },
+  {
+   "id": "6ed46ca4ed626b35",
+   "url": "https://www.mcsweeneys.net/articles/why-we-must-return-to-the-office-to-use-ai-in-person",
+   "titulo": "We Must Return to the Office to Use AI in Person",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-09-08T13:41:25+00:00",
+   "resumen": "Article URL: https://www.mcsweeneys.net/articles/why-we-must-return-to-the-office-to-use-ai-in-person Comments URL: https://news.ycombinator.com/item?id=49610229 Points: 331 # Comments: 49",
+   "categoria": "opinion",
+   "posicion": 2,
+   "destacado": true
+  },
+  {
+   "id": "6e4891aeaf4d961b",
+   "url": "https://manualdousuario.net/en/libreoffice-download-record-no-ai/",
+   "titulo": "LibreOffice breaks download records after declaring it has no AI features",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-09-08T14:05:57+00:00",
+   "resumen": "Article URL: https://manualdousuario.net/en/libreoffice-download-record-no-ai/ Comments URL: https://news.ycombinator.com/item?id=49610538 Points: 591 # Comments: 197",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false
+  },
+  {
+   "id": "aaada63e998e3254",
+   "url": "https://openai.com/index/the-work-now-within-reach",
+   "titulo": "The Work Now Within Reach",
+   "fuente": "OpenAI News",
+   "publicado": "2026-09-08T13:00:00+00:00",
+   "resumen": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false
+  },
+  {
+   "id": "99c22bc85dd5ff7a",
+   "url": "https://openai.com/index/teen-development-research-grants",
+   "titulo": "Funding grants for new research into AI and teen development",
+   "fuente": "OpenAI News",
+   "publicado": "2026-09-08T09:00:00+00:00",
+   "resumen": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": false
+  },
+  {
+   "id": "671a9fed35e21548",
+   "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+   "titulo": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+   "fuente": "OpenAI News",
+   "publicado": "2026-09-08T00:00:00+00:00",
+   "resumen": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": false
+  },
+  {
+   "id": "4f420d1c5cd0cb94",
+   "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+   "titulo": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-09-08T14:23:07+00:00",
+   "resumen": "",
+   "categoria": "investigacion",
+   "posicion": 3,
+   "destacado": false
+  },
+  {
+   "id": "5eebfa2383a586e2",
+   "url": "https://www.latent.space/p/aeo",
+   "titulo": "The Frontier AEO Tracker: What Astra Chooses (and every other frontier model, and what you can do about it)",
+   "fuente": "Latent Space",
+   "publicado": "2026-09-07T21:32:37+00:00",
+   "resumen": "Our first Astra project dives into AEO trends, a top asked topic from founders and DX leaders we talk to.",
+   "categoria": "investigacion",
+   "posicion": 4,
+   "destacado": false
+  }
+ ]
+}
