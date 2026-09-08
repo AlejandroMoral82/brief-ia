@@ -1,12 +1,46 @@
 {
- "generado_en": "2026-09-08T22:00:09.493128+00:00",
+ "generado_en": "2026-09-08T22:02:17.000915+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
-  "Hacker News - IA (150+ puntos): ConnectTimeout"
+  "Import AI: HTTPError",
+  "Hacker News - IA (150+ puntos): HTTPError"
  ],
- "candidatos": 3,
- "destacados": 2,
+ "candidatos": 14,
+ "destacados": 7,
  "items": [
+  {
+   "id": "276c6225db64ba2e",
+   "url": "https://simonwillison.net/2026/Sep/7/llm/",
+   "titulo": "llm 0.35",
+   "fuente": "Simon Willison",
+   "publicado": "2026-09-07T23:54:54+00:00",
+   "resumen": "Release: llm 0.35 New OpenAI model: gpt-6-astra for GPT-6 Astra . Tags: openai , llm , gpt-6-astra",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true
+  },
+  {
+   "id": "5eebfa2383a586e2",
+   "url": "https://www.latent.space/p/aeo",
+   "titulo": "The Frontier AEO Tracker: What Astra Chooses (and every other frontier model, and what you can do about it)",
+   "fuente": "Latent Space",
+   "publicado": "2026-09-07T21:32:37+00:00",
+   "resumen": "Our first Astra project dives into AEO trends, a top asked topic from founders and DX leaders we talk to.",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true
+  },
+  {
+   "id": "aaada63e998e3254",
+   "url": "https://openai.com/index/the-work-now-within-reach",
+   "titulo": "The Work Now Within Reach",
+   "fuente": "OpenAI News",
+   "publicado": "2026-09-08T13:00:00+00:00",
+   "resumen": "Explore how more capable, affordable AI can expand the work people and businesses can accomplish—and make growth more economical.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true
+  },
   {
    "id": "167bce5d47e71e47",
    "url": "https://openai.com/index/codex-quantum-computing-experiments",
@@ -19,15 +53,59 @@
    "destacado": true
   },
   {
-   "id": "305f03a4aa6aa16d",
-   "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
-   "titulo": "Introducing ChatGPT Images 2.5",
-   "fuente": "OpenAI News",
-   "publicado": "2026-09-08T11:30:00+00:00",
-   "resumen": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+   "id": "80d284f58871ce28",
+   "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+   "titulo": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+   "fuente": "Google DeepMind Blog",
+   "publicado": "2026-09-08T14:00:15+00:00",
+   "resumen": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
+   "categoria": "investigacion",
+   "posicion": 4,
+   "destacado": true
+  },
+  {
+   "id": "2089fa5ad760cf48",
+   "url": "https://www.interconnects.ai/p/latest-open-artifacts-24-motif-3",
+   "titulo": "Latest open artifacts (#24): Motif-3, GLM-5.3, Hy4-preview and open model licenses",
+   "fuente": "Interconnects",
+   "publicado": "2026-09-08T14:15:25+00:00",
+   "resumen": "The open model ecosystem continues to expand in its breadth",
    "categoria": "modelos",
    "posicion": 1,
    "destacado": true
+  },
+  {
+   "id": "b392e0204486327f",
+   "url": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
+   "titulo": "Quoting Jakub Pachocki",
+   "fuente": "Simon Willison",
+   "publicado": "2026-09-07T22:26:25+00:00",
+   "resumen": "The strongest argument I see for continuing to train much smarter models quickly is the need to build defensive systems against the dangers posed by other AI. [...] We will need powerful, aligned AI for defense; to secure infrastructure, to protect against rogue agents in real time, and to invent entirely new protective measures. This will be a primary focus of OpenAI’s deployment efforts. At the same time, even with the uncertainty that comes from anticipated broad AI progress and the need to b",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true
+  },
+  {
+   "id": "99c22bc85dd5ff7a",
+   "url": "https://openai.com/index/teen-development-research-grants",
+   "titulo": "Funding grants for new research into AI and teen development",
+   "fuente": "OpenAI News",
+   "publicado": "2026-09-08T09:00:00+00:00",
+   "resumen": "Apply now for OpenAI’s $5 million grant program supporting independent research on how generative AI affects teen development, well-being, and safety.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false
+  },
+  {
+   "id": "671a9fed35e21548",
+   "url": "https://openai.com/index/supporting-journalism-from-classrooms-to-newsrooms",
+   "titulo": "OpenAI expands initiatives to support journalism from classrooms to newsrooms",
+   "fuente": "OpenAI News",
+   "publicado": "2026-09-08T00:00:00+00:00",
+   "resumen": "OpenAI is expanding support for journalism with tools, training, and partnerships for students, educators, journalists, and news organizations.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false
   },
   {
    "id": "9816f5beea82e263",
@@ -36,8 +114,52 @@
    "fuente": "OpenAI News",
    "publicado": "2026-09-08T00:00:00+00:00",
    "resumen": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
-   "categoria": "industria",
-   "posicion": 1,
+   "categoria": "investigacion",
+   "posicion": 2,
+   "destacado": false
+  },
+  {
+   "id": "fbb79928f7d9c051",
+   "url": "https://openai.com/index/navier-stokes-solution",
+   "titulo": "On the Navier–Stokes Millennium Prize Problem",
+   "fuente": "OpenAI News",
+   "publicado": "2026-09-08T10:00:00+00:00",
+   "resumen": "We’re sharing an AI-generated solution to the Navier–Stokes Millennium Prize Problem, including a writeup and a formal proof in Lean.",
+   "categoria": "investigacion",
+   "posicion": 3,
+   "destacado": false
+  },
+  {
+   "id": "4f420d1c5cd0cb94",
+   "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+   "titulo": "Safety for Whom? Refusing the Right Subset of a Topic, Not the Whole Topic",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-09-08T14:23:07+00:00",
+   "resumen": "",
+   "categoria": "investigacion",
+   "posicion": 5,
+   "destacado": false
+  },
+  {
+   "id": "305f03a4aa6aa16d",
+   "url": "https://openai.com/index/introducing-chatgpt-images-2-5",
+   "titulo": "Introducing ChatGPT Images 2.5",
+   "fuente": "OpenAI News",
+   "publicado": "2026-09-08T11:30:00+00:00",
+   "resumen": "ChatGPT Images 2.5 helps turn your ideas, sketches, and reference photos into more personalized, polished images that better reflect your ideas.",
+   "categoria": "modelos",
+   "posicion": 2,
+   "destacado": false
+  },
+  {
+   "id": "315af994e13a7fe4",
+   "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies/",
+   "titulo": "Creepy crawlies",
+   "fuente": "Simon Willison",
+   "publicado": "2026-09-07T23:08:58+00:00",
+   "resumen": "Creepy crawlies Konstantin Ryabitsev discusses how bad the \"background radiation\" of abusive crawlers has become from the perspective of git.kernel.org , the official Git repository for the Linux kernel: TL;DR: we spend more CPU cycles rendering commits for scrapers than we spend on all other kinds of legitimate access, including git clones. At any one time, across 5 geo-distributed nodes, there are 14 CPU cores doing nothing but rendering git commits as html. I worry about this a lot from the p",
+   "categoria": "opinion",
+   "posicion": 2,
    "destacado": false
   }
  ]
