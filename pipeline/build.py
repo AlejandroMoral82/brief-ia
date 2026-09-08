@@ -39,15 +39,20 @@ MAX_POR_FUENTE = 2
 
 
 def marcar_destacados(items: list) -> list:
-    """Ordena por categoria y posicion, y marca los que entran en cuota."""
+    """Marca los que entran en cuota de categoria, con tope por fuente."""
     usados = {cat: 0 for cat in CUOTAS}
+    por_fuente: dict[str, int] = {}
+
     for it in sorted(items, key=lambda x: (x.posicion, x.fuente)):
-        cupo = CUOTAS.get(it.categoria, 0)
-        if usados.get(it.categoria, 0) < cupo:
-            it.destacado = True
-            usados[it.categoria] += 1
+        if usados.get(it.categoria, 0) >= CUOTAS.get(it.categoria, 0):
+            continue
+        if por_fuente.get(it.fuente, 0) >= MAX_POR_FUENTE:
+            continue
+        it.destacado = True
+        usados[it.categoria] += 1
+        por_fuente[it.fuente] = por_fuente.get(it.fuente, 0) + 1
+
     return sorted(items, key=lambda x: (not x.destacado, x.categoria, x.posicion))
-RETENCION_DIAS = 30
 
 
 def cargar_seen() -> dict[str, str]:
@@ -67,6 +72,13 @@ def main() -> None:
 
     items, fallos = sources.recoger(OPML, VENTANA_HORAS)
     log.info("recogidos %d items, %d fuentes con fallo", len(items), len(fallos))
+    
+        dias = sorted(
+        (f.stem for f in DATOS.glob("20*.json")), reverse=True
+    )[:90]
+    (DATOS / "index.json").write_text(
+        json.dumps(dias, indent=0), encoding="utf-8"
+    )
 
     seen = cargar_seen()
     nuevos = [it for it in items if it.id not in seen]

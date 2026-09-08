@@ -30,7 +30,7 @@ jobs:
       - name: Generar el brief
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          MAXIMO_ITEMS: "8"
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
         run: python -m pipeline.build
 
       - name: Commit si hay cambios
