@@ -17,6 +17,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 OPML = RAIZ / "feeds.opml"
 DATOS = RAIZ / "data"
 SEEN = DATOS / "seen.json"
+RETENCION_DIAS = 30
 
 # Carga .env si existe (solo en local; en Actions va por secrets).
 _env = RAIZ / ".env"
@@ -72,13 +73,6 @@ def main() -> None:
 
     items, fallos = sources.recoger(OPML, VENTANA_HORAS)
     log.info("recogidos %d items, %d fuentes con fallo", len(items), len(fallos))
-    
-        dias = sorted(
-        (f.stem for f in DATOS.glob("20*.json")), reverse=True
-    )[:90]
-    (DATOS / "index.json").write_text(
-        json.dumps(dias, indent=0), encoding="utf-8"
-    )
 
     seen = cargar_seen()
     nuevos = [it for it in items if it.id not in seen]
@@ -108,11 +102,14 @@ def main() -> None:
         json.dumps(salida, ensure_ascii=False, indent=1), encoding="utf-8"
     )
 
+    dias = sorted((f.stem for f in DATOS.glob("20*.json")), reverse=True)[:90]
+    (DATOS / "index.json").write_text(json.dumps(dias, indent=0), encoding="utf-8")
+
     # IMPORTANTE: solo se marca como visto lo que se ha procesado de verdad.
     # Si un feed fallo hoy, sus items entraran manana en vez de perderse.
     for it in nuevos:
         seen[it.id] = ahora.isoformat()
-        SEEN.write_text(json.dumps(podar(seen), indent=0), encoding="utf-8")
+    SEEN.write_text(json.dumps(podar(seen), indent=0), encoding="utf-8")
 
     log.info("escritos %d destacados de %d (modo %s)",
              salida["destacados"], len(ordenados), salida["modo"])
