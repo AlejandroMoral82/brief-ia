@@ -10,6 +10,16 @@ export async function cargarDias() {
   const r = await fetch(`${BASE}data/index.json`, { cache: 'no-cache' })
   return r.ok ? r.json() : []
 }
+export function nombreDia(iso) {
+  const [a, m, d] = iso.split('-')
+  const f = new Date(Number(a), Number(m) - 1, Number(d))
+  const hoy = new Date()
+  const ayer = new Date(hoy); ayer.setDate(hoy.getDate() - 1)
+  const mismo = (x, y) => x.toDateString() === y.toDateString()
+  if (mismo(f, hoy)) return 'hoy'
+  if (mismo(f, ayer)) return 'ayer'
+  return f.toLocaleDateString('es-ES', { weekday: 'short', day: 'numeric', month: 'short' })
+}
 
 export function esDeHoy(iso) {
   const d = new Date(iso)

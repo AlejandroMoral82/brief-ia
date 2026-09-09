@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { cargarBrief, esDeHoy, haceCuanto } from './data'
+import { cargarBrief, esDeHoy, haceCuanto, cargarDias, nombreDia } from './data'
 
 const CATS = ['modelos', 'herramientas', 'investigacion', 'opinion', 'industria']
 
@@ -60,6 +60,30 @@ function Lector({ it, volver }) {
   )
 }
 
+function Archivo({ abrirDia }) {
+    const [dia, setDia] = useState('latest')
+
+  useEffect(() => {
+    setBrief(null)
+    cargarBrief(dia).then(setBrief).catch((e) => setError(e.message))
+  }, [dia])
+
+  if (!dias) return <div className="vacio">cargando…</div>
+  if (!dias.length) return <div className="vacio">todavía no hay archivo</div>
+
+  return (
+    <>
+      <div className="titulo-seccion">Archivo</div>
+      <div className="date">{dias.length} días guardados</div>
+      {dias.map((d) => (
+        <button key={d} className="dia" onClick={() => abrirDia(d)}>
+          {nombreDia(d)}<span>{d}</span>
+        </button>
+      ))}
+    </>
+  )
+}
+
 export default function App() {
   const [brief, setBrief] = useState(null)
   const [error, setError] = useState(null)
@@ -80,6 +104,16 @@ export default function App() {
   }
 
   if (error) return <div className="wrap"><div className="vacio">no se pudo cargar el brief<br />{error}</div></div>
+  if (pestana === 'archivo') {
+    return (
+      <>
+        <div className="wrap">
+          <Archivo abrirDia={(d) => { setDia(d); setPestana('hoy'); setAbierto(null) }} />
+        </div>
+        <Tabs pestana={pestana} setPestana={setPestana} />
+      </>
+    )
+  }
   if (!brief) return <div className="wrap"><div className="vacio">cargando…</div></div>
 
   if (abierto) {
@@ -152,7 +186,7 @@ function Tabs({ pestana, setPestana }) {
             key={n}
             className={`tab${n === 'hoy' ? ' centro' : ''}`}
             aria-current={pestana === n ? 'page' : undefined}
-            onClick={() => setPestana(n)}
+            onClick={() => { setPestana(n); if (n === 'hoy') setDia('latest') }}
           >
             {n}<i />
           </button>

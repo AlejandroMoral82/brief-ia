@@ -87,3 +87,12 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;
   text-align:center;padding:50px 0;line-height:1.8}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+.dia{display:flex;justify-content:space-between;align-items:baseline;width:100%;
+  background:none;border:0;border-bottom:1px solid var(--line);color:inherit;
+  font-family:var(--mono);font-size:13.5px;padding:15px 2px;cursor:pointer;
+  transition:color .28s,padding-left .28s}
+.dia:hover,.dia:focus-visible{color:var(--g);padding-left:8px;outline:none}
+.dia span{font-size:11px;color:var(--faint)}
+.titulo-seccion{font-family:var(--mono);font-size:26px;letter-spacing:-.02em;
+  margin-bottom:6px}
