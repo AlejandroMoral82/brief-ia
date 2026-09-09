@@ -27,7 +27,7 @@ function Filtros({ activos, alternar: alt }) {
   )
 }
 
-function Item({ it, abrir, marcado, onGuardar }) {
+function Item({ it, abrir, marcado, onGuardar, bloqueado }) {
   const [dx, setDx] = useState(0)
   const [x0, setX0] = useState(null)
 
@@ -36,17 +36,24 @@ function Item({ it, abrir, marcado, onGuardar }) {
     setDx(0); setX0(null)
   }
 
+  const tocar = bloqueado ? {} : {
+    onTouchStart: (e) => setX0(e.touches[0].clientX),
+    onTouchMove: (e) => x0 !== null && setDx(Math.max(0, Math.min(130, e.touches[0].clientX - x0))),
+    onTouchEnd: fin,
+    onTouchCancel: fin,
+  }
+
   return (
     <div className="swipe">
-      <div className="swipe-bg" style={{ opacity: Math.min(dx / 90, 1) }}>
-        {dx > 90 ? 'guardar ✓' : 'guardar'}
+      <div className={`swipe-bg${marcado ? ' quitando' : ''}`} style={{ opacity: Math.min(dx / 90, 1) }}>
+        {marcado
+          ? (dx > 90 ? 'quitar ✓' : 'quitar de guardados')
+          : (dx > 90 ? 'guardar ✓' : 'guardar')}
       </div>
       <button className="item"
         style={{ transform: `translateX(${dx}px)`, transition: x0 ? 'none' : 'transform .3s cubic-bezier(.2,.9,.2,1)' }}
         onClick={() => dx === 0 && abrir(it)}
-        onTouchStart={(e) => setX0(e.touches[0].clientX)}
-        onTouchMove={(e) => x0 !== null && setDx(Math.max(0, Math.min(130, e.touches[0].clientX - x0)))}
-        onTouchEnd={fin} onTouchCancel={fin}>
+        {...tocar}>
         <div className="head">
           <span className="pip" style={{ color: color(it.categoria), background: color(it.categoria) }} />
           <span className="src">{it.fuente}</span>
@@ -68,9 +75,13 @@ function Lector({ it, volver, onGuardar }) {
         <span className="pip" style={{ color: color(it.categoria), background: color(it.categoria) }} />
         <span>{it.categoria} · {it.fuente} · hace {haceCuanto(it.publicado)}</span>
       </div>
+            {it.imagen && (
+        <img className="portada" src={it.imagen} alt=""
+          onError={(e) => { e.currentTarget.style.display = 'none' }} />
+      )}
       <p className="cuerpo">{it.resumen || 'Este feed no incluye resumen.'}</p>
       <div>
-        <button className="quitar" onClick={() => onGuardar(it)}>
+        <button className={`quitar${estaGuardado(it.id) ? ' activo' : ''}`} onClick={() => onGuardar(it)}>
           {estaGuardado(it.id) ? 'quitar de guardados' : 'guardar'}
         </button>
       </div>
@@ -109,23 +120,23 @@ function Guardados({ abrir, quitar }) {
       <div className="titulo-seccion">Guardados</div>
       <div className="date">{items.length} artículos</div>
       {items.map((it) => (
-        <div key={it.id}>
-          <Item it={it} abrir={abrir} marcado />
-          <button className="quitar" onClick={() => quitar(it)}>quitar</button>
+        <div key={it.id} className="fila-guardado">
+          <Item it={it} abrir={abrir} marcado bloqueado />
+          <button className="quitar activo" onClick={() => quitar(it)}>quitar</button>
         </div>
       ))}
     </>
   )
 }
 
-function Tabs({ pestana, setPestana, setDia }) {
+function Tabs({ pestana, setPestana, setDia, cerrar }) {
   return (
     <div className="tabs">
       <div className="tabs-in">
         {['archivo', 'hoy', 'guardados'].map((n) => (
           <button key={n} className={`tab${n === 'hoy' ? ' centro' : ''}`}
             aria-current={pestana === n ? 'page' : undefined}
-            onClick={() => { setPestana(n); if (n === 'hoy') setDia('latest') }}>
+            onClick={() => { cerrar(); setPestana(n); if (n === 'hoy') setDia('latest') }}>
             {n}<i />
           </button>
         ))}
@@ -164,7 +175,7 @@ export default function App() {
         <div className="wrap">
           <Lector it={abierto} volver={() => setAbierto(null)} onGuardar={guardar} />
         </div>
-        <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} />
+        <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} cerrar={() => setAbierto(null)} />
       </>
     )
   }
@@ -175,7 +186,7 @@ export default function App() {
         <div className="wrap">
           <Archivo abrirDia={(d) => { setDia(d); setPestana('hoy') }} />
         </div>
-        <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} />
+        <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} cerrar={() => setAbierto(null)} />
       </>
     )
   }
@@ -184,7 +195,7 @@ export default function App() {
     return (
       <>
         <div className="wrap"><Guardados abrir={setAbierto} quitar={guardar} /></div>
-        <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} />
+        <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} cerrar={() => setAbierto(null)} />
       </>
     )
   }
@@ -245,7 +256,7 @@ export default function App() {
           </>
         )}
       </div>
-      <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} />
+      <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} cerrar={() => setAbierto(null)} />
     </>
   )
 }

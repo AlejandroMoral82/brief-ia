@@ -29,6 +29,7 @@ class Item:
     categoria: str = ""     # la asigna el LLM
     posicion: int = 0       # la asigna el LLM
     destacado: bool = False
+    imagen: str = ""
 
     def dict(self) -> dict:
         return asdict(self)
@@ -65,6 +66,29 @@ def _limpiar(html: str, limite: int = 500) -> str:
     texto = re.sub(r"\s+", " ", texto).strip()
     return texto[:limite]
 
+def _imagen(entrada) -> str:
+    """Busca la imagen de portada en los campos habituales del feed."""
+    import re
+
+    for m in getattr(entrada, "media_content", []) or []:
+        if m.get("url"):
+            return m["url"]
+    for m in getattr(entrada, "media_thumbnail", []) or []:
+        if m.get("url"):
+            return m["url"]
+    for enc in getattr(entrada, "enclosures", []) or []:
+        if enc.get("type", "").startswith("image/") and enc.get("href"):
+            return enc["href"]
+
+    # Algunos feeds solo la incluyen dentro del HTML del contenido.
+    html = ""
+    for c in getattr(entrada, "content", []) or []:
+        html += c.get("value", "")
+    html += getattr(entrada, "summary", "")
+    m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', html)
+    if m and not m.group(1).startswith("data:"):
+        return m.group(1)
+    return ""
 
 def descargar(nombre: str, url: str, horas: int) -> tuple[list[Item], str | None]:
     """Descarga un feed. Devuelve (items, error). Nunca lanza excepcion."""
@@ -100,6 +124,7 @@ def descargar(nombre: str, url: str, horas: int) -> tuple[list[Item], str | None
                 fuente=nombre,
                 publicado=(fecha or datetime.now(timezone.utc)).isoformat(),
                 resumen=_limpiar(getattr(e, "summary", "")),
+                imagen=_imagen(e),
             )
         )
 
