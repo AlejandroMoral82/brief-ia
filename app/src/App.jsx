@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { cargarBrief, esDeHoy, haceCuanto, cargarDias, nombreDia } from './data'
+import { cargarBrief, cargarDias, nombreDia, esDeHoy, haceCuanto } from './data'
+import { listar, estaGuardado, alternar } from './guardados'
 
 const CATS = ['modelos', 'herramientas', 'investigacion', 'opinion', 'industria']
 
@@ -13,18 +14,12 @@ const ICONOS = {
 
 const color = (c) => `var(--c-${c})`
 
-function Filtros({ activos, alternar }) {
+function Filtros({ activos, alternar: alt }) {
   return (
     <div className="filtros" role="group" aria-label="Filtrar por categoría">
       {CATS.map((c) => (
-        <button
-          key={c}
-          className="filtro"
-          style={{ '--c': color(c) }}
-          aria-pressed={activos.has(c)}
-          aria-label={c}
-          onClick={() => alternar(c)}
-        >
+        <button key={c} className="filtro" style={{ '--c': color(c) }}
+          aria-pressed={activos.has(c)} aria-label={c} onClick={() => alt(c)}>
           <svg viewBox="0 0 24 24" aria-hidden="true">{ICONOS[c]}</svg>
         </button>
       ))}
@@ -32,20 +27,39 @@ function Filtros({ activos, alternar }) {
   )
 }
 
-function Item({ it, abrir }) {
+function Item({ it, abrir, marcado, onGuardar }) {
+  const [dx, setDx] = useState(0)
+  const [x0, setX0] = useState(null)
+
+  const fin = () => {
+    if (dx > 90) onGuardar?.(it)
+    setDx(0); setX0(null)
+  }
+
   return (
-    <button className="item" onClick={() => abrir(it)}>
-      <div className="head">
-        <span className="pip" style={{ color: color(it.categoria), background: color(it.categoria) }} />
-        <span className="src">{it.fuente}</span>
-        <span className="ago">{haceCuanto(it.publicado)}</span>
+    <div className="swipe">
+      <div className="swipe-bg" style={{ opacity: Math.min(dx / 90, 1) }}>
+        {dx > 90 ? 'guardar ✓' : 'guardar'}
       </div>
-      <div className="tl">{it.titulo}</div>
-    </button>
+      <button className="item"
+        style={{ transform: `translateX(${dx}px)`, transition: x0 ? 'none' : 'transform .3s cubic-bezier(.2,.9,.2,1)' }}
+        onClick={() => dx === 0 && abrir(it)}
+        onTouchStart={(e) => setX0(e.touches[0].clientX)}
+        onTouchMove={(e) => x0 !== null && setDx(Math.max(0, Math.min(130, e.touches[0].clientX - x0)))}
+        onTouchEnd={fin} onTouchCancel={fin}>
+        <div className="head">
+          <span className="pip" style={{ color: color(it.categoria), background: color(it.categoria) }} />
+          <span className="src">{it.fuente}</span>
+          <span className="ago">{haceCuanto(it.publicado)}</span>
+        </div>
+        <div className="tl">{it.titulo}</div>
+        {marcado && <span className="marca" />}
+      </button>
+    </div>
   )
 }
 
-function Lector({ it, volver }) {
+function Lector({ it, volver, onGuardar }) {
   return (
     <div className="reader">
       <button className="back" onClick={volver}>.. volver</button>
@@ -55,18 +69,19 @@ function Lector({ it, volver }) {
         <span>{it.categoria} · {it.fuente} · hace {haceCuanto(it.publicado)}</span>
       </div>
       <p className="cuerpo">{it.resumen || 'Este feed no incluye resumen.'}</p>
+      <div>
+        <button className="quitar" onClick={() => onGuardar(it)}>
+          {estaGuardado(it.id) ? 'quitar de guardados' : 'guardar'}
+        </button>
+      </div>
       <a className="orig" href={it.url} target="_blank" rel="noreferrer">abrir el original</a>
     </div>
   )
 }
 
 function Archivo({ abrirDia }) {
-    const [dia, setDia] = useState('latest')
-
-  useEffect(() => {
-    setBrief(null)
-    cargarBrief(dia).then(setBrief).catch((e) => setError(e.message))
-  }, [dia])
+  const [dias, setDias] = useState(null)
+  useEffect(() => { cargarDias().then(setDias).catch(() => setDias([])) }, [])
 
   if (!dias) return <div className="vacio">cargando…</div>
   if (!dias.length) return <div className="vacio">todavía no hay archivo</div>
@@ -84,6 +99,41 @@ function Archivo({ abrirDia }) {
   )
 }
 
+function Guardados({ abrir, quitar }) {
+  const items = listar()
+  if (!items.length) {
+    return <div className="vacio">nada guardado todavía<br />desliza un titular a la derecha</div>
+  }
+  return (
+    <>
+      <div className="titulo-seccion">Guardados</div>
+      <div className="date">{items.length} artículos</div>
+      {items.map((it) => (
+        <div key={it.id}>
+          <Item it={it} abrir={abrir} marcado />
+          <button className="quitar" onClick={() => quitar(it)}>quitar</button>
+        </div>
+      ))}
+    </>
+  )
+}
+
+function Tabs({ pestana, setPestana, setDia }) {
+  return (
+    <div className="tabs">
+      <div className="tabs-in">
+        {['archivo', 'hoy', 'guardados'].map((n) => (
+          <button key={n} className={`tab${n === 'hoy' ? ' centro' : ''}`}
+            aria-current={pestana === n ? 'page' : undefined}
+            onClick={() => { setPestana(n); if (n === 'hoy') setDia('latest') }}>
+            {n}<i />
+          </button>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 export default function App() {
   const [brief, setBrief] = useState(null)
   const [error, setError] = useState(null)
@@ -91,39 +141,56 @@ export default function App() {
   const [verResto, setVerResto] = useState(false)
   const [abierto, setAbierto] = useState(null)
   const [pestana, setPestana] = useState('hoy')
+  const [dia, setDia] = useState('latest')
+  const [, setVersion] = useState(0)
 
   useEffect(() => {
-    cargarBrief().then(setBrief).catch((e) => setError(e.message))
-  }, [])
+    setBrief(null)
+    cargarBrief(dia).then(setBrief).catch((e) => setError(e.message))
+  }, [dia])
 
-  const alternar = (c) => {
+  const guardar = (it) => { alternar(it); setVersion((v) => v + 1) }
+
+  const alternarFiltro = (c) => {
     const s = new Set(activos)
     s.has(c) ? s.delete(c) : s.add(c)
     setActivos(s)
     setVerResto(false)
   }
 
-  if (error) return <div className="wrap"><div className="vacio">no se pudo cargar el brief<br />{error}</div></div>
+  if (abierto) {
+    return (
+      <>
+        <div className="wrap">
+          <Lector it={abierto} volver={() => setAbierto(null)} onGuardar={guardar} />
+        </div>
+        <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} />
+      </>
+    )
+  }
+
   if (pestana === 'archivo') {
     return (
       <>
         <div className="wrap">
-          <Archivo abrirDia={(d) => { setDia(d); setPestana('hoy'); setAbierto(null) }} />
+          <Archivo abrirDia={(d) => { setDia(d); setPestana('hoy') }} />
         </div>
-        <Tabs pestana={pestana} setPestana={setPestana} />
+        <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} />
       </>
     )
   }
-  if (!brief) return <div className="wrap"><div className="vacio">cargando…</div></div>
 
-  if (abierto) {
+  if (pestana === 'guardados') {
     return (
       <>
-        <div className="wrap"><Lector it={abierto} volver={() => setAbierto(null)} /></div>
-        <Tabs pestana={pestana} setPestana={setPestana} />
+        <div className="wrap"><Guardados abrir={setAbierto} quitar={guardar} /></div>
+        <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} />
       </>
     )
   }
+
+  if (error) return <div className="wrap"><div className="vacio">no se pudo cargar el brief<br />{error}</div></div>
+  if (!brief) return <div className="wrap"><div className="vacio">cargando…</div></div>
 
   const filtra = (l) => (activos.size ? l.filter((i) => activos.has(i.categoria)) : l)
   const destacados = filtra(brief.items.filter((i) => i.destacado))
@@ -156,42 +223,29 @@ export default function App() {
           </div>
         )}
 
-        <Filtros activos={activos} alternar={alternar} />
+        <Filtros activos={activos} alternar={alternarFiltro} />
 
         {destacados.length === 0 && resto.length === 0 ? (
           <div className="vacio">nada en esta categoría hoy</div>
         ) : (
           <>
-            {destacados.map((it) => <Item key={it.id} it={it} abrir={setAbierto} />)}
+            {destacados.map((it) => (
+              <Item key={it.id} it={it} abrir={setAbierto}
+                marcado={estaGuardado(it.id)} onGuardar={guardar} />
+            ))}
             {resto.length > 0 && !verResto && (
               <button className="resto" onClick={() => setVerResto(true)}>
                 ver los otros {resto.length}
               </button>
             )}
-            {verResto && resto.map((it) => <Item key={it.id} it={it} abrir={setAbierto} />)}
+            {verResto && resto.map((it) => (
+              <Item key={it.id} it={it} abrir={setAbierto}
+                marcado={estaGuardado(it.id)} onGuardar={guardar} />
+            ))}
           </>
         )}
       </div>
-      <Tabs pestana={pestana} setPestana={setPestana} />
+      <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} />
     </>
-  )
-}
-
-function Tabs({ pestana, setPestana }) {
-  return (
-    <div className="tabs">
-      <div className="tabs-in">
-        {['archivo', 'hoy', 'guardados'].map((n) => (
-          <button
-            key={n}
-            className={`tab${n === 'hoy' ? ' centro' : ''}`}
-            aria-current={pestana === n ? 'page' : undefined}
-            onClick={() => { setPestana(n); if (n === 'hoy') setDia('latest') }}
-          >
-            {n}<i />
-          </button>
-        ))}
-      </div>
-    </div>
   )
 }
