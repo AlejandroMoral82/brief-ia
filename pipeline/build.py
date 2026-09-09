@@ -7,6 +7,7 @@ import logging
 import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from . import extract, llm, sources
 
 from . import llm, sources
 
@@ -90,6 +91,9 @@ def main() -> None:
 
     clasificados, uso_llm = llm.seleccionar(nuevos)
     ordenados = marcar_destacados(clasificados, uso_llm)
+    destacados = [it for it in ordenados if it.destacado]
+    n = extract.procesar(destacados, DATOS / "articles")
+    log.info("texto extraido de %d de %d destacados", n, len(destacados))
     salida = {
         "generado_en": ahora.isoformat(),
         "modo": "normal" if uso_llm else "degradado",

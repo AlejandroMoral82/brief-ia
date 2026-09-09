@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { cargarBrief, cargarDias, nombreDia, esDeHoy, haceCuanto } from './data'
+import { cargarBrief, cargarDias, nombreDia, esDeHoy, haceCuanto, cargarTexto } from './data'
 import { listar, estaGuardado, alternar } from './guardados'
 
 const CATS = ['modelos', 'herramientas', 'investigacion', 'opinion', 'industria']
@@ -67,6 +67,15 @@ function Item({ it, abrir, marcado, onGuardar, bloqueado }) {
 }
 
 function Lector({ it, volver, onGuardar }) {
+  const [texto, setTexto] = useState(null)
+  const [fallo, setFallo] = useState(false)
+
+  useEffect(() => {
+    setTexto(null); setFallo(false)
+    if (!it.texto_disponible) { setFallo(true); return }
+    cargarTexto(it.id).then(setTexto).catch(() => setFallo(true))
+  }, [it.id])
+
   return (
     <div className="reader">
       <button className="back" onClick={volver}>.. volver</button>
@@ -75,17 +84,35 @@ function Lector({ it, volver, onGuardar }) {
         <span className="pip" style={{ color: color(it.categoria), background: color(it.categoria) }} />
         <span>{it.categoria} · {it.fuente} · hace {haceCuanto(it.publicado)}</span>
       </div>
-            {it.imagen && (
+
+      {it.imagen && (
         <img className="portada" src={it.imagen} alt=""
           onError={(e) => { e.currentTarget.style.display = 'none' }} />
       )}
-      <p className="cuerpo">{it.resumen || 'Este feed no incluye resumen.'}</p>
+
+      {texto
+        ? texto.split('\n').filter((p) => p.trim()).map((p, i) => (
+            <p className="cuerpo" key={i}>{p}</p>
+          ))
+        : (
+          <>
+            <p className="cuerpo">{it.resumen || 'Este feed no incluye resumen.'}</p>
+            {fallo && (
+              <div className="aviso" style={{ marginTop: 22 }}>
+                No se pudo recuperar el texto completo. Ábrelo en el original.
+              </div>
+            )}
+          </>
+        )}
+
       <div>
         <button className={`quitar${estaGuardado(it.id) ? ' activo' : ''}`} onClick={() => onGuardar(it)}>
           {estaGuardado(it.id) ? 'quitar de guardados' : 'guardar'}
         </button>
       </div>
-      <a className="orig" href={it.url} target="_blank" rel="noreferrer">abrir el original</a>
+      <a className="orig" href={it.url} target="_blank" rel="noreferrer">
+        {texto ? 'ver en el original, con imágenes' : 'abrir el original'}
+      </a>
     </div>
   )
 }

@@ -30,6 +30,7 @@ class Item:
     posicion: int = 0       # la asigna el LLM
     destacado: bool = False
     imagen: str = ""
+    texto_disponible: bool = False
 
     def dict(self) -> dict:
         return asdict(self)
