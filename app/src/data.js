@@ -8,7 +8,9 @@ export async function cargarBrief(dia = 'latest') {
 
 export async function cargarDias() {
   const r = await fetch(`${BASE}data/index.json`, { cache: 'no-cache' })
-  return r.ok ? r.json() : []
+  if (!r.ok) return { dias: [], bytes: 0 }
+  const d = await r.json()
+  return Array.isArray(d) ? { dias: d, bytes: 0 } : d
 }
 
 export function nombreDia(iso) {
@@ -36,6 +38,7 @@ export function haceCuanto(iso) {
   if (h < 24) return `${h} h`
   return `${Math.floor(h / 24)} d`
 }
+
 export async function cargarTexto(id) {
   const r = await fetch(`${BASE}data/articles/${id}.json`, { cache: 'force-cache' })
   if (!r.ok) throw new Error('sin texto')

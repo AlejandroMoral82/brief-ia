@@ -72,6 +72,7 @@ function Lector({ it, volver, onGuardar }) {
 
   useEffect(() => {
     setTexto(null); setFallo(false)
+    if (it.texto) { setTexto(it.texto); return }
     if (!it.texto_disponible) { setFallo(true); return }
     cargarTexto(it.id).then(setTexto).catch(() => setFallo(true))
   }, [it.id])
@@ -106,7 +107,8 @@ function Lector({ it, volver, onGuardar }) {
         )}
 
       <div>
-        <button className={`quitar${estaGuardado(it.id) ? ' activo' : ''}`} onClick={() => onGuardar(it)}>
+                <button className={`quitar${estaGuardado(it.id) ? ' activo' : ''}`}
+          onClick={() => onGuardar(it, texto || '')}>
           {estaGuardado(it.id) ? 'quitar de guardados' : 'guardar'}
         </button>
       </div>
@@ -118,17 +120,21 @@ function Lector({ it, volver, onGuardar }) {
 }
 
 function Archivo({ abrirDia }) {
-  const [dias, setDias] = useState(null)
-  useEffect(() => { cargarDias().then(setDias).catch(() => setDias([])) }, [])
+  const [info, setInfo] = useState(null)
+  useEffect(() => { cargarDias().then(setInfo).catch(() => setInfo({ dias: [], bytes: 0 })) }, [])
 
-  if (!dias) return <div className="vacio">cargando…</div>
-  if (!dias.length) return <div className="vacio">todavía no hay archivo</div>
+  if (!info) return <div className="vacio">cargando…</div>
+  if (!info.dias.length) return <div className="vacio">todavía no hay archivo</div>
+
+  const mb = (info.bytes / 1048576).toFixed(1)
 
   return (
     <>
       <div className="titulo-seccion">Archivo</div>
-      <div className="date">{dias.length} días guardados</div>
-      {dias.map((d) => (
+      <div className="date">
+        {info.dias.length} días · {mb} MB · se borra a los 30 días
+      </div>
+      {info.dias.map((d) => (
         <button key={d} className="dia" onClick={() => abrirDia(d)}>
           {nombreDia(d)}<span>{d}</span>
         </button>
@@ -187,7 +193,7 @@ export default function App() {
     cargarBrief(dia).then(setBrief).catch((e) => setError(e.message))
   }, [dia])
 
-  const guardar = (it) => { alternar(it); setVersion((v) => v + 1) }
+    const guardar = (it, texto = '') => { alternar(it, texto); setVersion((v) => v + 1) }
 
   const alternarFiltro = (c) => {
     const s = new Set(activos)

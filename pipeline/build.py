@@ -1,4 +1,4 @@
-"""Punto de entrada del pipeline. Se ejecuta una vez al dia desde GitHub Actions."""
+"""Punto de entrada del pipeline. Se ejecuta dos veces al dia desde GitHub Actions."""
 
 from __future__ import annotations
 
@@ -7,9 +7,8 @@ import logging
 import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from . import extract, llm, sources
 
-from . import llm, sources
+from . import extract, llm, sources
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 log = logging.getLogger("brief")
@@ -18,7 +17,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 OPML = RAIZ / "feeds.opml"
 DATOS = RAIZ / "data"
 SEEN = DATOS / "seen.json"
-RETENCION_DIAS = 30
+ARTICULOS = DATOS / "articles"
 
 # Carga .env si existe (solo en local; en Actions va por secrets).
 _env = RAIZ / ".env"
@@ -29,7 +28,9 @@ if _env.exists():
             _k, _v = _linea.split("=", 1)
             os.environ.setdefault(_k.strip(), _v.strip())
 
-VENTANA_HORAS = int(os.getenv("VENTANA_HORAS", "26"))   # margen sobre 24h
+VENTANA_HORAS = int(os.getenv("VENTANA_HORAS", "26"))
+RETENCION_DIAS = 30
+
 CUOTAS = {
     "modelos": 3,
     "herramientas": 3,
@@ -69,9 +70,28 @@ def cargar_seen() -> dict[str, str]:
     return {}
 
 
-def podar(seen: dict[str, str]) -> dict[str, str]:
+def podar_seen(seen: dict[str, str]) -> dict[str, str]:
     corte = (datetime.now(timezone.utc) - timedelta(days=RETENCION_DIAS)).isoformat()
     return {k: v for k, v in seen.items() if v > corte}
+
+
+def podar_ficheros() -> None:
+    """Borra dias con mas de 30 dias y los articulos que ya no referencia nadie."""
+    corte = (datetime.now(timezone.utc) - timedelta(days=RETENCION_DIAS)).strftime("%Y-%m-%d")
+    vivos: set[str] = set()
+
+    for f in DATOS.glob("20*.json"):
+        if f.stem < corte:
+            f.unlink()
+            log.info("podado %s", f.name)
+        else:
+            for i in json.loads(f.read_text(encoding="utf-8")).get("items", []):
+                vivos.add(i["id"])
+
+    if ARTICULOS.exists():
+        for f in ARTICULOS.glob("*.json"):
+            if f.stem not in vivos:
+                f.unlink()
 
 
 def main() -> None:
@@ -91,37 +111,52 @@ def main() -> None:
 
     clasificados, uso_llm = llm.seleccionar(nuevos)
     ordenados = marcar_destacados(clasificados, uso_llm)
+
     destacados = [it for it in ordenados if it.destacado]
-    n = extract.procesar(destacados, DATOS / "articles")
+    n = extract.procesar(destacados, ARTICULOS)
     log.info("texto extraido de %d de %d destacados", n, len(destacados))
+
+    dia = ahora.strftime("%Y-%m-%d")
+    fichero_dia = DATOS / f"{dia}.json"
+
+    # Si ya hay un brief de hoy (la pasada de la manana), acumulamos sobre el.
+    previos = []
+    if fichero_dia.exists():
+        previos = json.loads(fichero_dia.read_text(encoding="utf-8")).get("items", [])
+
+    nuevos_dict = [it.dict() for it in ordenados]
+    ids_nuevos = {i["id"] for i in nuevos_dict}
+    todos = nuevos_dict + [i for i in previos if i["id"] not in ids_nuevos]
+
     salida = {
         "generado_en": ahora.isoformat(),
         "modo": "normal" if uso_llm else "degradado",
         "fuentes_fallidas": fallos,
-        "candidatos": len(nuevos),
-        "destacados": sum(1 for it in ordenados if it.destacado),
-        "items": [it.dict() for it in ordenados],
+        "candidatos": len(nuevos) + len(previos),
+        "destacados": sum(1 for i in todos if i["destacado"]),
+        "items": todos,
     }
 
-    dia = ahora.strftime("%Y-%m-%d")
-    (DATOS / f"{dia}.json").write_text(
-        json.dumps(salida, ensure_ascii=False, indent=1), encoding="utf-8"
-    )
-    (DATOS / "latest.json").write_text(
-        json.dumps(salida, ensure_ascii=False, indent=1), encoding="utf-8"
-    )
+    texto_json = json.dumps(salida, ensure_ascii=False, indent=1)
+    fichero_dia.write_text(texto_json, encoding="utf-8")
+    (DATOS / "latest.json").write_text(texto_json, encoding="utf-8")
 
-    dias = sorted((f.stem for f in DATOS.glob("20*.json")), reverse=True)[:90]
-    (DATOS / "index.json").write_text(json.dumps(dias, indent=0), encoding="utf-8")
+    podar_ficheros()
+
+    dias = sorted((f.stem for f in DATOS.glob("20*.json")), reverse=True)
+    bytes_totales = sum(f.stat().st_size for f in DATOS.rglob("*.json"))
+    (DATOS / "index.json").write_text(
+        json.dumps({"dias": dias, "bytes": bytes_totales}, indent=0), encoding="utf-8"
+    )
 
     # IMPORTANTE: solo se marca como visto lo que se ha procesado de verdad.
     # Si un feed fallo hoy, sus items entraran manana en vez de perderse.
     for it in nuevos:
         seen[it.id] = ahora.isoformat()
-    SEEN.write_text(json.dumps(podar(seen), indent=0), encoding="utf-8")
+    SEEN.write_text(json.dumps(podar_seen(seen), indent=0), encoding="utf-8")
 
-    log.info("escritos %d destacados de %d (modo %s)",
-             salida["destacados"], len(ordenados), salida["modo"])
+    log.info("brief con %d destacados de %d (modo %s)",
+             salida["destacados"], len(todos), salida["modo"])
 
 
 if __name__ == "__main__":

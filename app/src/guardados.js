@@ -16,15 +16,27 @@ export function estaGuardado(id) {
   return leer().some((x) => x.id === id)
 }
 
-export function alternar(item) {
+const TOPE_TEXTO = 25
+
+export function alternar(item, texto = '') {
   const l = leer()
   const i = l.findIndex((x) => x.id === item.id)
-  if (i >= 0) l.splice(i, 1)
-  else l.unshift({ ...item, guardado_en: new Date().toISOString() })
+  if (i >= 0) {
+    l.splice(i, 1)
+  } else {
+    const con = l.filter((x) => x.texto).length
+    l.unshift({
+      ...item,
+      texto: con < TOPE_TEXTO ? texto : '',
+      guardado_en: new Date().toISOString(),
+    })
+  }
   try {
     localStorage.setItem(CLAVE, JSON.stringify(l))
-  } catch (e) {
-    console.warn('no se pudo guardar', e)
+  } catch {
+    // cuota llena: reintenta sin el texto
+    if (i < 0) { l[0].texto = '' }
+    try { localStorage.setItem(CLAVE, JSON.stringify(l)) } catch {}
   }
   return i < 0
 }
