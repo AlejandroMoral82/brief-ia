@@ -18,7 +18,7 @@ log = logging.getLogger(__name__)
 
 CATEGORIAS = ["modelos", "herramientas", "investigacion", "opinion", "industria"]
 
-MODELO = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
+MODELO = os.getenv("GEMINI_MODEL", "gemini-3.6-flash-lite")
 ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent"
 
 CRITERIO = """Eres el editor de un brief diario de IA para un desarrollador que

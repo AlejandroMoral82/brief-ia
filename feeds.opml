@@ -22,5 +22,15 @@
     <outline text="Filtrado" title="Filtrado">
       <outline type="rss" text="Hacker News - IA (150+ puntos)" title="Hacker News - IA (150+ puntos)" xmlUrl="https://hnrss.org/newest?q=AI&amp;points=150" htmlUrl="https://news.ycombinator.com/"/>
     </outline>
+    <outline text="Noticia" title="Noticia">
+      <outline type="rss" text="TechCrunch AI" title="TechCrunch AI"
+        xmlUrl="https://techcrunch.com/category/artificial-intelligence/feed/"/>
+      <outline type="rss" text="Ars Technica AI" title="Ars Technica AI"
+        xmlUrl="https://arstechnica.com/ai/feed/"/>
+      <outline type="rss" text="The Verge AI" title="The Verge AI"
+        xmlUrl="https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"/>
+      <outline type="rss" text="MarkTechPost" title="MarkTechPost"
+        xmlUrl="https://www.marktechpost.com/feed/"/>
+    </outline>
   </body>
 </opml>

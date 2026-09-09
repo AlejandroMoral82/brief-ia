@@ -12,8 +12,11 @@ export async function cargarDias() {
 }
 
 export function esDeHoy(iso) {
-  const hoy = new Date().toISOString().slice(0, 10)
-  return iso?.slice(0, 10) === hoy
+  const d = new Date(iso)
+  const hoy = new Date()
+  return d.getFullYear() === hoy.getFullYear()
+    && d.getMonth() === hoy.getMonth()
+    && d.getDate() === hoy.getDate()
 }
 
 export function haceCuanto(iso) {

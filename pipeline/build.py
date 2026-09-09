@@ -39,8 +39,14 @@ CUOTAS = {
 MAX_POR_FUENTE = 2
 
 
-def marcar_destacados(items: list) -> list:
+def marcar_destacados(items: list, uso_llm: bool = True) -> list:
     """Marca los que entran en cuota de categoria, con tope por fuente."""
+    if not uso_llm:
+        # Sin clasificacion real no hay cuotas que aplicar: los 8 mas recientes.
+        for it in items[:8]:
+            it.destacado = True
+        return items
+
     usados = {cat: 0 for cat in CUOTAS}
     por_fuente: dict[str, int] = {}
 
@@ -83,8 +89,7 @@ def main() -> None:
         return
 
     clasificados, uso_llm = llm.seleccionar(nuevos)
-    ordenados = marcar_destacados(clasificados)
-
+    ordenados = marcar_destacados(clasificados, uso_llm)
     salida = {
         "generado_en": ahora.isoformat(),
         "modo": "normal" if uso_llm else "degradado",
