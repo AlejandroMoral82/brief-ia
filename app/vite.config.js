@@ -16,11 +16,15 @@ export default defineConfig({
         background_color: '#070908',
         theme_color: '#070908',
       },
-      workbox: {
+            workbox: {
+        navigateFallbackDenylist: [/\/data\//],
         runtimeCaching: [{
           urlPattern: /\/data\/.*\.json$/,
           handler: 'NetworkFirst',
-          options: { cacheName: 'brief-data' },
+          options: {
+            cacheName: 'brief-data',
+            expiration: { maxAgeSeconds: 3600 },
+          },
         }],
       },
     }),
