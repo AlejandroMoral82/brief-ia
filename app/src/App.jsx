@@ -240,8 +240,9 @@ export default function App() {
   const destacados = filtra(brief.items.filter((i) => i.destacado))
   const resto = filtra(brief.items.filter((i) => !i.destacado))
 
-  const desactualizado = !esDeHoy(brief.generado_en)
-  const fecha = new Date(brief.generado_en)
+  const comprobado = brief.comprobado_en || brief.generado_en
+  const desactualizado = !esDeHoy(comprobado)
+  const fecha = new Date(comprobado)
 
   return (
     <>

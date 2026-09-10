@@ -106,7 +106,13 @@ def main() -> None:
     log.info("%d nuevos tras deduplicar", len(nuevos))
 
     if not nuevos:
-        log.info("nada nuevo, no se escribe nada")
+        log.info("nada nuevo")
+        if (DATOS / "latest.json").exists():
+            actual = json.loads((DATOS / "latest.json").read_text(encoding="utf-8"))
+            actual["comprobado_en"] = ahora.isoformat()
+            (DATOS / "latest.json").write_text(
+                json.dumps(actual, ensure_ascii=False, indent=1), encoding="utf-8"
+            )
         return
 
     clasificados, uso_llm = llm.seleccionar(nuevos)
@@ -135,6 +141,7 @@ def main() -> None:
         "candidatos": len(nuevos) + len(previos),
         "destacados": sum(1 for i in todos if i["destacado"]),
         "items": todos,
+        "comprobado_en": ahora.isoformat(),
     }
 
     texto_json = json.dumps(salida, ensure_ascii=False, indent=1)
