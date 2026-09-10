@@ -4,8 +4,8 @@ on:
   schedule:
     # 04:30 UTC = 06:30 en Espana (verano) / 05:30 (invierno).
     # Actions no ejecuta a la hora exacta: programa con margen.
-    - cron: "30 4 * * *"
-    - cron: "0 12 * * *"
+    - cron: "0 4 * * *"
+    - cron: "0 11 * * *"
   workflow_dispatch:        # boton para lanzarlo a mano
 
 permissions:
