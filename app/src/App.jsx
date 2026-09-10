@@ -317,7 +317,7 @@ function Particulas() {
     medir()
 
         const GLIFOS = '01{}[]<>/\\|$#*+=~^_'
-        const ps = Array.from({ length: Math.round(h / 10) }, () => ({
+        const ps = Array.from({ length: Math.round(h / 5) }, () => ({
       x: Math.random() * w,
       y: Math.random() * h,
       v: 0.05 + Math.random() * 0.12,
