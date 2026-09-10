@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { cargarBrief, cargarDias, nombreDia, esDeHoy, haceCuanto, cargarTexto } from './data'
 import { listar, estaGuardado, alternar } from './guardados'
 
@@ -27,7 +27,7 @@ function Filtros({ activos, alternar: alt }) {
   )
 }
 
-function Item({ it, abrir, marcado, onGuardar, bloqueado }) {
+function Item({ it, abrir, marcado, onGuardar, bloqueado, par }) {
   const [dx, setDx] = useState(0)
   const [x0, setX0] = useState(null)
 
@@ -50,7 +50,7 @@ function Item({ it, abrir, marcado, onGuardar, bloqueado }) {
           ? (dx > 90 ? 'quitar ✓' : 'quitar de guardados')
           : (dx > 90 ? 'guardar ✓' : 'guardar')}
       </div>
-      <button className="item"
+      <button className={`item${par ? ' par' : ''}`}
         style={{ transform: `translateX(${dx}px)`, transition: x0 ? 'none' : 'transform .3s cubic-bezier(.2,.9,.2,1)' }}
         onClick={() => dx === 0 && abrir(it)}
         {...tocar}>
@@ -79,7 +79,7 @@ function Lector({ it, volver, onGuardar }) {
 
   return (
     <div className="reader">
-      <button className="back" onClick={volver}>.. volver</button>
+            <button className="back" onClick={volver}>.. volver</button>
       <h2>{it.titulo}</h2>
       <div className="rmeta">
         <span className="pip" style={{ color: color(it.categoria), background: color(it.categoria) }} />
@@ -152,9 +152,9 @@ function Guardados({ abrir, quitar }) {
     <>
       <div className="titulo-seccion">Guardados</div>
       <div className="date">{items.length} artículos</div>
-      {items.map((it) => (
+      {items.map((it, n) => (
         <div key={it.id} className="fila-guardado">
-          <Item it={it} abrir={abrir} marcado bloqueado />
+          <Item it={it} abrir={abrir} marcado bloqueado par={n % 2 === 1} />
           <button className="quitar activo" onClick={() => quitar(it)}>quitar</button>
         </div>
       ))}
@@ -246,18 +246,22 @@ export default function App() {
 
   return (
     <>
+    <Particulas />
       <div className="wrap">
         <div className="bar">
-          <span>brief · v1</span>
+          <span>Bienvenido a tu brief-ia</span>
           <span className={desactualizado ? 'mal' : 'ok'}>
             {desactualizado ? 'sin actualizar' : `sincronizado ${fecha.toTimeString().slice(0, 5)}`}
           </span>
         </div>
 
-        <div className="prompt">~/hoy <em>listo</em><span className="cur" /></div>
-        <div className="date">
-          {fecha.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' })}
-          {' · '}{brief.destacados} de {brief.candidatos}
+        <div className="cabecera">
+          
+          <div className="prompt">~/hoy <em>listo</em><span className="cur" /></div>
+          <div className="date">
+            {fecha.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' })}
+            {' · '}{brief.destacados} de {brief.candidatos}
+          </div>
         </div>
 
         {(desactualizado || brief.modo === 'degradado' || brief.fuentes_fallidas.length > 0) && (
@@ -274,8 +278,8 @@ export default function App() {
           <div className="vacio">nada en esta categoría hoy</div>
         ) : (
           <>
-            {destacados.map((it) => (
-              <Item key={it.id} it={it} abrir={setAbierto}
+            {destacados.map((it, n) => (
+              <Item key={it.id} it={it} abrir={setAbierto} par={n % 2 === 1}
                 marcado={estaGuardado(it.id)} onGuardar={guardar} />
             ))}
             {resto.length > 0 && !verResto && (
@@ -293,4 +297,56 @@ export default function App() {
       <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} cerrar={() => setAbierto(null)} />
     </>
   )
+}
+
+function Particulas() {
+  const ref = useRef(null)
+
+  useEffect(() => {
+    const c = ref.current
+    if (!c || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+    const ctx = c.getContext('2d')
+    const dpr = window.devicePixelRatio || 1
+    let w, h, raf
+
+    const medir = () => {
+      w = c.offsetWidth; h = c.offsetHeight
+      c.width = w * dpr; c.height = h * dpr
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+    }
+    medir()
+
+        const GLIFOS = '01{}[]<>/\\|$#*+=~^_'
+        const ps = Array.from({ length: Math.round(h / 10) }, () => ({
+      x: Math.random() * w,
+      y: Math.random() * h,
+      v: 0.05 + Math.random() * 0.12,
+      ch: GLIFOS[Math.floor(Math.random() * GLIFOS.length)],
+      a: 0.1 + Math.random() * 0.28,
+      t: Math.random() * 200,
+    }))
+
+    const pintar = () => {
+      ctx.clearRect(0, 0, w, h)
+      ctx.font = '11px "IBM Plex Mono", monospace'
+      for (const p of ps) {
+        p.y += p.v
+        p.t += 1
+        if (p.t > 160) {                 // cambia de glifo de vez en cuando
+          p.ch = GLIFOS[Math.floor(Math.random() * GLIFOS.length)]
+          p.t = 0
+        }
+        if (p.y > h + 8) { p.y = -8; p.x = Math.random() * w }
+        ctx.fillStyle = `rgba(76,224,126,${p.a})`
+        ctx.fillText(p.ch, p.x, p.y)
+      }
+      raf = requestAnimationFrame(pintar)
+    }
+    pintar()
+
+    window.addEventListener('resize', medir)
+    return () => { cancelAnimationFrame(raf); window.removeEventListener('resize', medir) }
+  }, [])
+
+  return <canvas className="particulas" ref={ref} aria-hidden="true" />
 }

@@ -41,14 +41,12 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;
 
 /* ---------- filtros de categoria ---------- */
 
-.filtros{display:flex;gap:10px;padding-bottom:18px;margin-bottom:6px;
-  border-bottom:1px solid var(--line)}
-.filtro{background:none;border:0;cursor:pointer;padding:6px;line-height:0;opacity:.42;
-  transition:opacity .28s}
-.filtro svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.5;
-  stroke-linecap:round;stroke-linejoin:round;color:var(--faint);transition:color .28s}
-.filtro[aria-pressed="true"]{opacity:1}
-.filtro[aria-pressed="true"] svg{color:var(--c)}
+.filtro{background:none;border:0;cursor:pointer;padding:7px;line-height:0;
+  border-radius:4px;opacity:.45;transition:opacity .28s,background .28s}
+.filtro svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.5;
+  stroke-linecap:round;stroke-linejoin:round;color:var(--c)}
+.filtro[aria-pressed="true"]{opacity:1;background:color-mix(in srgb,var(--c) 12%,transparent)}
+.filtro:active{opacity:.8}
 .filtro:focus-visible{outline:1px solid var(--g);outline-offset:2px;border-radius:3px}
 
 /* ---------- item de la lista ---------- */
@@ -59,7 +57,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;
 .swipe-bg.quitando{color:var(--naranja)}
 
 .item{display:block;position:relative;width:100%;text-align:left;background:var(--bg);
-  border:0;border-left:1px solid var(--line);padding:16px 0 16px 16px;cursor:pointer;
+  border:0;padding:16px 0 16px 16px;cursor:pointer;
   color:inherit;font:inherit;touch-action:pan-y;transition:border-color .3s,background .3s}
 .item:focus-visible{border-left-color:var(--g);outline:none}
 .head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
@@ -68,8 +66,9 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;
 .ago{font-family:var(--mono);font-size:11px;color:var(--faint);margin-left:auto}
 .tl{font-family:var(--mono);font-weight:400;font-size:16px;line-height:1.45;
   letter-spacing:-.015em;transition:color .3s}
-.marca{position:absolute;left:6px;top:22px;width:5px;height:5px;border-radius:50%;
-  background:var(--g);box-shadow:0 0 8px var(--g-glow)}
+.marca{position:absolute;right:14px;top:38px;width:9px;height:12px;
+  background:var(--g);opacity:.85;
+  clip-path:polygon(0 0,100% 0,100% 100%,50% 72%,0 100%)}
 
 .resto{width:100%;background:none;border:1px solid var(--line);border-radius:3px;
   color:var(--faint);font-family:var(--mono);font-size:12px;padding:12px;margin-top:20px;
@@ -77,8 +76,10 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;
 
 /* ---------- lector ---------- */
 
-.back{font-family:var(--mono);font-size:12px;color:var(--faint);background:none;border:0;
-  cursor:pointer;padding:0;margin-bottom:26px;transition:color .25s}
+.back{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:12px;
+  color:var(--dim);background:none;border:1px solid var(--line);border-radius:3px;
+  cursor:pointer;padding:8px 13px;margin-bottom:26px;transition:color .25s,border-color .25s}
+.back:active{color:var(--g);border-color:var(--g-dim)}
 .reader h2{font-family:var(--mono);font-weight:400;font-size:clamp(20px,5.2vw,26px);
   line-height:1.34;letter-spacing:-.025em;margin-bottom:14px}
 .rmeta{font-family:var(--mono);font-size:11px;color:var(--faint);padding-bottom:22px;
@@ -125,10 +126,19 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;
 
 .vacio{font-family:var(--mono);font-size:12.5px;color:var(--faint);
   text-align:center;padding:50px 0;line-height:1.8}
-.item:active{border-left-color:var(--g);background:var(--g-tenue)}
 .dia:active{color:var(--g)}
 .quitar:active,.resto:active,.orig:active{opacity:.6}
 .portada{display:block;width:100%;height:auto;margin-top:22px;border-radius:3px;
   border:1px solid var(--line)}
+.item{display:block;position:relative;width:100%;text-align:left;background:var(--bg);
+  border:0;padding:16px 18px;cursor:pointer;color:inherit;font:inherit;
+  touch-action:pan-y;transition:background .3s}
+.item.par{background:rgba(255,255,255,.022)}
+.item:active{background:var(--g-tenue)}
+
+.particulas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.35) 35%,rgba(0,0,0,.2) 100%);
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.35) 35%,rgba(0,0,0,.2) 100%)}
+.wrap{position:relative;z-index:1}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
