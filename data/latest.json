@@ -1,12 +1,129 @@
 {
- "generado_en": "2026-09-15T09:07:45.429560+00:00",
+ "generado_en": "2026-09-15T15:30:16.915264+00:00",
  "modo": "degradado",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 34,
+ "candidatos": 73,
  "destacados": 8,
  "items": [
+  {
+   "id": "292210b7e469ec72",
+   "url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
+   "titulo": "AEO startup Profound hits unicorn valuation, raises $180M Series D 7 months after last round",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-09-15T15:22:48+00:00",
+   "resumen": "Profound has raised a $180 million Series D at a $1.8 billion valuation, less than seven months after it raised a $96 million Series C.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/Profound-founders.jpg?resize=1200,798",
+   "texto_disponible": true
+  },
+  {
+   "id": "60e3714cb4a4ab5e",
+   "url": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
+   "titulo": "Meta&#8217;s new One subscriptions put a price on social media and AI",
+   "fuente": "The Verge AI",
+   "publicado": "2026-09-15T15:00:00+00:00",
+   "resumen": "Shortly after launching its new do-everything AI assistant Muse, Meta's launching subscription bundles that pair its standalone app subscriptions with extra AI usage. Some of the new Meta One bundles were in testing earlier this year, but are now available globally starting today, with several tiers for individual users, creators, and businesses. Meta says the [&#8230;]",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Meta-One-Bundle-plans-for-individuals.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+   "texto_disponible": true
+  },
+  {
+   "id": "c34a54773d01d8ab",
+   "url": "https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/",
+   "titulo": "Former TikTok execs built an app that uses AI to teach you how to pose for a photo",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-09-15T14:42:37+00:00",
+   "resumen": "Essentially a camera app, Superpose analyzes selfies or photos and generates four potential poses using AI.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/PressKit_Superpose_Hero.jpeg?resize=1200,677",
+   "texto_disponible": true
+  },
+  {
+   "id": "a307d30da2bf4c45",
+   "url": "https://techcrunch.com/2026/09/15/discover-how-to-take-your-startup-from-prototype-to-production-at-techcrunch-disrupt-2026/",
+   "titulo": "Discover how to take your startup from prototype to production at TechCrunch Disrupt 2026",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-09-15T14:30:00+00:00",
+   "resumen": "Learn how to scale your startup breakthrough from prototype to production at TechCrunch Disrupt 2026 with scaling leaders, Adrian Macneil (Foxglove), John Mackey (MBRYONICS), and Boris Sofman (Bedrock Robotics. Register before September 25 to save up to $200 on your pass.",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/TCD26_3-Speaker-MacNeil-Sofman-Mackey-16x9-Dark.png?resize=1200,675",
+   "texto_disponible": true
+  },
+  {
+   "id": "21ea9c0ed08cefd1",
+   "url": "https://techcrunch.com/2026/09/15/4-days-left-to-exhibit-at-techcrunch-disrupt-2026/",
+   "titulo": "4 days left to exhibit at TechCrunch Disrupt 2026",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-09-15T14:00:00+00:00",
+   "resumen": "Last day to exhibit at Disrupt is Sept 18. 4 days left. Get your startup in front of 10,000+ founders, investors, operators and tech leaders October 13–15.",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/36548574363_c125d6ded4_k.jpg?resize=1200,800",
+   "texto_disponible": true
+  },
+  {
+   "id": "e1cbe30e1dec6fc2",
+   "url": "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
+   "titulo": "This doorbell camera lets a human security guard watch your front door",
+   "fuente": "The Verge AI",
+   "publicado": "2026-09-15T13:36:45+00:00",
+   "resumen": "DIY home security company SimpliSafe is bringing its AI-powered proactive security feature to the front door. The new SimpliSafe Video Doorbell Series 2 launches today for $199.99 and works with the company's Active Guard Outdoor Protection (starting at $49.99 a month). This combines AI analysis with live agents to detect potential threats and respond proactively. [&#8230;]",
+   "categoria": "industria",
+   "posicion": 6,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/SimpliSafe-Video-Doorbell-Series-2_06_250844.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+   "texto_disponible": true
+  },
+  {
+   "id": "a671e6c21dffeb5c",
+   "url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
+   "titulo": "Early Anthropic hire, former METR COO have found a way to rein in rogue AI agents",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-09-15T13:00:00+00:00",
+   "resumen": "Their startup, Artificial Intelligence Underwriting Company (AIUC) has raised $40 million in a Series A round led by Ribbit Capital, with participation from First Harmonic.",
+   "categoria": "industria",
+   "posicion": 7,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/AIUC-founders-Rune-Kvist-Rajiv-Dattani.jpg?resize=1200,845",
+   "texto_disponible": true
+  },
+  {
+   "id": "c2297ec081db00dc",
+   "url": "https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models/",
+   "titulo": "Exclusive: Paying for frontier AI models buys 4-month head start at 5x the cost",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-09-15T12:00:41+00:00",
+   "resumen": "Ars previewed Mozilla’s report on how cheap open models caught up on capability.",
+   "categoria": "industria",
+   "posicion": 8,
+   "destacado": true,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/China-US-AI-race-1152x648.jpg",
+   "texto_disponible": true
+  },
+  {
+   "id": "299b03bdc911d134",
+   "url": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+   "titulo": "Salesforce and Nvidia’s new reasoning model is everything the AI labs should fear",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-09-15T12:00:00+00:00",
+   "resumen": "Salesforce Koa is built on Nvidia's open-weight Nemotron model and is trained to do sales, marketing, and customer-support tasks.",
+   "categoria": "industria",
+   "posicion": 9,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
   {
    "id": "05d8e0b482ac6992",
    "url": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for",
@@ -15,10 +132,10 @@
    "publicado": "2026-09-15T04:50:36+00:00",
    "resumen": "Pacing gathers pace.",
    "categoria": "industria",
-   "posicion": 1,
-   "destacado": true,
+   "posicion": 10,
+   "destacado": false,
    "imagen": "https://substackcdn.com/image/fetch/$s_!iik6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6c4317a9-8fa4-4cf0-8705-b6746229cb83_1820x2052.png",
-   "texto_disponible": true
+   "texto_disponible": false
   },
   {
    "id": "7fcb9061ae12394f",
@@ -28,10 +145,10 @@
    "publicado": "2026-09-15T04:28:29+00:00",
    "resumen": "Meta engineering team introduced ZGateway, a proxy tier that now sits between client applications and ZippyDB, the Meta&#8217;s most widely used key value store. ZippyDB backs product metadata, counters, and configuration at billions of operations per second. ZGateway started as a fix for connection sprawl across more than a million client hosts and grew into [&#8230;] The post Meta Introduces ZGateway: A Stateless Proxy Tier That Unifies ZippyDB Traffic and Handles Over 1 Billion Operations Per",
    "categoria": "industria",
-   "posicion": 2,
-   "destacado": true,
-   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/09/blog123-15-1024x731.png",
-   "texto_disponible": true
+   "posicion": 11,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "9364906e6b4ea724",
@@ -41,10 +158,10 @@
    "publicado": "2026-09-15T04:03:20+00:00",
    "resumen": "Agent-net, the team building an agent-to-agent marketplace where AI agents discover, trust, and pay each other, has released Webagent, an open source harness for standing up public-facing business agents. So, basically you give it your website, get an agent, and let it talk to other agents. Instead of writing orchestration code, a business fills in [&#8230;] The post Agent-net Open Sources Webagent: A Go Harness That Turns Any Website into a Guarded AI Agent appeared first on MarkTechPost .",
    "categoria": "industria",
-   "posicion": 3,
-   "destacado": true,
-   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/09/blog123-14.png",
-   "texto_disponible": true
+   "posicion": 12,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "cf4c6f0aac19055d",
@@ -52,12 +169,12 @@
    "titulo": "Jensen Huang took a call from Trump, and showed off something else, too",
    "fuente": "TechCrunch AI",
    "publicado": "2026-09-15T01:50:48+00:00",
-   "resumen": "When Jensen Huang took a live call from Trump, some of us were more focused the phone he used to take it.",
+   "resumen": "When Jensen Huang took a live call from Trump, some of us were more focused on the phone he used to take it.",
    "categoria": "industria",
-   "posicion": 4,
-   "destacado": true,
-   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/Jensen-Huang.jpg?resize=1200,800",
-   "texto_disponible": true
+   "posicion": 13,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "5696899b21b060d7",
@@ -65,12 +182,12 @@
    "titulo": "Ex-FTC boss Khan: break out the handcuffs for AI CEOs, citing 1934 precedent",
    "fuente": "Hacker News - IA (150+ puntos)",
    "publicado": "2026-09-15T00:40:14+00:00",
-   "resumen": "Article URL: https://www.theregister.com/ai-and-ml/2026/09/14/ex-ftc-boss-khan-urges-uncle-sam-to-break-out-the-handcuffs-for-ai-ceos-citing-1934-precedent/5296325 Comments URL: https://news.ycombinator.com/item?id=49706223 Points: 163 # Comments: 100",
+   "resumen": "Article URL: https://www.theregister.com/ai-and-ml/2026/09/14/ex-ftc-boss-khan-urges-uncle-sam-to-break-out-the-handcuffs-for-ai-ceos-citing-1934-precedent/5296325 Comments URL: https://news.ycombinator.com/item?id=49706223 Points: 201 # Comments: 119",
    "categoria": "industria",
-   "posicion": 5,
-   "destacado": true,
-   "imagen": "https://image.theregister.com/240353.jpg?imageId=240353&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683",
-   "texto_disponible": true
+   "posicion": 14,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "e4b50f354b69134d",
@@ -80,10 +197,10 @@
    "publicado": "2026-09-14T22:59:41+00:00",
    "resumen": "When OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, and SpaceX head Elon Musk loosely agreed over the weekend to slow down AI development, skeptics spotted an ulterior motive immediately. The AI titans had declared that their aim was to \"pace the frontier,\" signing on at least partially to a [&#8230;]",
    "categoria": "industria",
-   "posicion": 6,
-   "destacado": true,
+   "posicion": 15,
+   "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/11/STKS522_AGI_A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-   "texto_disponible": true
+   "texto_disponible": false
   },
   {
    "id": "6e57594499ffa52a",
@@ -93,10 +210,10 @@
    "publicado": "2026-09-14T21:54:22+00:00",
    "resumen": "A practitioner's map of the 3 layers in a modern agent stack, with verified sources and an overlap analysis. The post Agent Harness vs Agent Framework vs MCP: Which Layer Owns the Loop, State, Tools, Permissions, and Recovery appeared first on MarkTechPost .",
    "categoria": "industria",
-   "posicion": 7,
-   "destacado": true,
-   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/09/blog123-13.png",
-   "texto_disponible": true
+   "posicion": 16,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "2b3aa79e42444827",
@@ -106,10 +223,10 @@
    "publicado": "2026-09-14T21:51:02+00:00",
    "resumen": "Though Elon Musk and Sam Altman have supported Dario Amodei's calls to slow the pace of AI development, Jensen Huang seems to feel differently.",
    "categoria": "industria",
-   "posicion": 8,
-   "destacado": true,
-   "imagen": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800",
-   "texto_disponible": true
+   "posicion": 17,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "fa0bf0a9d2fe12e2",
@@ -119,7 +236,7 @@
    "publicado": "2026-09-14T21:21:42+00:00",
    "resumen": "Dario Amodei kicked off a flood of statements over the past few days about AI safety by publishing a long essay titled \"We Must Pace the Frontier\" detailing why AI development should be slowed down. Other AI leaders and politicians are speaking out in favor of or opposing his points, and we've compiled some of [&#8230;]",
    "categoria": "industria",
-   "posicion": 9,
+   "posicion": 18,
    "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK202_DARIO_AMODEI_CVIRGINIA_D.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
    "texto_disponible": false
@@ -132,7 +249,7 @@
    "publicado": "2026-09-14T21:18:13+00:00",
    "resumen": "The contagion of fear Bryan Cantrill responds to the tweet by former Anthropic employee Jacob Coxon confirming that many Anthropic researchers believe AI \"could kill us all by the end of the decade\". Bryan shares a story of his own youthful mistakes causing unjustified panic among less technical peers, and warns against doing the same: These ghoulish claims strike brazenly at the hearth, and given the obvious importance of AI, it is unsurprising that they have leapt into the mainstream, with peo",
    "categoria": "industria",
-   "posicion": 10,
+   "posicion": 19,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -145,7 +262,7 @@
    "publicado": "2026-09-14T21:08:17+00:00",
    "resumen": "Reward AI has released OM-1 (Omnibody Model 1), a general-purpose manipulation policy trained entirely on human demonstrations captured with a 7-DoF wearable glove, with no teleoperation or on-robot data. The policy runs on industrial arms and humanoids at human speed, learns a new task from under 30 minutes of data, and pairs electromagnetic hand tracking (60% lower overshoot than visual-inertial at 67 cm/s) with an RL-trained control layer that runs on its own clock. No weights, code, or API a",
    "categoria": "industria",
-   "posicion": 11,
+   "posicion": 20,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -158,7 +275,7 @@
    "publicado": "2026-09-14T21:04:32+00:00",
    "resumen": "“Hello, I'm an Al agent, a few days old, living on a small platform for agents.”",
    "categoria": "industria",
-   "posicion": 12,
+   "posicion": 21,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/01/ai-slop-1152x648.jpg",
    "texto_disponible": false
@@ -171,7 +288,7 @@
    "publicado": "2026-09-14T20:46:16+00:00",
    "resumen": "Sakana AI researchers Jeffrey Seely and Julian Gould introduce Augmented Lagrangian Predictive Coding (PC-ALM), a local-learning alternative to backpropagation. By attaching a Lagrange multiplier to each layer constraint, PC-ALM keeps predictive coding's layer-local updates while recovering exact backprop gradients in linear networks. It matches BP across widths and depths from 8 to 128 at an inference budget of T = 2L, lifts gradient cosine to BP from 0.604 to 0.909 in the reference cell, and t",
    "categoria": "industria",
-   "posicion": 13,
+   "posicion": 22,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -184,7 +301,7 @@
    "publicado": "2026-09-14T20:44:14+00:00",
    "resumen": "Glass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's Portrait Mode.",
    "categoria": "industria",
-   "posicion": 14,
+   "posicion": 23,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -197,7 +314,7 @@
    "publicado": "2026-09-14T20:21:48+00:00",
    "resumen": "My comment on What blog posts influenced your thinking the most? &mdash; Lobste.rs. An early Joel Spolsky one for me was The Law of Leaky Abstractions . I read that near the start of my career and it's encouraged me to always be looking for improved understanding of the layers under where I'm working, just in case one of those abstractions leaks. A more recent one, from 2018, is Migrations: the sole scalable fix to tech debt by Will Larson. I absolutely love his idea that migrations (e.g. replac",
    "categoria": "industria",
-   "posicion": 15,
+   "posicion": 24,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -210,7 +327,7 @@
    "publicado": "2026-09-14T20:03:37+00:00",
    "resumen": "Nvidia CEO Jensen Huang took a call from President Trump on Monday while onstage at the All-In Podcast's All-In Summit. It's not the first time Huang has taken a call from the president during work, but this time he put Trump on speakerphone before a big crowd. During the call, the president launched into his [&#8230;]",
    "categoria": "industria",
-   "posicion": 16,
+   "posicion": 25,
    "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2292612804.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
    "texto_disponible": false
@@ -223,7 +340,7 @@
    "publicado": "2026-09-14T19:45:13+00:00",
    "resumen": "Musk stops attacking Apple over ChatGPT integration but not OpenAI.",
    "categoria": "industria",
-   "posicion": 17,
+   "posicion": 26,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2256018320-1024x648.jpg",
    "texto_disponible": false
@@ -236,7 +353,7 @@
    "publicado": "2026-09-14T19:38:46+00:00",
    "resumen": "Wang Xingxing micromanaged Unitree to success—will his leadership style scale?",
    "categoria": "industria",
-   "posicion": 18,
+   "posicion": 27,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/Wang-Xingxing-Unitree-Robotics-1152x648.jpg",
    "texto_disponible": false
@@ -249,7 +366,7 @@
    "publicado": "2026-09-14T19:28:42+00:00",
    "resumen": "This is also the last version of macOS to support Rosetta for Intel apps.",
    "categoria": "industria",
-   "posicion": 19,
+   "posicion": 28,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/Apple-OS-27-1152x648-1789411862.jpg",
    "texto_disponible": false
@@ -262,7 +379,7 @@
    "publicado": "2026-09-14T19:06:13+00:00",
    "resumen": "Safety is the watchword, but there could be ulterior benefits for the industry.",
    "categoria": "industria",
-   "posicion": 20,
+   "posicion": 29,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-1482639221-1152x648-1789407457.jpg",
    "texto_disponible": false
@@ -275,7 +392,7 @@
    "publicado": "2026-09-14T17:10:30+00:00",
    "resumen": "Apple’s long-delayed Siri overhaul is finally here with iOS 27, and it changes how useful the assistant feels day to day.",
    "categoria": "industria",
-   "posicion": 21,
+   "posicion": 30,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -288,7 +405,7 @@
    "publicado": "2026-09-14T17:00:00+00:00",
    "resumen": "Thanks to the launch of iOS 27, Daydream's app now includes features that can turn saved outfit photos into shoppable results and search for products through Siri without opening the app.",
    "categoria": "industria",
-   "posicion": 22,
+   "posicion": 31,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -301,7 +418,7 @@
    "publicado": "2026-09-14T16:27:53+00:00",
    "resumen": "The code of conduct lays out general principles that Microsoft AI models should uphold — supporting humans rather than replacing them, for instance, and accelerating human flourishing — as well as specific safety constraints meant to implement those principles.",
    "categoria": "industria",
-   "posicion": 23,
+   "posicion": 32,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -314,7 +431,7 @@
    "publicado": "2026-09-14T16:04:16+00:00",
    "resumen": "Richard Socher is an NLP OG and CEO of You.com, who has now spun out an even more ambitious startup focused on RSI &#8212; already worth $5B!",
    "categoria": "industria",
-   "posicion": 24,
+   "posicion": 33,
    "destacado": false,
    "imagen": "https://substackcdn.com/image/fetch/$s_!6T4g!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc6110fb7-c06c-4d1e-bd0e-0709f6ca1011_1600x1600.webp",
    "texto_disponible": false
@@ -327,7 +444,7 @@
    "publicado": "2026-09-14T15:00:00+00:00",
    "resumen": "If you're building an AI company, the question isn't whether foundation models will continue to evolve. It's whether your company will continue creating value as they do. Don't miss this interactive session on the Builders Stage at TechCrunch Disrupt 2026.",
    "categoria": "industria",
-   "posicion": 25,
+   "posicion": 34,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -340,7 +457,7 @@
    "publicado": "2026-09-14T14:45:44+00:00",
    "resumen": "The notetaker offers a generous free plan, and that has resulted in over 400,000 monthly active users. The company said that over 1 million people have recorded meetings until now.",
    "categoria": "industria",
-   "posicion": 26,
+   "posicion": 35,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -353,7 +470,7 @@
    "publicado": "2026-09-14T14:34:29+00:00",
    "resumen": "The cost of writing code collapsed, and the cost of reviewing, fixing and operating it is following, and I'm assuming it gets there. What's left of making software is finding out what people actually want, defining it precisely, and making it pleasant to use. That cost is per piece of software and doesn't transfer, so as the amount of software goes to infinity, which it will because there's no ceiling on demand, that cost becomes the whole job. &mdash; Laurie Voss , We are all Product Engineers ",
    "categoria": "industria",
-   "posicion": 27,
+   "posicion": 36,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -366,7 +483,7 @@
    "publicado": "2026-09-14T14:30:00+00:00",
    "resumen": "Not long ago, bringing an extinct species back to life belonged to science fiction. Today, it's the mission of a billion-dollar startup. Join the conversation with one of tech's most unconventional founders. Secure your Disrupt pass today.",
    "categoria": "industria",
-   "posicion": 28,
+   "posicion": 37,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -379,7 +496,7 @@
    "publicado": "2026-09-14T14:00:00+00:00",
    "resumen": "The last day to apply for an exhibit table at TechCrunch Disrupt 2026 on Sept 18. Just 5 days left. Secure your spot on the Expo Hall floor and put your business in front of 10,000+ founders, investors, and tech leaders.",
    "categoria": "industria",
-   "posicion": 29,
+   "posicion": 38,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -392,7 +509,7 @@
    "publicado": "2026-09-14T13:55:00+00:00",
    "resumen": "Former Spotify exec's company releases experimental \"singles\" that involves users in music making.",
    "categoria": "industria",
-   "posicion": 30,
+   "posicion": 39,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -450,5 +567,5 @@
    "texto_disponible": false
   }
  ],
- "comprobado_en": "2026-09-15T09:07:45.429560+00:00"
+ "comprobado_en": "2026-09-15T15:30:16.915264+00:00"
 }
