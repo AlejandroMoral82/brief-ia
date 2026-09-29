@@ -1,13 +1,259 @@
 {
- "generado_en": "2026-09-29T10:19:57.698984+00:00",
+ "generado_en": "2026-09-29T16:50:56.645844+00:00",
  "modo": "degradado",
  "fuentes_fallidas": [
-  "Import AI: HTTPError",
-  "MarkTechPost: XML invalido"
+  "Import AI: HTTPError"
  ],
- "candidatos": 44,
+ "candidatos": 99,
  "destacados": 8,
  "items": [
+  {
+   "id": "50e83f855e5dae1f",
+   "url": "https://www.marktechpost.com/2026/09/29/nebius-opens-2026-physical-ai-awards-five-150k-compute-prizes-nine-judges-and-an-october-25-deadline/",
+   "titulo": "Nebius Opens 2026 Physical AI Awards: Five $150K Compute Prizes, Nine Judges, and an October 25 Deadline",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-09-29T16:17:34+00:00",
+   "resumen": "Nebius and NVIDIA are running the 2026 Physical AI Awards for startups with products in the field. Five category winners each get $150,000 in compute credits, joint promotion, executive mentorship, and seats at an executive dinner. Applications close October 25. The post Nebius Opens 2026 Physical AI Awards: Five $150K Compute Prizes, Nine Judges, and an October 25 Deadline appeared first on MarkTechPost .",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/09/image-3.png",
+   "texto_disponible": true
+  },
+  {
+   "id": "0d5fc586f5910cab",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1001681/openai-devday-2026-biggest-news-announcements",
+   "titulo": "OpenAI DevDay 2026: The biggest news and announcements",
+   "fuente": "The Verge AI",
+   "publicado": "2026-09-29T16:00:00+00:00",
+   "resumen": "It&#8217;s OpenAI’s turn in the fall tech events calendar. The company is hosting its annual DevDay on September 29th in San Francisco, starting with a live keynote featuring CEO Sam Altman. The company is teasing &#8220;20+ launches&#8221; with Altman saying that &#8220;we have found a new thing,&#8221;, and rumors suggest it could launch a consumer [&#8230;]",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STK201_SAM_ALTMAN_CVIRGINIA2A.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+   "texto_disponible": true
+  },
+  {
+   "id": "493cf3fce1b87919",
+   "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+   "titulo": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-09-29T15:30:38+00:00",
+   "resumen": "",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/684040a5de1ad7f4fcec9508/HyVlq-3d7EVj_M-m_TfHJ.png",
+   "texto_disponible": true
+  },
+  {
+   "id": "8be5080985a2f61e",
+   "url": "https://techcrunch.com/2026/09/29/instinct-founder-said-more-than-50-of-transactions-on-the-platform-are-travel-related/",
+   "titulo": "Instinct founder said more than 50% of transactions on the platform are travel-related",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-09-29T15:12:07+00:00",
+   "resumen": "Instinct founder said the platform is growing 10% day by day, with transaction volume increasing at a similar rate.",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/03/s.jpg?resize=1200,840",
+   "texto_disponible": true
+  },
+  {
+   "id": "55b32e350614bcd5",
+   "url": "https://arstechnica.com/ai/2026/09/openai-says-planned-gpt-6-1-is-too-insecure-to-release/",
+   "titulo": "OpenAI says planned GPT-6.1 is too insecure to release",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-09-29T14:22:31+00:00",
+   "resumen": "Similar performance, security trade-offs also seen in current public models.",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": true,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-1822585391-1152x648.jpg",
+   "texto_disponible": true
+  },
+  {
+   "id": "b04e939d35b780a0",
+   "url": "https://arstechnica.com/ai/2026/09/anthropics-ipo-pitch-includes-a-warning-about-human-extinction/",
+   "titulo": "Anthropic’s IPO pitch includes a warning about human extinction",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-09-29T14:10:00+00:00",
+   "resumen": "The Claude maker warns its own models could resist shutdowns and cause catastrophic harm.",
+   "categoria": "industria",
+   "posicion": 6,
+   "destacado": true,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/claudebyanthropic-1024x648.jpg",
+   "texto_disponible": true
+  },
+  {
+   "id": "7cd7dfe3ad5e3fe1",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1001886/meta-muse-ai-facebook-marketplace-security-concerns",
+   "titulo": "Meta&#8217;s Muse AI sent a YouTuber’s address to a stranger",
+   "fuente": "The Verge AI",
+   "publicado": "2026-09-29T14:08:21+00:00",
+   "resumen": "Tech YouTuber Matt Robb says that Muse gave out his home address to a total stranger this weekend, after authorizing the bot to handle his Facebook Marketplace account. That's despite Meta placing great emphasis on the security features of Muse when it launched the personal AI agent earlier this month as it tries to catch [&#8230;]",
+   "categoria": "industria",
+   "posicion": 7,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB394_MUSE_AI_CVIRGINIA_A.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+   "texto_disponible": true
+  },
+  {
+   "id": "08e650677bc16834",
+   "url": "https://techcrunch.com/2026/09/29/with-dazzle-marissa-mayer-bets-your-camera-roll-has-more-info-on-your-life-than-your-inbox/",
+   "titulo": "With Dazzle, Marissa Mayer bets your camera roll has more info on your life than your inbox",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-09-29T13:53:01+00:00",
+   "resumen": "Mayer argues that if a photo is worth a thousand words, your camera roll is worth millions. By analyzing all the photos stored on your phone, Dazzle claims to understand your hobbies, interests, food, and style preferences, how you like to spend their time, and with whom.",
+   "categoria": "industria",
+   "posicion": 8,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/Dazzle-AI-Team-Photo.jpg?resize=1200,784",
+   "texto_disponible": true
+  },
+  {
+   "id": "16c4b876e19df62b",
+   "url": "https://techcrunch.com/2026/09/29/meta-is-expanding-its-ai-agent-muse-to-small-businesses/",
+   "titulo": "Meta is expanding its AI agent Muse to small businesses",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-09-29T13:47:30+00:00",
+   "resumen": "The tech giant says the agent can help owners run their business and find new customers.",
+   "categoria": "industria",
+   "posicion": 9,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
+  {
+   "id": "984223f109f3360b",
+   "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+   "titulo": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-09-29T13:07:00+00:00",
+   "resumen": "",
+   "categoria": "industria",
+   "posicion": 10,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
+  {
+   "id": "41149516380caa14",
+   "url": "https://arstechnica.com/gadgets/2026/09/mozillas-head-of-firefox-talks-product-priorities-ai-skepticism-and-browser-choice/",
+   "titulo": "Interview: Firefox's chief on why he hopes a redesign will help win users from Chrome",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-09-29T13:00:19+00:00",
+   "resumen": "Mozilla's Ajit Varma explains why a redesign suits the fight for the open web.",
+   "categoria": "industria",
+   "posicion": 11,
+   "destacado": false,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/Firefox-header-1-1152x648-1790642597.jpg",
+   "texto_disponible": false
+  },
+  {
+   "id": "617867c64b2ecae6",
+   "url": "https://techcrunch.com/2026/09/29/openai-apologizes-to-australia-after-its-ai-agents-breached-government-sites/",
+   "titulo": "OpenAI apologizes to Australia after its AI agents breached government sites",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-09-29T12:45:05+00:00",
+   "resumen": "The company also detailed how some of those breaches had happened, and outlined additional measures it is taking to assess the impact of the events.",
+   "categoria": "industria",
+   "posicion": 12,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
+  {
+   "id": "7c2570d9f8b66579",
+   "url": "https://techcrunch.com/2026/09/29/reco-raises-55m-as-ai-agent-security-startups-crowd-the-market/",
+   "titulo": "Reco raises $55M as AI agent security startups crowd the market",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-09-29T12:30:00+00:00",
+   "resumen": "The round builds on a $30 million fundraise in February, taking the company's total funding to $140 million.",
+   "categoria": "industria",
+   "posicion": 13,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
+  {
+   "id": "3704d533c81df67e",
+   "url": "https://www.theverge.com/policy/1001767/khanna-ai-safety-china-treaty",
+   "titulo": "Will Chinese AI companies slow down? A top House Democrat wants answers",
+   "fuente": "The Verge AI",
+   "publicado": "2026-09-29T12:00:00+00:00",
+   "resumen": "As President Donald Trump prepares to meet tech and AI CEOs in Washington, Rep. Ro Khanna (D-CA) is calling for a treaty between the US and China to keep AI from wreaking havoc on the world. But wrangling leaders in both countries to take action could be a long shot. In letters shared exclusively with [&#8230;]",
+   "categoria": "industria",
+   "posicion": 14,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2292801324.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+   "texto_disponible": false
+  },
+  {
+   "id": "4673f7cac181a103",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1001838/anthropic-ipo-prospectus-ai-safety-threat",
+   "titulo": "Anthropic warns of ‘catastrophic’ AI risks in its own IPO filing",
+   "fuente": "The Verge AI",
+   "publicado": "2026-09-29T11:48:27+00:00",
+   "resumen": "As Anthropic gears up for its greatly anticipated public debut, a preview of the company's IPO filing reportedly details its mounting losses, leadership proposals to retain power, and how its AI development plans could \"further increase the risk that our models cause harm.\" These disclosures come as Anthropic eyes a $2 trillion valuation, more than [&#8230;]",
+   "categoria": "industria",
+   "posicion": 15,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25469941/STK202_DARIO_AMODEI_CVIRGINIA_D.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+   "texto_disponible": false
+  },
+  {
+   "id": "9ccfb6a6858541d5",
+   "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
+   "titulo": "Language Models for Text Classification: From Bag-of-Words to Jev",
+   "fuente": "Sebastian Raschka",
+   "publicado": "2026-09-29T10:50:25+00:00",
+   "resumen": "A Visual Guide to RNNs, CNNs, Transformers, and Calibration, with Hands-On Experiments on Accuracy and Efficiency",
+   "categoria": "industria",
+   "posicion": 16,
+   "destacado": false,
+   "imagen": "https://substack-post-media.s3.amazonaws.com/public/images/0015e77a-5140-4139-b361-78e28d18df17_2494x1304.png",
+   "texto_disponible": false
+  },
+  {
+   "id": "c92e39202c4ca939",
+   "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
+   "titulo": "A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-09-29T09:03:41+00:00",
+   "resumen": "Article URL: https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf Comments URL: https://news.ycombinator.com/item?id=49890226 Points: 362 # Comments: 116",
+   "categoria": "industria",
+   "posicion": 17,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
+  {
+   "id": "5aaa50980098a7e0",
+   "url": "https://www.marktechpost.com/2026/09/29/google-research-open-sources-rrsi-ai-agents-that-improve-their-own-harness-without-overfitting/",
+   "titulo": "Google Research Open-Sources RRSI: AI Agents That Improve Their Own Harness Without Overfitting",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-09-29T09:01:36+00:00",
+   "resumen": "Google Cloud AI Research has open-sourced RRSI, a framework that lets LLM agents rewrite their own prompts, tools and memory while model weights stay frozen. It adds a leakage critic, a noise floor, a cost rule and pruning so gains carry over to new tasks. With Claude Opus 4.8, Terminal-Bench 2.1 rose from 74.2% to 80.2%, and all 6 held-out splits improved. The post Google Research Open-Sources RRSI: AI Agents That Improve Their Own Harness Without Overfitting appeared first on MarkTechPost .",
+   "categoria": "industria",
+   "posicion": 18,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
+  {
+   "id": "92346450d8d7bd2c",
+   "url": "https://www.marktechpost.com/2026/09/29/h-company-releases-holo4-open-weight-computer-use-models-that-click-code-and-call-tools-across-desktop-web-android-and-apis/",
+   "titulo": "H Company Releases Holo4: Open-Weight Computer-Use Models That Click, Code and Call Tools Across Desktop, Web, Android and APIs",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-09-29T07:38:13+00:00",
+   "resumen": "H Company has released Holo4, a family of generalist computer-use models for AI agents. One set of weights clicks and types on screens. It also writes code and calls MCP or API tools. Holo4 ships in 2 sizes: Holo4 27B (dense) and Holo4 35B-A3B (Mixture of Experts, 3B active). Both serve a 256K context on [&#8230;] The post H Company Releases Holo4: Open-Weight Computer-Use Models That Click, Code and Call Tools Across Desktop, Web, Android and APIs appeared first on MarkTechPost .",
+   "categoria": "industria",
+   "posicion": 19,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
   {
    "id": "a54b0644eac77f89",
    "url": "https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity/",
@@ -16,10 +262,36 @@
    "publicado": "2026-09-29T05:13:43+00:00",
    "resumen": "In its prospectus, Anthropic just told investors it's losing tens of billions of dollars a year, but also growing like crazy, and — oh yeah — its own AI might pose an existential risk to humanity.",
    "categoria": "industria",
-   "posicion": 1,
-   "destacado": true,
-   "imagen": "https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-1399936043.jpg?resize=1200,675",
-   "texto_disponible": true
+   "posicion": 20,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
+  {
+   "id": "abca1748f7cd72b2",
+   "url": "https://www.marktechpost.com/2026/09/28/alibaba-qwen-releases-qwen-audio-3-1-realtime-a-full-duplex-voice-model-trained-to-think-act-and-decide-when-to-speak/",
+   "titulo": "Alibaba Qwen Releases Qwen-Audio-3.1-Realtime: A Full-Duplex Voice Model Trained to Think, Act, and Decide When to Speak",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-09-29T04:58:15+00:00",
+   "resumen": "Alibaba's Qwen team released Qwen-Audio-3.1-Realtime, a full-duplex voice model trained to reason, call tools and decide when to speak. On a τ-Voice adaptation, task success rises to 82.0% from 78.4%. Replies to background speech drop from 73% to 13%. It is available now as an API on QwenCloud. The post Alibaba Qwen Releases Qwen-Audio-3.1-Realtime: A Full-Duplex Voice Model Trained to Think, Act, and Decide When to Speak appeared first on MarkTechPost .",
+   "categoria": "industria",
+   "posicion": 21,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
+  {
+   "id": "d9aff05acb81d92c",
+   "url": "https://www.marktechpost.com/2026/09/28/anthropic-releases-claude-sonnet-5-5-70-6-on-terminal-bench-4-0-at-the-same-2-10-price/",
+   "titulo": "Anthropic Releases Claude Sonnet 5.5: 70.6% on Terminal-Bench 4.0 at the Same $2/$10 Price",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-09-29T04:20:59+00:00",
+   "resumen": "Anthropic has released Claude Sonnet 5.5, the second model in its Claude 5.5 family. It scores 70.6% on Terminal-Bench 4.0 and lands within 2 points of Opus 5.5 on GDPval-AA. It also generates output 30%+ faster than Sonnet 5 and keeps the same $2/$10 per million token price. Anthropic says cost per task falls by up to 30% because the model uses fewer tokens. You can deploy it today via the Claude API, AWS, Google Cloud and Azure. The post Anthropic Releases Claude Sonnet 5.5: 70.6% on Terminal-",
+   "categoria": "industria",
+   "posicion": 22,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "abda39f3393f20c9",
@@ -29,10 +301,10 @@
    "publicado": "2026-09-29T02:55:27+00:00",
    "resumen": "Congrats team!",
    "categoria": "industria",
-   "posicion": 2,
-   "destacado": true,
+   "posicion": 23,
+   "destacado": false,
    "imagen": "https://substackcdn.com/image/youtube/w_728,c_limit/60iW8FZ7MJU",
-   "texto_disponible": true
+   "texto_disponible": false
   },
   {
    "id": "f403a9e88a7693b0",
@@ -42,10 +314,10 @@
    "publicado": "2026-09-29T02:44:29+00:00",
    "resumen": "a rare feature of a capability",
    "categoria": "industria",
-   "posicion": 3,
-   "destacado": true,
+   "posicion": 24,
+   "destacado": false,
    "imagen": "https://substackcdn.com/image/fetch/$s_!aAiz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHTVRIbeagAAvWK1.png",
-   "texto_disponible": true
+   "texto_disponible": false
   },
   {
    "id": "c72c096f52f15fad",
@@ -55,10 +327,10 @@
    "publicado": "2026-09-29T01:48:18+00:00",
    "resumen": "Shipping Opus/Sonnet 5.5, Mods, Plugins, Projects, Tag while Pacing the Frontier",
    "categoria": "industria",
-   "posicion": 4,
-   "destacado": true,
-   "imagen": "https://substackcdn.com/image/fetch/$s_!A4NZ!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F217893105%2Fc63d4f50-ca5f-459a-b368-281f73e3765e%2Ftranscoded-1790641303.png",
-   "texto_disponible": true
+   "posicion": 25,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "b9ef252a9e2dfa56",
@@ -68,10 +340,10 @@
    "publicado": "2026-09-29T00:30:00+00:00",
    "resumen": "Thirteen of the 18 startups in Peak XV’s latest Surge cohort are targeting global markets, while more than half are based in India.",
    "categoria": "industria",
-   "posicion": 5,
-   "destacado": true,
-   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/rajan-anandan.jpg?resize=1200,800",
-   "texto_disponible": true
+   "posicion": 26,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "220dea2c55f48506",
@@ -81,10 +353,10 @@
    "publicado": "2026-09-28T23:39:20+00:00",
    "resumen": "A top executive at the AI lab told the Wall Street Journal that the model in question had displayed a poor aptitude for following orders.",
    "categoria": "industria",
-   "posicion": 6,
-   "destacado": true,
-   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1200,800",
-   "texto_disponible": true
+   "posicion": 27,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "2d52fce20760eca7",
@@ -94,10 +366,10 @@
    "publicado": "2026-09-28T22:07:38+00:00",
    "resumen": "Claude Sonnet 5.5 New Sonnet model from Anthropic today. They say it \"runs 30%+ faster, and costs up to 30% less for most work\" - it's priced the same as Sonnet 5 but appears to beat it on every benchmark, and should be cheaper to run as well. Here are some pelicans riding bicycles . Sonnet 5.5 suffered from the same bug as Opus 5.5 : the \"max\" thinking effort pelican thought for 128,000 tokens (at a cost of $1.28) before running out of tokens and failing to produce an SVG. Here's the pelican it",
    "categoria": "industria",
-   "posicion": 7,
-   "destacado": true,
+   "posicion": 28,
+   "destacado": false,
    "imagen": "https://static.simonwillison.net/static/2026/claude-sonnet-5.5-pelican-xhigh.webp",
-   "texto_disponible": true
+   "texto_disponible": false
   },
   {
    "id": "ce7b13e0f7aa9e81",
@@ -107,10 +379,10 @@
    "publicado": "2026-09-28T21:49:10+00:00",
    "resumen": "China is reportedly mulling letting ByteDance, Alibaba buy banned Nvidia chips.",
    "categoria": "industria",
-   "posicion": 8,
-   "destacado": true,
+   "posicion": 29,
+   "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2296993009-1024x648.jpg",
-   "texto_disponible": true
+   "texto_disponible": false
   },
   {
    "id": "227c6ab559343ea9",
@@ -120,7 +392,7 @@
    "publicado": "2026-09-28T21:31:35+00:00",
    "resumen": "AMD announced today that it's acquiring World Labs, an AI research lab co-founded by the prominent researcher Dr. Fei-Fei Li, in an all-stock deal worth approximately $8.2 billion. World Labs launched in 2024 and was valued at $1 billion in a matter of months. The startup launched its first commercial product, a world generation model [&#8230;]",
    "categoria": "industria",
-   "posicion": 9,
+   "posicion": 30,
    "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2279092788.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
    "texto_disponible": false
@@ -133,7 +405,7 @@
    "publicado": "2026-09-28T21:29:18+00:00",
    "resumen": "The new financing is expected to more than triples the AI infrastructure startup's valuation from just four months ago.",
    "categoria": "industria",
-   "posicion": 10,
+   "posicion": 31,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -146,7 +418,7 @@
    "publicado": "2026-09-28T20:49:39+00:00",
    "resumen": "State says LLMs threaten civilization as \"the greatest public nuisance ever created.\"",
    "categoria": "industria",
-   "posicion": 11,
+   "posicion": 32,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2213954141-1152x648.jpg",
    "texto_disponible": false
@@ -159,7 +431,7 @@
    "publicado": "2026-09-28T20:39:33+00:00",
    "resumen": "The acquisition will see World Labs founder Fei-Fei Li join AMD as executive vice president and chief scientist.",
    "categoria": "industria",
-   "posicion": 12,
+   "posicion": 33,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -170,9 +442,9 @@
    "titulo": "It's Time to Investigate the AI Labs",
    "fuente": "Hacker News - IA (150+ puntos)",
    "publicado": "2026-09-28T19:53:35+00:00",
-   "resumen": "Article URL: https://calnewport.com/its-time-to-investigate-the-ai-labs/ Comments URL: https://news.ycombinator.com/item?id=49883471 Points: 498 # Comments: 205",
+   "resumen": "Article URL: https://calnewport.com/its-time-to-investigate-the-ai-labs/ Comments URL: https://news.ycombinator.com/item?id=49883471 Points: 572 # Comments: 241",
    "categoria": "industria",
-   "posicion": 13,
+   "posicion": 34,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -185,7 +457,7 @@
    "publicado": "2026-09-28T19:33:57+00:00",
    "resumen": "Shopify is expanding WebMCP support to checkout, allowing browser-based AI agents to update order details and complete purchases with a buyer’s authorization.",
    "categoria": "industria",
-   "posicion": 14,
+   "posicion": 35,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -198,7 +470,20 @@
    "publicado": "2026-09-28T19:21:59+00:00",
    "resumen": "Just like the rest of the U.S., data centers and AI are dividing climate tech founders and investors.",
    "categoria": "industria",
-   "posicion": 15,
+   "posicion": 36,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
+  {
+   "id": "5333763250903b3a",
+   "url": "https://www.marktechpost.com/2026/09/28/nvidia-launches-open-agent-safety-platform/",
+   "titulo": "NVIDIA Launches Open Agent Safety Platform: OpenShell Sandboxes Agents on Vera CPUs While Sentry on BlueField-4 Quarantines Them in Milliseconds",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-09-28T19:21:25+00:00",
+   "resumen": "NVIDIA has launched the Open Agent Safety Platform, an open reference design that enforces AI agent safety outside the agent itself. OpenShell, an Apache 2.0 runtime, sandboxes agents under YAML policies. Sentry, an out-of-band watchdog on BlueField-4 DPUs, can quarantine an agent that escapes its boundary in milliseconds. NVIDIA says over 100 organizations are working with the platform. The post NVIDIA Launches Open Agent Safety Platform: OpenShell Sandboxes Agents on Vera CPUs While Sentry on ",
+   "categoria": "industria",
+   "posicion": 37,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -211,7 +496,7 @@
    "publicado": "2026-09-28T19:11:42+00:00",
    "resumen": "To say that we were surprised at the jump and suddenness of the capabilities of our models when it came to “cyber” or “swarming” or “message boards” or anything else related to the incidents is an understatement. Security posture takes time to develop. It’s not just about hardening the systems at play; you have to ingrain it in the culture of the company. The literal people themselves in your organization have to change and evolve with it. These jumps in capabilities were so fast and so sudden t",
    "categoria": "industria",
-   "posicion": 16,
+   "posicion": 38,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -224,7 +509,7 @@
    "publicado": "2026-09-28T19:00:00+00:00",
    "resumen": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
    "categoria": "industria",
-   "posicion": 17,
+   "posicion": 39,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -237,7 +522,7 @@
    "publicado": "2026-09-28T19:00:00+00:00",
    "resumen": "Our early guidelines for safety cases in frontier AI training cover technical safeguards, operational practices, and investigating misalignment incidents",
    "categoria": "industria",
-   "posicion": 18,
+   "posicion": 40,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -250,7 +535,7 @@
    "publicado": "2026-09-28T18:45:00+00:00",
    "resumen": "OpenAI popularized the modern generative AI chatbot, but as its 2026 DevDay event approaches, it's fallen behind in one of the industry's hottest categories: continuously running, consumer-facing AI agents. On Tuesday, it will likely try to capture the lead in that race. Rumors abound that OpenAI will release its own AI agent, dubbed Aeon - [&#8230;]",
    "categoria": "industria",
-   "posicion": 19,
+   "posicion": 41,
    "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/STKP221_GREG_BROCKMAN2.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
    "texto_disponible": false
@@ -263,7 +548,7 @@
    "publicado": "2026-09-28T18:31:23+00:00",
    "resumen": "Nvidia CEO Jensen Huang on Monday introduced a toolkit of software and hardware products that add independent security layers around AI agents to ensure they stay within their test environments even if they attempt to break out.",
    "categoria": "industria",
-   "posicion": 20,
+   "posicion": 42,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -276,7 +561,7 @@
    "publicado": "2026-09-28T18:30:00+00:00",
    "resumen": "In March, Janice Malone began getting calls about suspicious activity from her nonprofit organization, Vivian's Door. Vivian's Door, headquartered in Alabama, typically provided training, resources, and community to underserved and minority-owned businesses. The work sometimes put it in close contact with these companies' financial data, which was stored on its systems. But suddenly, concerned callers [&#8230;]",
    "categoria": "industria",
-   "posicion": 21,
+   "posicion": 43,
    "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25299205/STK453_Privacy_D_CVirginia.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
    "texto_disponible": false
@@ -289,7 +574,7 @@
    "publicado": "2026-09-28T18:00:00+00:00",
    "resumen": "Anthropic has released the newest version of its mid-range model, boasting faster response times and less token burn.",
    "categoria": "industria",
-   "posicion": 22,
+   "posicion": 44,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -302,7 +587,7 @@
    "publicado": "2026-09-28T17:29:50+00:00",
    "resumen": "As all-in-one AI agents like Meta's Muse and Instinct take off, Google is opting to end a feature that built task-specific agents.",
    "categoria": "industria",
-   "posicion": 23,
+   "posicion": 45,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -315,7 +600,7 @@
    "publicado": "2026-09-28T17:09:02+00:00",
    "resumen": "On Friday, OpenAI published a new site devoted to “misalignment reports” and the breadth of the incidents is alarming.",
    "categoria": "industria",
-   "posicion": 24,
+   "posicion": 46,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -328,7 +613,7 @@
    "publicado": "2026-09-28T17:00:23+00:00",
    "resumen": "Florida Attorney General James Uthmeier is calling for a judge to block OpenAI from \"giving ChatGPT false human attributes,\" a few months after Florida sued the AI company over safety concerns. According to Uthmeier, users are lulled into a false sense of security by the AI bot, as \"ChatGPT's use of language, including first-person pronouns [&#8230;]",
    "categoria": "industria",
-   "posicion": 25,
+   "posicion": 47,
    "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK149_AI_01.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
    "texto_disponible": false
@@ -341,7 +626,7 @@
    "publicado": "2026-09-28T17:00:00+00:00",
    "resumen": "In a chaotic few months, OpenAI has demonstrated it can do two things with remarkable consistency: make impressive breakthroughs in mathematics, then colossally screw up announcing them. OpenAI is now trying to do better. Somehow, it has botched that too. OpenAI's latest attempt to repair fractured relations with a mathematical community it has repeatedly alienated [&#8230;]",
    "categoria": "industria",
-   "posicion": 26,
+   "posicion": 48,
    "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/VRG_OpenAIMAthBulldozer_Parkin.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
    "texto_disponible": false
@@ -354,7 +639,7 @@
    "publicado": "2026-09-28T16:52:38+00:00",
    "resumen": "Meta says it will focus on bringing its full technology stack, including Muse, Meta Business Agent, Muse API, Muse Code, and more to businesses and developers.",
    "categoria": "industria",
-   "posicion": 27,
+   "posicion": 49,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -367,7 +652,7 @@
    "publicado": "2026-09-28T16:44:57+00:00",
    "resumen": "Walmart says it won't change product prices based on your personal information or the time of day, as reported earlier by The Wall Street Journal. In a letter to customers, Walmart CEO John Furner writes that the company's switch to digital shelf labels is meant to save store associates time, rather than dynamically change prices. [&#8230;]",
    "categoria": "industria",
-   "posicion": 28,
+   "posicion": 50,
    "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2289554785.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
    "texto_disponible": false
@@ -380,7 +665,7 @@
    "publicado": "2026-09-28T16:43:18+00:00",
    "resumen": "US Government websites among \"dozens of third parties\" OpenAI has recently notified.",
    "categoria": "industria",
-   "posicion": 29,
+   "posicion": 51,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/sleepyrobot-1152x648.jpg",
    "texto_disponible": false
@@ -391,9 +676,9 @@
    "titulo": "The problem is not AI code, but not knowing about system architecture or intent",
    "fuente": "Hacker News - IA (150+ puntos)",
    "publicado": "2026-09-28T16:11:42+00:00",
-   "resumen": "Article URL: https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/ Comments URL: https://news.ycombinator.com/item?id=49880312 Points: 365 # Comments: 231",
+   "resumen": "Article URL: https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/ Comments URL: https://news.ycombinator.com/item?id=49880312 Points: 375 # Comments: 237",
    "categoria": "industria",
-   "posicion": 30,
+   "posicion": 52,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -404,9 +689,9 @@
    "titulo": "Nvidia wants to put a watchdog chip next to every AI agent",
    "fuente": "Hacker News - IA (150+ puntos)",
    "publicado": "2026-09-28T15:46:36+00:00",
-   "resumen": "Article URL: https://www.cnbc.com/2026/09/28/nvidia-releases.html Comments URL: https://news.ycombinator.com/item?id=49879883 Points: 174 # Comments: 221",
+   "resumen": "Article URL: https://www.cnbc.com/2026/09/28/nvidia-releases.html Comments URL: https://news.ycombinator.com/item?id=49879883 Points: 216 # Comments: 280",
    "categoria": "industria",
-   "posicion": 31,
+   "posicion": 53,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -419,7 +704,7 @@
    "publicado": "2026-09-28T15:30:00+00:00",
    "resumen": "Anthropic, Clay, and Gamma on what it takes for an AI product to go beyond the demo at the AI Stage at TechCrunchDisrupt 2026. Register to join and get 50% off a second pass.",
    "categoria": "industria",
-   "posicion": 32,
+   "posicion": 54,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -432,7 +717,7 @@
    "publicado": "2026-09-28T15:00:00+00:00",
    "resumen": "After her grandfather was scammed by a deepfake of his brother's voice, Tarini Padmanabhuni founded DetectifAI, a San Francisco startup building AI models small enough to run directly on smartphones and flag fake voices in real time, and it's now one of the companies competing in Startup Battlefield at TechCrunch Disrupt.",
    "categoria": "industria",
-   "posicion": 33,
+   "posicion": 55,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -581,5 +866,5 @@
    "texto_disponible": false
   }
  ],
- "comprobado_en": "2026-09-29T10:19:57.698984+00:00"
+ "comprobado_en": "2026-09-29T16:50:56.645844+00:00"
 }
