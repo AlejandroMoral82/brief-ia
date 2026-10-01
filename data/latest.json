@@ -1,13 +1,155 @@
 {
- "generado_en": "2026-10-01T10:39:24.628671+00:00",
+ "generado_en": "2026-10-01T17:19:23.132199+00:00",
  "modo": "degradado",
  "fuentes_fallidas": [
-  "Import AI: HTTPError",
-  "Hacker News - IA (150+ puntos): HTTPError"
+  "Import AI: HTTPError"
  ],
- "candidatos": 41,
+ "candidatos": 82,
  "destacados": 8,
  "items": [
+  {
+   "id": "3ca8d18bc42251cd",
+   "url": "https://www.marktechpost.com/2026/10/01/cohere-releases-embed-5/",
+   "titulo": "Cohere Releases Embed 5: How It Compares to Voyage 4 Large, Gemini Embedding 2, and OpenAI",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-01T17:13:12+00:00",
+   "resumen": "Cohere has released Embed 5, a new embedding model family. It targets enterprise search, RAG, and agentic retrieval. The model family ships in 2 tiers. Embed 5 Pro targets maximum retrieval quality. Embed 5 Fast targets latency and cost on the live query path. Both accept text, images, and fused text plus image inputs. Both [&#8230;] The post Cohere Releases Embed 5: How It Compares to Voyage 4 Large, Gemini Embedding 2, and OpenAI appeared first on MarkTechPost .",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/blog149-2.png",
+   "texto_disponible": true
+  },
+  {
+   "id": "f85c4d066c1ce9bd",
+   "url": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+   "titulo": "Amazon releases its own Jev clone as decision models flood the web",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-01T16:49:22+00:00",
+   "resumen": "Amazon Web Services' Strand Labs has released the latest Jevalike decision model, Strands Decider 2B.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/William_Stanley_Jevons_portrait_extract.jpg?w=726",
+   "texto_disponible": true
+  },
+  {
+   "id": "67fa7499b8fbed8b",
+   "url": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
+   "titulo": "Shopify debuts Canvas, a way to build online stores by chatting with AI",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-01T16:44:35+00:00",
+   "resumen": "Shopify’s new Canvas site builder lets merchants create and customize their online stores by chatting with its AI agent Sidekick, while watching the changes happen in real time.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/canvas-shopify.webp?resize=1200,517",
+   "texto_disponible": true
+  },
+  {
+   "id": "decb5d86e7448725",
+   "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+   "titulo": "With most information hidden, the game Stratego had stumped AI—until now",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-10-01T16:28:04+00:00",
+   "resumen": "Adding in a second neural network that guesses the identity of hidden pieces was key.",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": true,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1864707238-1152x648.jpg",
+   "texto_disponible": true
+  },
+  {
+   "id": "a80484c2d5849bdb",
+   "url": "https://openai.com/index/albertsons-reimagining-retail",
+   "titulo": "How Albertsons Companies is reimagining retail from the inside out",
+   "fuente": "OpenAI News",
+   "publicado": "2026-10-01T16:00:00+00:00",
+   "resumen": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": true,
+   "imagen": "https://images.ctfassets.net/kftzwdyauwt9/6sZopZBu8aHeeYeb8H6IS1/945a5ed2fcd3a837554c8ac49a38cdf6/how-albertsons-companies-is-reimagining-retail-from-the-inside-out-seo.png?w=1600&amp;h=900&amp;fit=fill",
+   "texto_disponible": true
+  },
+  {
+   "id": "fdadf99fae2beb47",
+   "url": "https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/",
+   "titulo": "Brian Chesky interview: AI agents need their own operating system",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-01T15:12:00+00:00",
+   "resumen": "Brian Chesky on making Airbnb agent-friendly, the state of consumer AI, and why the world needs an AI-native operating system.",
+   "categoria": "industria",
+   "posicion": 6,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/Brian-Chesky-Environmental-Headshot-3.jpg?resize=1200,675",
+   "texto_disponible": true
+  },
+  {
+   "id": "0bf00b70dbd762e2",
+   "url": "https://huggingface.co/blog/allenai/olmocore3",
+   "titulo": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-10-01T15:01:43+00:00",
+   "resumen": "",
+   "categoria": "industria",
+   "posicion": 7,
+   "destacado": true,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/uKnK93gjkKbmJmSx94WO2.png",
+   "texto_disponible": true
+  },
+  {
+   "id": "2be59ecee0ce4c21",
+   "url": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
+   "titulo": "Photon held a funeral for mobile apps. Now it has $4.5M to help replace them with agents.",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-01T14:00:00+00:00",
+   "resumen": "The startup helps developers build AI agents that work over iMessage, SMS/RCS, email, and other messaging platforms. It's a bet that consumers will increasingly use agents instead of downloading apps.",
+   "categoria": "industria",
+   "posicion": 8,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/DSC01567.jpg?resize=1200,801",
+   "texto_disponible": true
+  },
+  {
+   "id": "adb45e048c1df812",
+   "url": "https://www.theverge.com/podcast/1002851/utah-ai-data-center-stratos-kevin-oleary-investigation-backlash",
+   "titulo": "Inside our months-long investigation into Kevin O’Leary’s Utah data center debacle",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-01T14:00:00+00:00",
+   "resumen": "Today I’m talking with Josh Dzieza, a longtime features writer here at The Verge, about Kevin O’Leary’s plans to build a massive data center in Utah.&#160; The idea was to build the world&#8217;s biggest data centers — a 40,000-acre AI campus with nine gigawatts of power, or more than double the average power usage of [&#8230;]",
+   "categoria": "industria",
+   "posicion": 9,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DCD_1001_Oleary.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
+   "texto_disponible": false
+  },
+  {
+   "id": "498d9d05d6fce327",
+   "url": "https://techcrunch.com/2026/10/01/hearing-tech-startup-legato-launches-its-ai-hearing-glasses/",
+   "titulo": "Hearing tech startup Legato launches its AI hearing glasses",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-01T13:00:00+00:00",
+   "resumen": "The glasses stem from the startup’s goal of making hearing care more accessible by addressing the cost, comfort, and stigma associated with traditional hearing aids.",
+   "categoria": "industria",
+   "posicion": 10,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
+  {
+   "id": "de11222dc23d9742",
+   "url": "https://techcrunch.com/2026/10/01/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
+   "titulo": "Satlyt, founded by a former Google and SpaceX product manager, raises $8M to run AI on satellites",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-01T12:00:00+00:00",
+   "resumen": "Satlyt wants to be the Android of orbital computing, offering open software that works on many companies' satellites, versus SpaceX's closed, all-in-one iPhone-style approach.",
+   "categoria": "industria",
+   "posicion": 11,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
+  },
   {
    "id": "c95a102bc4cf37b2",
    "url": "https://www.marktechpost.com/2026/09/30/nvidia-releases-kumo-tabular/",
@@ -16,10 +158,10 @@
    "publicado": "2026-10-01T06:57:50+00:00",
    "resumen": "NVIDIA has released Kumo Tabular, a new family of tabular foundation models (TFMs) for classification and regression. If you have followed TabPFN or TabICL, the setup will look familiar. The model takes labeled rows as context and predicts new rows in one forward pass. There is no training, no hyperparameter tuning, and no feature engineering. [&#8230;] The post NVIDIA Releases Kumo Tabular: Open Tabular Foundation Models That Predict New Rows in a Single Forward Pass appeared first on MarkTechP",
    "categoria": "industria",
-   "posicion": 1,
-   "destacado": true,
-   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/09/blog149-6.png",
-   "texto_disponible": true
+   "posicion": 12,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "d579ab095fb709fa",
@@ -29,10 +171,10 @@
    "publicado": "2026-10-01T06:45:05+00:00",
    "resumen": "... but you can&#8217;t try it yet unless you are &#8220;government users and trusted cyber defenders in the Fairwind Program&#8221;",
    "categoria": "industria",
-   "posicion": 2,
-   "destacado": true,
+   "posicion": 13,
+   "destacado": false,
    "imagen": "https://substackcdn.com/image/fetch/$s_!wmoR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHTfV52SWgAIlX3W.png",
-   "texto_disponible": true
+   "texto_disponible": false
   },
   {
    "id": "4fb3caa1bad2e135",
@@ -42,10 +184,10 @@
    "publicado": "2026-10-01T06:29:01+00:00",
    "resumen": "[...] Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the next agent. Agents in separately-isolated sandboxes discovered that they could leave instructions for each other in a shared package cache, and those instructions changed what the recipients did. Replace the package cache with email, Slack and shared documents or WhatsApp, and replace independently-sandboxed training runs with independently-depl",
    "categoria": "industria",
-   "posicion": 3,
-   "destacado": true,
+   "posicion": 14,
+   "destacado": false,
    "imagen": "",
-   "texto_disponible": true
+   "texto_disponible": false
   },
   {
    "id": "81a8b06f589109fb",
@@ -55,10 +197,10 @@
    "publicado": "2026-10-01T03:23:39+00:00",
    "resumen": "Perplexity Research and turbopuffer have released pplx-embed-v2-context-9b-preview, a contextual embedding model for RAG pipelines. Each chunk is embedded with the full document in view. The real change is the training signal. The model learns to retrieve the answer along with the context needed to verify it, not one &#8216;gold passage.&#8217; P Is it deployable? Yes, [&#8230;] The post Perplexity Releases pplx-embed-v2-context-9b-preview: A Contextual Embedding Model That Retrieves Answers and",
    "categoria": "industria",
-   "posicion": 4,
-   "destacado": true,
-   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/09/blog149-5.png",
-   "texto_disponible": true
+   "posicion": 15,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "5afad699a57c6742",
@@ -68,10 +210,10 @@
    "publicado": "2026-10-01T00:23:45+00:00",
    "resumen": "Grokipedia, SpaceXAI's AI-powered competitor to Wikipedia, recently started incorporating edits again, and today, it got some design tweaks as part of a v0.3 update, including a new logo and refreshes to its homepage and live edits page. SpaceXAI head of design Benji Taylor calls it a \"newly refreshed Grokipedia.\" Grokipedia's old homepage was pretty much [&#8230;]",
    "categoria": "industria",
-   "posicion": 5,
-   "destacado": true,
+   "posicion": 16,
+   "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Screenshot-2026-09-30-at-5.16.09-PM.png?quality=90&#038;strip=all&#038;crop=0,0,100,100",
-   "texto_disponible": true
+   "texto_disponible": false
   },
   {
    "id": "1237634e7f12d4ed",
@@ -81,10 +223,10 @@
    "publicado": "2026-09-30T23:43:07+00:00",
    "resumen": "Google has released its latest Gemini model, marketing it as a workhorse for coding and cybersecurity work.",
    "categoria": "industria",
-   "posicion": 6,
-   "destacado": true,
-   "imagen": "https://techcrunch.com/wp-content/uploads/2026/06/gemini-app-GettyImages-2276204472-1.jpg?w=1024",
-   "texto_disponible": true
+   "posicion": 17,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "1a601b09c690596d",
@@ -94,10 +236,10 @@
    "publicado": "2026-09-30T22:23:40+00:00",
    "resumen": "Our DevDay coverage - the first pod on the DevDay lineup - dives in with the leaders of OpenAI&#8217;s CUA team and API platform.",
    "categoria": "industria",
-   "posicion": 7,
-   "destacado": true,
-   "imagen": "https://substackcdn.com/image/fetch/$s_!6k0o!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F218243619%2Fbf1dd45c-cca3-4c2c-8bd6-b825ecb451ab%2Ftranscoded-1790802162.png",
-   "texto_disponible": true
+   "posicion": 18,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false
   },
   {
    "id": "562470c22e2896c8",
@@ -107,8 +249,8 @@
    "publicado": "2026-09-30T21:54:19+00:00",
    "resumen": "I visited the Museum of the City of New York today and got to see He Built This City: Joe Macken’s Model , the 50 x27 feet model of the city built over a 21 year period from balsa wood and cardboard. It exceeded my already high expectations. The exhibition closes on 12th October so you should absolutely make a priority to see it if you get the chance. Tags: museums , new-york",
    "categoria": "industria",
-   "posicion": 8,
-   "destacado": true,
+   "posicion": 19,
+   "destacado": false,
    "imagen": "https://static.simonwillison.net/static/2026-09-30/image_crop_4853x3640_w2427_q0.3.jpg",
    "texto_disponible": false
   },
@@ -120,7 +262,7 @@
    "publicado": "2026-09-30T21:30:08+00:00",
    "resumen": "Gemini 4 Argon tops GPT-6 Astra and Claude Opus 5.5 on most benchmarks, but access remains gated today. The post Google DeepMind Unveils Gemini 4 Argon with 1M Output Tokens for Coding, Knowledge Work and Cyber Defense appeared first on MarkTechPost .",
    "categoria": "industria",
-   "posicion": 9,
+   "posicion": 20,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -133,7 +275,7 @@
    "publicado": "2026-09-30T21:09:24+00:00",
    "resumen": "OpenAI released GPT-6.1 Sol on September 29, 2026, an upgrade to GPT-6 Sol. It reaches near-Astra results on agentic coding, computer use and professional work at one-fifth of Astra's token prices. It costs $2 input and $10 output per million tokens, and cached input drops to $0.10. It is available now through the OpenAI API, ChatGPT Work and Codex. The post OpenAI Releases GPT-6.1 Sol: Near-Astra Coding and Computer Use at One-Fifth of Astra&#8217;s Token Price appeared first on MarkTechPost .",
    "categoria": "industria",
-   "posicion": 10,
+   "posicion": 21,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -146,7 +288,7 @@
    "publicado": "2026-09-30T21:07:40+00:00",
    "resumen": "Flow Engineering, which is bringing AI agents to hardware design, also landed Roelof Botha as an angel investor and board member.",
    "categoria": "industria",
-   "posicion": 11,
+   "posicion": 22,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -159,7 +301,7 @@
    "publicado": "2026-09-30T20:41:41+00:00",
    "resumen": "Google today revealed its next AI frontier model, which it's calling Gemini 4 Argon. The new model delivers \"frontier performance in complex workflows across real-world software engineering, enterprise knowledge work like legal and finance, and cybersecurity defense,\" according to chief AI architect and Google DeepMind SVP Koray Kavukcuoglu. But the company is limiting access at [&#8230;]",
    "categoria": "industria",
-   "posicion": 12,
+   "posicion": 23,
    "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK093_Google_02.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
    "texto_disponible": false
@@ -172,7 +314,7 @@
    "publicado": "2026-09-30T20:11:08+00:00",
    "resumen": "So much for Gemini 3.5 Pro.",
    "categoria": "industria",
-   "posicion": 13,
+   "posicion": 24,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/gemini-general-1-1152x648.jpg",
    "texto_disponible": false
@@ -185,7 +327,7 @@
    "publicado": "2026-09-30T20:01:45+00:00",
    "resumen": "",
    "categoria": "industria",
-   "posicion": 14,
+   "posicion": 25,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -198,7 +340,7 @@
    "publicado": "2026-09-30T19:31:25+00:00",
    "resumen": "AI is far from a perfect resource. But it seems to hallucinate less than Kennedy.",
    "categoria": "industria",
-   "posicion": 15,
+   "posicion": 26,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2294068904-1152x648.jpg",
    "texto_disponible": false
@@ -211,7 +353,7 @@
    "publicado": "2026-09-30T19:00:57+00:00",
    "resumen": "OpenAI's \"Decisions API\" is a Jev clone that confirms the importance of fast, cheap intelligence.",
    "categoria": "industria",
-   "posicion": 16,
+   "posicion": 27,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -224,7 +366,7 @@
    "publicado": "2026-09-30T18:47:01+00:00",
    "resumen": "Trump gets dozens of AI firms to agree to voluntary safety tests.",
    "categoria": "industria",
-   "posicion": 17,
+   "posicion": 28,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2297759490-1024x648.jpg",
    "texto_disponible": false
@@ -237,7 +379,7 @@
    "publicado": "2026-09-30T18:25:04+00:00",
    "resumen": "OpenAI makes others suffer \"the harms of its unsafe decision-making,\" nonprofit says.",
    "categoria": "industria",
-   "posicion": 18,
+   "posicion": 29,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/openai-logo-1152x648-1784833184.jpg",
    "texto_disponible": false
@@ -250,7 +392,7 @@
    "publicado": "2026-09-30T18:23:57+00:00",
    "resumen": "The $300 million employee tender was co-led by Wellington and T. Rowe Price.",
    "categoria": "industria",
-   "posicion": 19,
+   "posicion": 30,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -263,7 +405,7 @@
    "publicado": "2026-09-30T18:07:38+00:00",
    "resumen": "While AI has made plenty of inroads on people's phones and computers, it's largely failed in dedicated devices. But over the next year, two major AI companies, Meta and OpenAI, will attempt to change that. And they're apparently betting on a similar path: testing appetites for physical hardware with their cutesy software agents. \"Hardware is [&#8230;]",
    "categoria": "industria",
-   "posicion": 20,
+   "posicion": 31,
    "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/IMG_3046.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
    "texto_disponible": false
@@ -276,7 +418,7 @@
    "publicado": "2026-09-30T17:45:00+00:00",
    "resumen": "Reddit is ending support for RSS feeds, as the company continues tightening access to its trove of user-generated content.",
    "categoria": "industria",
-   "posicion": 21,
+   "posicion": 32,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -289,7 +431,7 @@
    "publicado": "2026-09-30T17:24:45+00:00",
    "resumen": "There’s a reason frontier labs have gotten gun-shy about consumer AI — and it’s not because the tech isn’t good enough.",
    "categoria": "industria",
-   "posicion": 22,
+   "posicion": 33,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -302,7 +444,7 @@
    "publicado": "2026-09-30T17:15:49+00:00",
    "resumen": "After hosting a meal with Big Tech leaders on Tuesday, President Donald Trump responded to journalist questions about his artificial intelligence announcements in typical fashion. He said his previous claims regarding fears around AI safety being a \"hoax\" cooked up by Democrats no longer apply now that he's renamed the technology to \"Super Intelligence.\" He [&#8230;]",
    "categoria": "industria",
-   "posicion": 23,
+   "posicion": 34,
    "destacado": false,
    "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2297777001.jpg?quality=90&#038;strip=all&#038;crop=0,0,100,100",
    "texto_disponible": false
@@ -315,7 +457,7 @@
    "publicado": "2026-09-30T16:24:23+00:00",
    "resumen": "Meta says its Muse AI agent cannot access a user’s Messages without explicit permission, disputing a journalist’s account that the agent read his private messages while the required Mac setting was turned off.",
    "categoria": "industria",
-   "posicion": 24,
+   "posicion": 35,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -328,7 +470,7 @@
    "publicado": "2026-09-30T16:03:48+00:00",
    "resumen": "Many sites see just one-tenth of one percent of their advertising revenue from AI payments.",
    "categoria": "industria",
-   "posicion": 25,
+   "posicion": 36,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2025/05/google-logo-big-g-grooves-1152x648.jpg",
    "texto_disponible": false
@@ -341,7 +483,7 @@
    "publicado": "2026-09-30T16:00:24+00:00",
    "resumen": "By launching an AI agent for food ordering, DoorDash is looking to gain an edge over rivals Uber Eats and Grubhub.",
    "categoria": "industria",
-   "posicion": 26,
+   "posicion": 37,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -354,7 +496,7 @@
    "publicado": "2026-09-30T16:00:00+00:00",
    "resumen": "\"One of the biggest reasons we are winning against robotics companies is because we are not a robotics company.\"",
    "categoria": "industria",
-   "posicion": 27,
+   "posicion": 38,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -367,7 +509,7 @@
    "publicado": "2026-09-30T15:56:28+00:00",
    "resumen": "Instinct is rolling out human-curated product and travel recommendations, but some users aren’t happy about getting suggestions they never asked for.",
    "categoria": "industria",
-   "posicion": 28,
+   "posicion": 39,
    "destacado": false,
    "imagen": "",
    "texto_disponible": false
@@ -380,9 +522,22 @@
    "publicado": "2026-09-30T15:54:52+00:00",
    "resumen": "Intended to help with biosecurity, it works with a popular AI protein design tool.",
    "categoria": "industria",
-   "posicion": 29,
+   "posicion": 40,
    "destacado": false,
    "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2204734561-1152x648.jpg",
+   "texto_disponible": false
+  },
+  {
+   "id": "59458154916f8d9f",
+   "url": "https://insufferable.dev/posts/the-ai-race-just-got-awkward/",
+   "titulo": "The AI Race Just Got Awkward",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-09-30T15:50:11+00:00",
+   "resumen": "Article URL: https://insufferable.dev/posts/the-ai-race-just-got-awkward/ Comments URL: https://news.ycombinator.com/item?id=49910553 Points: 396 # Comments: 447",
+   "categoria": "industria",
+   "posicion": 41,
+   "destacado": false,
+   "imagen": "",
    "texto_disponible": false
   },
   {
@@ -542,5 +697,5 @@
    "texto_disponible": false
   }
  ],
- "comprobado_en": "2026-10-01T10:39:24.628671+00:00"
+ "comprobado_en": "2026-10-01T17:19:23.132199+00:00"
 }
