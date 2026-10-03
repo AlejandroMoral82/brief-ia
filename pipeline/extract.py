@@ -13,6 +13,7 @@ from pathlib import Path
 
 import requests
 import trafilatura
+from trafilatura.utils import decode_file
 import html as htmlmod
 
 log = logging.getLogger(__name__)
@@ -36,14 +37,16 @@ def extraer(url: str) -> tuple[str, str]:
     try:
         resp = requests.get(url, timeout=TIMEOUT, headers={"User-Agent": UA})
         resp.raise_for_status()
-        html = resp.text
+        # Bytes, no resp.text: requests asume ISO-8859-1 si la cabecera no trae
+        # charset, y trafilatura detecta la codificacion real a partir del HTML.
+        crudo = resp.content
     except Exception as exc:
         log.warning("no se pudo descargar %s: %s", url[:60], type(exc).__name__)
         return "", ""
 
     try:
         texto = trafilatura.extract(
-            html, include_comments=False, include_tables=False, favor_precision=True
+            crudo, include_comments=False, include_tables=False, favor_precision=True
         ) or ""
     except Exception as exc:
         log.warning("trafilatura fallo en %s: %s", url[:60], type(exc).__name__)
@@ -53,7 +56,12 @@ def extraer(url: str) -> tuple[str, str]:
     if len(texto) < 400:
         texto = ""
 
-    return texto, _og_image(html)
+    try:
+        imagen = _og_image(decode_file(crudo))
+    except Exception:
+        imagen = ""
+
+    return texto, imagen
 
 
 def procesar(items: list, destino: Path) -> int:

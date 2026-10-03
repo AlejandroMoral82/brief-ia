@@ -32,6 +32,7 @@ class Item:
     destacado: bool = False
     imagen: str = ""
     texto_disponible: bool = False
+    sin_fecha: bool = False  # el feed no da fecha: "publicado" es la hora de descarga
 
     def dict(self) -> dict:
         return asdict(self)
@@ -128,6 +129,9 @@ def descargar(nombre: str, url: str, horas: int) -> tuple[list[Item], str | None
                 publicado=(fecha or datetime.now(timezone.utc)).isoformat(),
                 resumen=_limpiar(getattr(e, "summary", "")),
                 imagen=htmlmod.unescape(_imagen(e)),
+                # Sin fecha no se puede filtrar por ventana: build.py mantiene
+                # su id en seen.json mientras el feed lo siga publicando.
+                sin_fecha=fecha is None,
             )
         )
 

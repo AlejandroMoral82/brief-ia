@@ -11,6 +11,8 @@ import json
 import logging
 import os
 import re
+import time
+import unicodedata
 
 import requests
 
@@ -49,6 +51,42 @@ Devuelve UNICAMENTE un array JSON, sin markdown ni texto alrededor:
 [{"id": "...", "categoria": "...", "posicion": 1}]"""
 
 
+# Fuerza el formato de salida: lista de {id, categoria, posicion}. El modelo
+# no puede devolver ningun campo de texto libre que acabe en la interfaz.
+ESQUEMA = {
+    "type": "ARRAY",
+    "items": {
+        "type": "OBJECT",
+        "properties": {
+            "id": {"type": "STRING"},
+            "categoria": {"type": "STRING", "format": "enum", "enum": CATEGORIAS},
+            "posicion": {"type": "INTEGER"},
+        },
+        "required": ["id", "categoria", "posicion"],
+    },
+}
+
+REINTENTABLES = (429, 500, 502, 503, 504)
+INTENTOS = 4
+
+
+def _normalizar(texto) -> str:
+    """'Investigación ' -> 'investigacion'."""
+    s = unicodedata.normalize("NFKD", str(texto))
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return s.lower().strip()
+
+
+def _validar(datos) -> list[dict]:
+    """La respuesta debe ser una lista de objetos. Si no, se trata como fallo del LLM."""
+    if not isinstance(datos, list):
+        raise ValueError(f"se esperaba una lista y llego {type(datos).__name__}")
+    malos = [f for f in datos if not isinstance(f, dict)]
+    if malos:
+        raise ValueError(f"{len(malos)} elementos de la lista no son objetos")
+    return datos
+
+
 def _extraer_json(texto: str) -> list[dict]:
     """El modelo a veces envuelve la respuesta en markdown o la precede de texto."""
     limpio = re.sub(r"^```(?:json)?|```$", "", texto.strip(), flags=re.MULTILINE).strip()
@@ -63,31 +101,41 @@ def _extraer_json(texto: str) -> list[dict]:
 
 
 def _llamar(prompt: str, api_key: str) -> str:
-    import time
-
     cuerpo = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json"},
+        "generationConfig": {
+            "temperature": 0.2,
+            "responseMimeType": "application/json",
+            "responseSchema": ESQUEMA,
+        },
     }
     ultimo = None
 
-    for intento in range(4):
-        resp = requests.post(
-            ENDPOINT.format(m=MODELO),
-            headers={"Content-Type": "application/json", "X-goog-api-key": api_key},
-            json=cuerpo,
-            timeout=90,
-        )
-        if resp.ok:
-            datos = resp.json()
-            return datos["candidates"][0]["content"]["parts"][0]["text"]
+    for intento in range(INTENTOS):
+        try:
+            resp = requests.post(
+                ENDPOINT.format(m=MODELO),
+                headers={"Content-Type": "application/json", "X-goog-api-key": api_key},
+                json=cuerpo,
+                timeout=90,
+            )
+        except requests.RequestException as exc:
+            # Timeout, ConnectionError...: transitorio, se reintenta como un 5xx.
+            ultimo = f"{type(exc).__name__}: {exc}"
+            log.warning("intento %d fallido — %s", intento + 1, ultimo)
+        else:
+            if resp.ok:
+                datos = resp.json()
+                return datos["candidates"][0]["content"]["parts"][0]["text"]
 
-        ultimo = f"{resp.status_code}: {resp.text[:300]}"
-        log.warning("intento %d fallido — %s", intento + 1, ultimo)
+            ultimo = f"{resp.status_code}: {resp.text[:300]}"
+            log.warning("intento %d fallido — %s", intento + 1, ultimo)
 
-        if resp.status_code not in (429, 500, 502, 503, 504):
-            break                      # error permanente, no insistas
-        time.sleep(2 ** intento * 3)   # 3s, 6s, 12s
+            if resp.status_code not in REINTENTABLES:
+                break                      # error permanente, no insistas
+
+        if intento < INTENTOS - 1:
+            time.sleep(2 ** intento * 3)   # 3s, 6s, 12s
 
     raise RuntimeError(ultimo or "sin respuesta")
 
@@ -109,7 +157,7 @@ def seleccionar(items: list) -> tuple[list, bool]:
     prompt = CRITERIO + "\n\nITEMS:\n" + json.dumps(catalogo, ensure_ascii=False)
 
     try:
-        clasificados = _extraer_json(_llamar(prompt, api_key))
+        clasificados = _validar(_extraer_json(_llamar(prompt, api_key)))
     except Exception as exc:
         log.error("LLM fallo: %s", exc)
         return _degradado(items), False
@@ -120,7 +168,7 @@ def seleccionar(items: list) -> tuple[list, bool]:
         it = por_id.pop(str(fila.get("id", "")), None)
         if it is None:
             continue
-        cat = str(fila.get("categoria", "")).lower().strip()
+        cat = _normalizar(fila.get("categoria", ""))
         it.categoria = cat if cat in CATEGORIAS else "industria"
         try:
             it.posicion = int(fila.get("posicion", 99))

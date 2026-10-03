@@ -41,7 +41,19 @@ jobs:
           git add data/
           if git diff --staged --quiet; then
             echo "sin cambios"
-          else
-            git commit -m "brief $(date -u +%Y-%m-%d)"
-            git push
+            exit 0
           fi
+          git commit -m "brief $(date -u +%Y-%m-%d)"
+
+          # Si alguien ha subido algo a la rama mientras corria el pipeline,
+          # el push se rechaza: se rebasa sobre lo nuevo y se reintenta una vez.
+          rama="${GITHUB_REF_NAME}"
+          for intento in 1 2; do
+            if git pull --rebase origin "$rama" && git push origin "HEAD:$rama"; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "push fallido (intento $intento)"
+            sleep 10
+          done
+          exit 1
