@@ -193,7 +193,41 @@ export default function App() {
     cargarBrief(dia).then(setBrief).catch((e) => setError(e.message))
   }, [dia])
 
-    const guardar = (it, texto = '') => { alternar(it, texto); setVersion((v) => v + 1) }
+  // Cada vez que cambia la vista, la apuntamos en el historial del navegador,
+  // para que el gesto de atrás de Android navegue dentro de la app.
+  const vista = abierto ? `articulo:${abierto.id}` : `${pestana}:${dia}`
+  const primera = useRef(true)
+
+  useEffect(() => {
+    if (primera.current) {
+      history.replaceState({ vista }, '')
+      primera.current = false
+      return
+    }
+    if (history.state?.vista !== vista) history.pushState({ vista }, '')
+  }, [vista])
+
+    const ultimoAbierto = useRef(null)
+  useEffect(() => { if (abierto) ultimoAbierto.current = abierto }, [abierto])
+
+  useEffect(() => {
+    const atras = (e) => {
+      const v = e.state?.vista || 'hoy:latest'
+      if (v.startsWith('articulo:')) {
+        const it = ultimoAbierto.current
+        setAbierto(it && `articulo:${it.id}` === v ? it : null)
+        return
+      }
+      const [p, d] = v.split(':')
+      setAbierto(null)
+      setPestana(p)
+      setDia(d)
+    }
+    window.addEventListener('popstate', atras)
+    return () => window.removeEventListener('popstate', atras)
+  }, [])
+
+  const guardar = (it, texto = '') => { alternar(it, texto); setVersion((v) => v + 1) }
 
   const alternarFiltro = (c) => {
     const s = new Set(activos)
@@ -231,7 +265,9 @@ export default function App() {
         <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} cerrar={() => setAbierto(null)} />
       </>
     )
+    
   }
+  
 
   if (error) return <div className="wrap"><div className="vacio">no se pudo cargar el brief<br />{error}</div></div>
   if (!brief) return <div className="wrap"><div className="vacio">cargando…</div></div>
