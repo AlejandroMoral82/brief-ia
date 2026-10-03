@@ -57,8 +57,7 @@ coincide, y pintar `fuentes_fallidas` y `modo: degradado` como aviso.
 | Variable | Por defecto | Que hace |
 |---|---|---|
 | `GEMINI_API_KEY` | — | Sin ella, modo degradado |
-| `GEMINI_MODEL` | `gemini-2.5-flash` | Comprueba el nombre vigente en AI Studio |
-| `MAXIMO_ITEMS` | `8` | Items del brief |
+| `GEMINI_MODEL` | `gemini-3.5-flash` | Comprueba el nombre vigente en AI Studio |
 | `VENTANA_HORAS` | `26` | Margen sobre 24h por si el cron se retrasa |
 
 ## Decisiones que no conviene cambiar sin pensar
