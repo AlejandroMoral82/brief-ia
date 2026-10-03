@@ -16,13 +16,14 @@ import unicodedata
 
 import requests
 
-log = logging.getLogger(__name__)
+from .categorias import CATEGORIAS, COMODIN, bloque_prompt
 
-CATEGORIAS = ["modelos", "herramientas", "investigacion", "opinion", "industria"]
+log = logging.getLogger(__name__)
 
 MODELO = os.getenv("GEMINI_MODEL") or "gemini-3.5-flash"
 ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent"
 
+# Criterio editorial. La lista de categorias y sus notas salen de categorias.json.
 CRITERIO = """Eres el editor de un brief diario de IA para un desarrollador que
 esta orientando su carrera hacia AI engineering.
 
@@ -34,13 +35,7 @@ Rebaja rondas de financiacion, drama corporativo, predicciones sin sustancia y
 notas de prensa sin contenido tecnico.
 
 Categorias (asigna EXACTAMENTE UNA por item):
-- modelos: lanzamientos, versiones, capacidades, benchmarks
-- herramientas: librerias, frameworks, APIs, patrones de implementacion
-- investigacion: papers y experimentos con resultados medidos
-- opinion: el valor esta en el argumento, no en el dato que aporta
-- industria: dinero, empresas, mercado, regulacion
-
-Ante la duda entre investigacion y opinion, elige investigacion.
+""" + bloque_prompt() + """
 
 CLASIFICA TODOS los items que recibas. No descartes ninguno.
 Dentro de cada categoria, ordena por relevancia: posicion 1 es el mas relevante
@@ -169,21 +164,29 @@ def seleccionar(items: list) -> tuple[list, bool]:
         if it is None:
             continue
         cat = _normalizar(fila.get("categoria", ""))
-        it.categoria = cat if cat in CATEGORIAS else "industria"
+        it.categoria = cat if cat in CATEGORIAS else COMODIN
         try:
             it.posicion = int(fila.get("posicion", 99))
         except (TypeError, ValueError):
             it.posicion = 99
         salida.append(it)
 
+    # Si el LLM clasifica menos de la mitad (incluida una lista vacia), la
+    # seleccion no es fiable: la pasada se trata como degradada. Se borran las
+    # categorias parciales para que todos los items queden igual que en
+    # cualquier otro modo degradado.
+    if len(salida) * 2 < len(items):
+        log.error("LLM clasifico solo %d de %d items: modo degradado", len(salida), len(items))
+        for it in items:
+            it.categoria = ""
+        return _degradado(items), False
+
     # Lo que el LLM se dejo sin clasificar no se pierde: va al final.
     for it in por_id.values():
         log.warning("sin clasificar: %s", it.titulo[:60])
-        it.categoria, it.posicion = "industria", 99
+        it.categoria, it.posicion = COMODIN, 99
         salida.append(it)
 
-    if not salida:
-        return _degradado(items), False
     return salida, True
 
 
@@ -191,5 +194,5 @@ def _degradado(items: list) -> list:
     items = sorted(items, key=lambda x: x.publicado, reverse=True)
     for n, it in enumerate(items, 1):
         it.posicion = n
-        it.categoria = it.categoria or "industria"
+        it.categoria = it.categoria or COMODIN
     return items

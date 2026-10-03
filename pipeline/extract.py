@@ -11,16 +11,17 @@ import logging
 import re
 from pathlib import Path
 
+import html as htmlmod
+
 import requests
 import trafilatura
 from trafilatura.utils import decode_file
-import html as htmlmod
+
+from .sources import USER_AGENT
 
 log = logging.getLogger(__name__)
 
 TIMEOUT = 25
-UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-      "(KHTML, like Gecko) Chrome/122.0 Safari/537.36")
 
 
 def _og_image(html: str) -> str:
@@ -35,7 +36,7 @@ def _og_image(html: str) -> str:
 def extraer(url: str) -> tuple[str, str]:
     """Devuelve (texto, imagen). Cadenas vacias si no se pudo."""
     try:
-        resp = requests.get(url, timeout=TIMEOUT, headers={"User-Agent": UA})
+        resp = requests.get(url, timeout=TIMEOUT, headers={"User-Agent": USER_AGENT})
         resp.raise_for_status()
         # Bytes, no resp.text: requests asume ISO-8859-1 si la cabecera no trae
         # charset, y trafilatura detecta la codificacion real a partir del HTML.

@@ -3,18 +3,10 @@ import {
   cargarBrief, cargarDias, nombreDia, estaDesactualizado, horasDesde, haceCuanto, cargarTexto, urlSegura,
 } from './data'
 import { listar, idsGuardados, alternar, escucharCambios } from './guardados'
+import { CATS, nombreCat, colorCat as color } from './categorias'
 
-const CATS = ['modelos', 'herramientas', 'investigacion', 'opinion', 'industria']
-
-const NOMBRES = {
-  modelos: 'Modelos',
-  herramientas: 'Herramientas',
-  investigacion: 'Investigación',
-  opinion: 'Opinión',
-  industria: 'Industria',
-}
-const nombreCat = (c) => NOMBRES[c] || c
-
+// Iconos de los filtros, por id de categoria. Una categoria nueva sin icono se
+// muestra como boton vacio: anade aqui su <path>.
 const ICONOS = {
   modelos: <><path d="M21 8v8l-9 5-9-5V8l9-5z"/><path d="M3.3 7.5 12 12.5l8.7-5"/><path d="M12 21v-8.5"/></>,
   herramientas: <><path d="M14.7 6.3a4 4 0 0 0 5 5l-9.4 9.4a2.1 2.1 0 0 1-3-3z"/><path d="M14.7 6.3 18 3l3 3-3.3 3.3"/></>,
@@ -22,8 +14,6 @@ const ICONOS = {
   opinion: <path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.8-.9L3 21l1.9-5.1A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4z"/>,
   industria: <><path d="M2 20h20"/><path d="M4 20V10l5 3.5V10l5 3.5V10l5 3.5V20"/><path d="M4 10 4.6 4h2.8L8 10"/></>,
 }
-
-const color = (c) => `var(--c-${c})`
 
 // Gesto de deslizar: a partir de UMBRAL_EJE px se decide si es horizontal o scroll.
 const UMBRAL_EJE = 10

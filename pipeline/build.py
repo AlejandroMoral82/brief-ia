@@ -10,6 +10,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from . import extract, llm, sources
+from .categorias import CUOTAS
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 log = logging.getLogger("brief")
@@ -32,20 +33,15 @@ if _env.exists():
 VENTANA_HORAS = int(os.getenv("VENTANA_HORAS", "26"))
 RETENCION_DIAS = 30
 
-CUOTAS = {
-    "modelos": 3,
-    "herramientas": 3,
-    "investigacion": 2,
-    "opinion": 2,
-    "industria": 1,
-}
+# Las cuotas por categoria vienen de categorias.json (ver pipeline/categorias.py).
 MAX_POR_FUENTE = 2
 
 
 def marcar_destacados(items: list, uso_llm: bool = True) -> list:
     """Marca los que entran en cuota de categoria, con tope por fuente."""
     if not uso_llm:
-        # Sin clasificacion real no hay cuotas que aplicar: los 8 mas recientes.
+        # Sin clasificacion real no hay cuotas que aplicar: se destacan los mas
+        # recientes, tantos como suman las cuotas (items llega ya ordenado por fecha).
         for it in items[:sum(CUOTAS.values())]:
             it.destacado = True
         return items

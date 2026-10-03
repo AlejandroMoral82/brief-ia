@@ -6,8 +6,7 @@
   --bg:#070908; --fg:#DDE6DF; --dim:#7B8A80; --faint:#718078; --line:#18201C;
   --g:#4CE07E; --g-dim:#2E8F52; --g-glow:rgba(76,224,126,.28); --g-tenue:rgba(76,224,126,.03);
   --naranja:#E09070;
-  --c-modelos:#DDBE63; --c-herramientas:#6FD3C4; --c-investigacion:#B79AE6;
-  --c-opinion:#78B4E8; --c-industria:#E09070;
+  /* Los colores de categoria vienen de categorias.json (ver src/categorias.js). */
   --mono:'IBM Plex Mono',ui-monospace,monospace;
   --sans:'IBM Plex Sans',system-ui,sans-serif;
 }

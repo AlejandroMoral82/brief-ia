@@ -15,7 +15,12 @@ import html as htmlmod
 
 log = logging.getLogger(__name__)
 
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
+# User-Agent de navegador para feeds y paginas: algunos medios rechazan el de requests.
+# extract.py lo importa de aqui.
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/122.0 Safari/537.36"
+)
 TIMEOUT = 20
 
 

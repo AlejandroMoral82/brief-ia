@@ -1,0 +1,43 @@
+{
+  "comodin": "industria",
+  "notas_prompt": [
+    "Ante la duda entre investigacion y opinion, elige investigacion."
+  ],
+  "categorias": [
+    {
+      "id": "modelos",
+      "nombre": "Modelos",
+      "descripcion": "lanzamientos, versiones, capacidades, benchmarks",
+      "cuota": 3,
+      "color": "#DDBE63"
+    },
+    {
+      "id": "herramientas",
+      "nombre": "Herramientas",
+      "descripcion": "librerias, frameworks, APIs, patrones de implementacion",
+      "cuota": 3,
+      "color": "#6FD3C4"
+    },
+    {
+      "id": "investigacion",
+      "nombre": "Investigación",
+      "descripcion": "papers y experimentos con resultados medidos",
+      "cuota": 2,
+      "color": "#B79AE6"
+    },
+    {
+      "id": "opinion",
+      "nombre": "Opinión",
+      "descripcion": "el valor esta en el argumento, no en el dato que aporta",
+      "cuota": 2,
+      "color": "#78B4E8"
+    },
+    {
+      "id": "industria",
+      "nombre": "Industria",
+      "descripcion": "dinero, empresas, mercado, regulacion",
+      "cuota": 1,
+      "color": "#E09070"
+    }
+  ]
+}

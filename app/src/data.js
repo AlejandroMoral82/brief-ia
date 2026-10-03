@@ -16,7 +16,10 @@ export async function cargarDias() {
   const r = await fetch(`${BASE}data/index.json`, { cache: 'no-cache' })
   if (!r.ok) return { dias: [], bytes: 0 }
   const d = await r.json()
-  return Array.isArray(d) ? { dias: d, bytes: 0 } : d
+  return {
+    dias: Array.isArray(d?.dias) ? d.dias : [],
+    bytes: Number(d?.bytes) || 0,
+  }
 }
 
 export function nombreDia(iso) {

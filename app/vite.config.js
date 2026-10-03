@@ -1,11 +1,20 @@
+import { fileURLToPath } from 'node:url'
 import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+import { defineConfig, searchForWorkspaceRoot } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 const DIA = 24 * 60 * 60
 
+// Fuente unica de categorias, compartida con el pipeline. Esta fuera de app/.
+const CATEGORIAS = fileURLToPath(new URL('../categorias.json', import.meta.url))
+
 export default defineConfig({
   base: '/brief-ia/',
+  // El servidor de desarrollo solo sirve app/; se permite ademas ese fichero
+  // concreto, no toda la raiz del repo.
+  server: {
+    fs: { allow: [searchForWorkspaceRoot(process.cwd()), CATEGORIAS] },
+  },
   plugins: [
     react(),
     VitePWA({
