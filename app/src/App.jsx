@@ -275,6 +275,8 @@ export default function App() {
   const filtra = (l) => (activos.size ? l.filter((i) => activos.has(i.categoria)) : l)
   const destacados = filtra(brief.items.filter((i) => i.destacado))
   const resto = filtra(brief.items.filter((i) => !i.destacado))
+  const total = destacados.length + resto.length
+  const visibles = verResto ? total : destacados.length
 
   const comprobado = brief.comprobado_en || brief.generado_en
   const desactualizado = !esDeHoy(comprobado)
@@ -296,7 +298,7 @@ export default function App() {
           <div className="prompt">~/hoy <em>listo</em><span className="cur" /></div>
           <div className="date">
             {fecha.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' })}
-            {' · '}{brief.destacados} de {brief.candidatos}
+            {' · '}{visibles} de {total}
           </div>
         </div>
 
