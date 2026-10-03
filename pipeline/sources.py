@@ -11,6 +11,7 @@ from pathlib import Path
 
 import feedparser
 import requests
+import html as htmlmod
 
 log = logging.getLogger(__name__)
 
@@ -59,11 +60,12 @@ def _fecha(entrada) -> datetime | None:
     return None
 
 
-def _limpiar(html: str, limite: int = 500) -> str:
-    """Quita etiquetas del resumen del feed. No reescribe nada."""
+def _limpiar(texto_html: str, limite: int = 500) -> str:
+    """Quita etiquetas y decodifica entidades HTML. No reescribe nada."""
     import re
 
-    texto = re.sub(r"<[^>]+>", " ", html or "")
+    texto = re.sub(r"<[^>]+>", " ", texto_html or "")
+    texto = htmlmod.unescape(texto)
     texto = re.sub(r"\s+", " ", texto).strip()
     return texto[:limite]
 
@@ -121,11 +123,11 @@ def descargar(nombre: str, url: str, horas: int) -> tuple[list[Item], str | None
             Item(
                 id=_hash(enlace),
                 url=enlace,
-                titulo=titulo.strip(),
+                titulo=htmlmod.unescape(titulo).strip(),
                 fuente=nombre,
                 publicado=(fecha or datetime.now(timezone.utc)).isoformat(),
                 resumen=_limpiar(getattr(e, "summary", "")),
-                imagen=_imagen(e),
+                imagen=htmlmod.unescape(_imagen(e)),
             )
         )
 

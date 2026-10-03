@@ -27,7 +27,7 @@ def _og_image(html: str) -> str:
     ) or re.search(
         r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image["\']', html
     )
-    return m.group(1) if m else ""
+    return htmlmod.unescape(m.group(1)) if m else ""
 
 
 def extraer(url: str) -> tuple[str, str]:
