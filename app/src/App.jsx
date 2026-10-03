@@ -1,8 +1,19 @@
-import { useEffect, useState, useRef } from 'react'
-import { cargarBrief, cargarDias, nombreDia, esDeHoy, haceCuanto, cargarTexto } from './data'
-import { listar, estaGuardado, alternar } from './guardados'
+import { useEffect, useLayoutEffect, useMemo, useState, useRef } from 'react'
+import {
+  cargarBrief, cargarDias, nombreDia, estaDesactualizado, horasDesde, haceCuanto, cargarTexto, urlSegura,
+} from './data'
+import { listar, idsGuardados, alternar, escucharCambios } from './guardados'
 
 const CATS = ['modelos', 'herramientas', 'investigacion', 'opinion', 'industria']
+
+const NOMBRES = {
+  modelos: 'Modelos',
+  herramientas: 'Herramientas',
+  investigacion: 'Investigación',
+  opinion: 'Opinión',
+  industria: 'Industria',
+}
+const nombreCat = (c) => NOMBRES[c] || c
 
 const ICONOS = {
   modelos: <><path d="M21 8v8l-9 5-9-5V8l9-5z"/><path d="M3.3 7.5 12 12.5l8.7-5"/><path d="M12 21v-8.5"/></>,
@@ -14,12 +25,19 @@ const ICONOS = {
 
 const color = (c) => `var(--c-${c})`
 
+// Gesto de deslizar: a partir de UMBRAL_EJE px se decide si es horizontal o scroll.
+const UMBRAL_EJE = 10
+const UMBRAL_GUARDAR = 90
+
+const horaMinutos = (iso) => new Date(iso).toTimeString().slice(0, 5)
+
 function Filtros({ activos, alternar: alt }) {
   return (
     <div className="filtros" role="group" aria-label="Filtrar por categoría">
       {CATS.map((c) => (
-        <button key={c} className="filtro" style={{ '--c': color(c) }}
-          aria-pressed={activos.has(c)} aria-label={c} onClick={() => alt(c)}>
+        <button key={c} type="button" className="filtro" style={{ '--c': color(c) }}
+          aria-pressed={activos.has(c)} aria-label={nombreCat(c)} title={nombreCat(c)}
+          onClick={() => alt(c)}>
           <svg viewBox="0 0 24 24" aria-hidden="true">{ICONOS[c]}</svg>
         </button>
       ))}
@@ -29,65 +47,107 @@ function Filtros({ activos, alternar: alt }) {
 
 function Item({ it, abrir, marcado, onGuardar, bloqueado, par }) {
   const [dx, setDx] = useState(0)
-  const [x0, setX0] = useState(null)
+  const [arrastrando, setArrastrando] = useState(false)
+  const inicio = useRef(null)
+  const eje = useRef(null)
+  const ultimoGesto = useRef(0)
 
   const fin = () => {
-    if (dx > 90) onGuardar?.(it)
-    setDx(0); setX0(null)
+    if (eje.current === 'x' && dx > UMBRAL_GUARDAR) onGuardar?.(it)
+    inicio.current = null
+    eje.current = null
+    setDx(0)
+    setArrastrando(false)
   }
 
   const tocar = bloqueado ? {} : {
-    onTouchStart: (e) => setX0(e.touches[0].clientX),
-    onTouchMove: (e) => x0 !== null && setDx(Math.max(0, Math.min(130, e.touches[0].clientX - x0))),
+    onTouchStart: (e) => {
+      const t = e.touches[0]
+      inicio.current = { x: t.clientX, y: t.clientY }
+      eje.current = null
+    },
+    onTouchMove: (e) => {
+      if (!inicio.current) return
+      const t = e.touches[0]
+      const mx = t.clientX - inicio.current.x
+      const my = t.clientY - inicio.current.y
+      if (!eje.current) {
+        if (Math.abs(mx) < UMBRAL_EJE && Math.abs(my) < UMBRAL_EJE) return
+        // Se decide una sola vez por toque: si domina el vertical es scroll y se ignora.
+        eje.current = Math.abs(mx) > Math.abs(my) ? 'x' : 'y'
+        ultimoGesto.current = Date.now()
+        if (eje.current === 'x') setArrastrando(true)
+      }
+      if (eje.current === 'x') setDx(Math.max(0, Math.min(130, mx)))
+    },
     onTouchEnd: fin,
     onTouchCancel: fin,
   }
 
+  // Tras un deslizamiento el navegador puede disparar un click: no abre el articulo.
+  const pulsar = () => {
+    if (Date.now() - ultimoGesto.current < 400) return
+    abrir(it)
+  }
+
   return (
     <div className="swipe">
-      <div className={`swipe-bg${marcado ? ' quitando' : ''}`} style={{ opacity: Math.min(dx / 90, 1) }}>
+      <div className={`swipe-bg${marcado ? ' quitando' : ''}`} aria-hidden="true"
+        style={{ opacity: Math.min(dx / UMBRAL_GUARDAR, 1) }}>
         {marcado
-          ? (dx > 90 ? 'quitar ✓' : 'quitar de guardados')
-          : (dx > 90 ? 'guardar ✓' : 'guardar')}
+          ? (dx > UMBRAL_GUARDAR ? 'quitar ✓' : 'quitar de guardados')
+          : (dx > UMBRAL_GUARDAR ? 'guardar ✓' : 'guardar')}
       </div>
-      <button className={`item${par ? ' par' : ''}`}
-        style={{ transform: `translateX(${dx}px)`, transition: x0 ? 'none' : 'transform .3s cubic-bezier(.2,.9,.2,1)' }}
-        onClick={() => dx === 0 && abrir(it)}
+      <button type="button" data-item={it.id} className={`item${par ? ' par' : ''}`}
+        style={{ transform: `translateX(${dx}px)`, transition: arrastrando ? 'none' : 'transform .3s cubic-bezier(.2,.9,.2,1)' }}
+        onClick={pulsar}
         {...tocar}>
-        <div className="head">
+        <span className="head">
           <span className="pip" style={{ color: color(it.categoria), background: color(it.categoria) }} />
           <span className="src">{it.fuente}</span>
           <span className="ago">{haceCuanto(it.publicado)}</span>
-        </div>
-        <div className="tl">{it.titulo}</div>
+        </span>
+        <span className="tl">{it.titulo}</span>
         {marcado && <span className="marca" />}
       </button>
     </div>
   )
 }
 
-function Lector({ it, volver, onGuardar }) {
-  const [texto, setTexto] = useState(null)
-  const [fallo, setFallo] = useState(false)
+function Lector({ it, volver, onGuardar, guardado }) {
+  const titulo = useRef(null)
+  const [carga, setCarga] = useState({ id: null })
+  const hayQueCargar = !it.texto && Boolean(it.texto_disponible)
 
   useEffect(() => {
-    setTexto(null); setFallo(false)
-    if (it.texto) { setTexto(it.texto); return }
-    if (!it.texto_disponible) { setFallo(true); return }
-    cargarTexto(it.id).then(setTexto).catch(() => setFallo(true))
-  }, [it.id])
+    if (!hayQueCargar) return
+    let vigente = true
+    cargarTexto(it.id)
+      .then((texto) => { if (vigente) setCarga({ id: it.id, texto }) })
+      .catch(() => { if (vigente) setCarga({ id: it.id, fallo: true }) })
+    return () => { vigente = false }
+  }, [it.id, hayQueCargar])
+
+  // El foco va al titulo para que el lector de pantalla anuncie el articulo.
+  useEffect(() => { titulo.current?.focus({ preventScroll: true }) }, [it.id])
+
+  const propio = carga.id === it.id ? carga : {}
+  const texto = it.texto || propio.texto || null
+  const fallo = !texto && (!it.texto_disponible || propio.fallo)
+  const enlace = urlSegura(it.url)
+  const imagen = urlSegura(it.imagen)
 
   return (
     <div className="reader">
-            <button className="back" onClick={volver}>.. volver</button>
-      <h2>{it.titulo}</h2>
+      <button type="button" className="back" onClick={volver}>.. volver</button>
+      <h2 ref={titulo} tabIndex={-1}>{it.titulo}</h2>
       <div className="rmeta">
         <span className="pip" style={{ color: color(it.categoria), background: color(it.categoria) }} />
-        <span>{it.categoria} · {it.fuente} · hace {haceCuanto(it.publicado)}</span>
+        <span>{nombreCat(it.categoria)} · {it.fuente} · hace {haceCuanto(it.publicado)}</span>
       </div>
 
-      {it.imagen && (
-        <img className="portada" src={it.imagen} alt=""
+      {imagen && (
+        <img className="portada" src={imagen} alt="" referrerPolicy="no-referrer" loading="lazy"
           onError={(e) => { e.currentTarget.style.display = 'none' }} />
       )}
 
@@ -100,21 +160,25 @@ function Lector({ it, volver, onGuardar }) {
             <p className="cuerpo">{it.resumen || 'Este feed no incluye resumen.'}</p>
             {fallo && (
               <div className="aviso" style={{ marginTop: 22 }}>
-                No se pudo recuperar el texto completo. Ábrelo en el original.
+                No se pudo recuperar el texto completo.{enlace && ' Ábrelo en el original.'}
               </div>
             )}
           </>
         )}
 
       <div>
-                <button className={`quitar${estaGuardado(it.id) ? ' activo' : ''}`}
+        <button type="button" className={`quitar${guardado ? ' activo' : ''}`}
           onClick={() => onGuardar(it, texto || '')}>
-          {estaGuardado(it.id) ? 'quitar de guardados' : 'guardar'}
+          {guardado ? 'quitar de guardados' : 'guardar'}
         </button>
       </div>
-      <a className="orig" href={it.url} target="_blank" rel="noreferrer">
-        {texto ? 'ver en el original, con imágenes' : 'abrir el original'}
-      </a>
+      {enlace
+        ? (
+          <a className="orig" href={enlace} target="_blank" rel="noreferrer">
+            {texto ? 'ver en el original, con imágenes' : 'abrir el original'}
+          </a>
+        )
+        : <div className="aviso" style={{ marginTop: 38 }}>El enlace original no es válido.</div>}
     </div>
   )
 }
@@ -135,7 +199,7 @@ function Archivo({ abrirDia }) {
         {info.dias.length} días · {mb} MB · se borra a los 30 días
       </div>
       {info.dias.map((d) => (
-        <button key={d} className="dia" onClick={() => abrirDia(d)}>
+        <button key={d} type="button" className="dia" onClick={() => abrirDia(d)}>
           {nombreDia(d)}<span>{d}</span>
         </button>
       ))}
@@ -143,8 +207,9 @@ function Archivo({ abrirDia }) {
   )
 }
 
-function Guardados({ abrir, quitar }) {
-  const items = listar()
+function Guardados({ abrir, quitar, ids }) {
+  // Solo se relee localStorage cuando cambia el conjunto de guardados.
+  const items = useMemo(() => listar().filter((x) => ids.has(x.id)), [ids])
   if (!items.length) {
     return <div className="vacio">nada guardado todavía<br />desliza un titular a la derecha</div>
   }
@@ -155,46 +220,163 @@ function Guardados({ abrir, quitar }) {
       {items.map((it, n) => (
         <div key={it.id} className="fila-guardado">
           <Item it={it} abrir={abrir} marcado bloqueado par={n % 2 === 1} />
-          <button className="quitar activo" onClick={() => quitar(it)}>quitar</button>
+          <button type="button" className="quitar activo" onClick={() => quitar(it)}>quitar</button>
         </div>
       ))}
     </>
   )
 }
 
-function Tabs({ pestana, setPestana, setDia, cerrar }) {
+function Brief({ brief, dia, activos, alternarFiltro, verResto, mostrarResto, abrir, guardados, guardar }) {
+  const esUltimo = dia === 'latest'
+
+  const filtra = (l) => (activos.size ? l.filter((i) => activos.has(i.categoria)) : l)
+  const destacados = filtra(brief.items.filter((i) => i.destacado))
+  const resto = filtra(brief.items.filter((i) => !i.destacado))
+  const total = destacados.length + resto.length
+  const visibles = verResto ? total : destacados.length
+
+  // generado_en: de cuando es el contenido. comprobado_en: la ultima vez que corrio el pipeline.
+  const comprobado = brief.comprobado_en || brief.generado_en
+  const desactualizado = esUltimo && estaDesactualizado(comprobado)
+  const horas = Math.floor(horasDesde(comprobado))
+  const generado = new Date(brief.generado_en)
+  const fecha = Number.isNaN(generado.getTime())
+    ? (esUltimo ? '' : dia)
+    : generado.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' })
+
   return (
-    <div className="tabs">
+    <>
+      <div className="bar">
+        <span>Bienvenido a tu brief-ia</span>
+        {esUltimo
+          ? (
+            <span className={desactualizado ? 'mal' : 'ok'}>
+              {desactualizado ? 'sin actualizar' : `sincronizado ${horaMinutos(comprobado)}`}
+            </span>
+          )
+          : <span>archivo</span>}
+      </div>
+
+      <div className="cabecera">
+        <div className="prompt">{esUltimo ? '~/hoy' : `~/archivo/${dia}`} <em>listo</em><span className="cur" /></div>
+        <div className="date">
+          {fecha}{fecha && ' · '}{visibles} de {total}
+        </div>
+      </div>
+
+      {(desactualizado || brief.modo === 'degradado' || brief.fuentes_fallidas.length > 0) && (
+        <div className="aviso">
+          {desactualizado && (
+            Number.isFinite(horas)
+              ? <>El brief lleva {horas} h sin actualizarse. Última comprobación: {new Date(comprobado).toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short' })}.<br /></>
+              : <>El brief no indica cuándo se actualizó.<br /></>
+          )}
+          {brief.modo === 'degradado' && <>Sin selección: el modelo no respondió, los items van por fecha.<br /></>}
+          {brief.fuentes_fallidas.length > 0 && <>Fuentes con fallo: {brief.fuentes_fallidas.join(', ')}</>}
+        </div>
+      )}
+
+      <Filtros activos={activos} alternar={alternarFiltro} />
+
+      {total === 0 ? (
+        <div className="vacio">nada en esta categoría{esUltimo && ' hoy'}</div>
+      ) : (
+        <>
+          {destacados.map((it, n) => (
+            <Item key={it.id} it={it} abrir={abrir} par={n % 2 === 1}
+              marcado={guardados.has(it.id)} onGuardar={guardar} />
+          ))}
+          {resto.length > 0 && !verResto && (
+            <button type="button" className="resto" onClick={mostrarResto}>
+              ver los otros {resto.length}
+            </button>
+          )}
+          {verResto && resto.map((it) => (
+            <Item key={it.id} it={it} abrir={abrir}
+              marcado={guardados.has(it.id)} onGuardar={guardar} />
+          ))}
+        </>
+      )}
+    </>
+  )
+}
+
+function Tabs({ pestana, ir }) {
+  return (
+    <nav className="tabs" aria-label="Secciones">
       <div className="tabs-in">
         {['archivo', 'hoy', 'guardados'].map((n) => (
-          <button key={n} className={`tab${n === 'hoy' ? ' centro' : ''}`}
+          <button key={n} type="button" className={`tab${n === 'hoy' ? ' centro' : ''}`}
             aria-current={pestana === n ? 'page' : undefined}
-            onClick={() => { cerrar(); setPestana(n); if (n === 'hoy') setDia('latest') }}>
-            {n}<i />
+            onClick={() => ir(n)}>
+            {n}<i aria-hidden="true" />
           </button>
         ))}
       </div>
-    </div>
+    </nav>
   )
 }
 
 export default function App() {
-  const [brief, setBrief] = useState(null)
-  const [error, setError] = useState(null)
+  const [pestana, setPestana] = useState('hoy')
+  const [dia, setDia] = useState('latest')
+  const [intento, setIntento] = useState(0)
+  const [carga, setCarga] = useState({ clave: null })
   const [activos, setActivos] = useState(new Set())
   const [verResto, setVerResto] = useState(false)
   const [abierto, setAbierto] = useState(null)
-  const [pestana, setPestana] = useState('hoy')
-  const [dia, setDia] = useState('latest')
-  const [, setVersion] = useState(0)
+  const [guardados, setGuardados] = useState(() => idsGuardados())
+  const [aviso, setAviso] = useState('')
 
+  // Cada carga se identifica por dia + intento. Una respuesta que llega tarde
+  // (se cambio de dia mientras tanto) se descarta, y al cambiar de dia o
+  // reintentar el error anterior deja de aplicar sin tener que borrarlo.
+  const clave = `${dia}|${intento}`
   useEffect(() => {
-    setBrief(null)
-    cargarBrief(dia).then(setBrief).catch((e) => setError(e.message))
-  }, [dia])
+    let vigente = true
+    const k = `${dia}|${intento}`
+    cargarBrief(dia)
+      .then((brief) => { if (vigente) setCarga({ clave: k, brief, error: null }) })
+      .catch((e) => { if (vigente) setCarga({ clave: k, brief: null, error: e.message }) })
+    return () => { vigente = false }
+  }, [dia, intento])
+  const actual = carga.clave === clave ? carga : null
+  const brief = actual?.brief
+  const error = actual?.error
 
-  // Cada vez que cambia la vista, la apuntamos en el historial del navegador,
-  // para que el gesto de atrás de Android navegue dentro de la app.
+  useEffect(() => escucharCambios(() => setGuardados(idsGuardados())), [])
+
+  // ---------- aviso discreto ----------
+  const temporizador = useRef(null)
+  const avisar = (msg) => {
+    clearTimeout(temporizador.current)
+    setAviso(msg)
+    temporizador.current = setTimeout(() => setAviso(''), 4000)
+  }
+  useEffect(() => () => clearTimeout(temporizador.current), [])
+
+  // ---------- guardar ----------
+  const enCurso = useRef(new Set())
+  const guardar = async (it, texto = '') => {
+    if (enCurso.current.has(it.id)) return
+    enCurso.current.add(it.id)
+    try {
+      let t = texto
+      // Desde la lista no hay texto a mano: si el articulo lo tiene, se descarga para leerlo offline.
+      if (!t && !guardados.has(it.id) && it.texto_disponible) {
+        t = await cargarTexto(it.id).catch(() => '')
+      }
+      const r = alternar(it, t)
+      setGuardados(idsGuardados())
+      if (!r.ok) avisar(r.guardado ? 'no se pudo quitar de guardados' : 'no se pudo guardar: almacenamiento lleno o bloqueado')
+      else if (r.sinTexto) avisar('guardado sin el texto: no queda espacio')
+    } finally {
+      enCurso.current.delete(it.id)
+    }
+  }
+
+  // ---------- historial: el gesto de atras navega dentro de la app ----------
   const vista = abierto ? `articulo:${abierto.id}` : `${pestana}:${dia}`
   const primera = useRef(true)
 
@@ -207,7 +389,7 @@ export default function App() {
     if (history.state?.vista !== vista) history.pushState({ vista }, '')
   }, [vista])
 
-    const ultimoAbierto = useRef(null)
+  const ultimoAbierto = useRef(null)
   useEffect(() => { if (abierto) ultimoAbierto.current = abierto }, [abierto])
 
   useEffect(() => {
@@ -227,112 +409,74 @@ export default function App() {
     return () => window.removeEventListener('popstate', atras)
   }, [])
 
-  const guardar = (it, texto = '') => { alternar(it, texto); setVersion((v) => v + 1) }
+  // ---------- scroll y foco entre lista y lector ----------
+  const retorno = useRef(null)
+  const abrir = (it) => {
+    retorno.current = { vista: `${pestana}:${dia}`, y: window.scrollY, id: it.id }
+    setAbierto(it)
+  }
+
+  useLayoutEffect(() => {
+    if (abierto) {
+      window.scrollTo(0, 0)
+      return
+    }
+    const r = retorno.current
+    retorno.current = null
+    // Solo se restaura si se vuelve a la misma lista desde la que se abrio.
+    if (!r || r.vista !== `${pestana}:${dia}`) return
+    window.scrollTo(0, r.y)
+    document.querySelector(`[data-item="${CSS.escape(r.id)}"]`)?.focus({ preventScroll: true })
+  }, [abierto, pestana, dia])
+
+  // ---------- navegacion ----------
+  const ir = (n) => {
+    setAbierto(null)
+    setPestana(n)
+    if (n !== 'guardados') setDia('latest')
+  }
 
   const alternarFiltro = (c) => {
     const s = new Set(activos)
-    s.has(c) ? s.delete(c) : s.add(c)
+    if (s.has(c)) s.delete(c)
+    else s.add(c)
     setActivos(s)
     setVerResto(false)
   }
 
+  let contenido
+  let conParticulas = false
+
   if (abierto) {
-    return (
-      <>
-        <div className="wrap">
-          <Lector it={abierto} volver={() => setAbierto(null)} onGuardar={guardar} />
-        </div>
-        <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} cerrar={() => setAbierto(null)} />
-      </>
+    contenido = <Lector it={abierto} volver={() => setAbierto(null)} onGuardar={guardar} guardado={guardados.has(abierto.id)} />
+  } else if (pestana === 'guardados') {
+    contenido = <Guardados abrir={abrir} quitar={guardar} ids={guardados} />
+  } else if (pestana === 'archivo' && dia === 'latest') {
+    contenido = <Archivo abrirDia={setDia} />
+  } else if (error) {
+    contenido = (
+      <div className="vacio">
+        no se pudo cargar el brief<br />{error}<br />
+        <button type="button" className="reintentar" onClick={() => setIntento((n) => n + 1)}>reintentar</button>
+      </div>
+    )
+  } else if (!brief) {
+    contenido = <div className="vacio">cargando…</div>
+  } else {
+    conParticulas = true
+    contenido = (
+      <Brief brief={brief} dia={dia} activos={activos} alternarFiltro={alternarFiltro}
+        verResto={verResto} mostrarResto={() => setVerResto(true)}
+        abrir={abrir} guardados={guardados} guardar={guardar} />
     )
   }
-
-  if (pestana === 'archivo') {
-    return (
-      <>
-        <div className="wrap">
-          <Archivo abrirDia={(d) => { setDia(d); setPestana('hoy') }} />
-        </div>
-        <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} cerrar={() => setAbierto(null)} />
-      </>
-    )
-  }
-
-  if (pestana === 'guardados') {
-    return (
-      <>
-        <div className="wrap"><Guardados abrir={setAbierto} quitar={guardar} /></div>
-        <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} cerrar={() => setAbierto(null)} />
-      </>
-    )
-    
-  }
-  
-
-  if (error) return <div className="wrap"><div className="vacio">no se pudo cargar el brief<br />{error}</div></div>
-  if (!brief) return <div className="wrap"><div className="vacio">cargando…</div></div>
-
-  const filtra = (l) => (activos.size ? l.filter((i) => activos.has(i.categoria)) : l)
-  const destacados = filtra(brief.items.filter((i) => i.destacado))
-  const resto = filtra(brief.items.filter((i) => !i.destacado))
-  const total = destacados.length + resto.length
-  const visibles = verResto ? total : destacados.length
-
-  const comprobado = brief.comprobado_en || brief.generado_en
-  const desactualizado = !esDeHoy(comprobado)
-  const fecha = new Date(comprobado)
 
   return (
     <>
-    <Particulas />
-      <div className="wrap">
-        <div className="bar">
-          <span>Bienvenido a tu brief-ia</span>
-          <span className={desactualizado ? 'mal' : 'ok'}>
-            {desactualizado ? 'sin actualizar' : `sincronizado ${fecha.toTimeString().slice(0, 5)}`}
-          </span>
-        </div>
-
-        <div className="cabecera">
-          
-          <div className="prompt">~/hoy <em>listo</em><span className="cur" /></div>
-          <div className="date">
-            {fecha.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' })}
-            {' · '}{visibles} de {total}
-          </div>
-        </div>
-
-        {(desactualizado || brief.modo === 'degradado' || brief.fuentes_fallidas.length > 0) && (
-          <div className="aviso">
-            {desactualizado && <>El brief no es de hoy. El último es del {fecha.toLocaleDateString('es-ES')}.<br /></>}
-            {brief.modo === 'degradado' && <>Sin selección: el modelo no respondió, los items van por fecha.<br /></>}
-            {brief.fuentes_fallidas.length > 0 && <>Fuentes con fallo: {brief.fuentes_fallidas.join(', ')}</>}
-          </div>
-        )}
-
-        <Filtros activos={activos} alternar={alternarFiltro} />
-
-        {destacados.length === 0 && resto.length === 0 ? (
-          <div className="vacio">nada en esta categoría hoy</div>
-        ) : (
-          <>
-            {destacados.map((it, n) => (
-              <Item key={it.id} it={it} abrir={setAbierto} par={n % 2 === 1}
-                marcado={estaGuardado(it.id)} onGuardar={guardar} />
-            ))}
-            {resto.length > 0 && !verResto && (
-              <button className="resto" onClick={() => setVerResto(true)}>
-                ver los otros {resto.length}
-              </button>
-            )}
-            {verResto && resto.map((it) => (
-              <Item key={it.id} it={it} abrir={setAbierto}
-                marcado={estaGuardado(it.id)} onGuardar={guardar} />
-            ))}
-          </>
-        )}
-      </div>
-      <Tabs pestana={pestana} setPestana={setPestana} setDia={setDia} cerrar={() => setAbierto(null)} />
+      {conParticulas && <Particulas />}
+      <main className="wrap">{contenido}</main>
+      <Tabs pestana={pestana} ir={ir} />
+      <div className="toast" role="status" aria-live="polite">{aviso}</div>
     </>
   )
 }
