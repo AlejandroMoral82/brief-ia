@@ -45,7 +45,7 @@ def marcar_destacados(items: list, uso_llm: bool = True) -> list:
     """Marca los que entran en cuota de categoria, con tope por fuente."""
     if not uso_llm:
         # Sin clasificacion real no hay cuotas que aplicar: los 8 mas recientes.
-        for it in items[:8]:
+        for it in items[:sum(CUOTAS.values())]:
             it.destacado = True
         return items
 
