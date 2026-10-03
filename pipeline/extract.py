@@ -13,6 +13,7 @@ from pathlib import Path
 
 import requests
 import trafilatura
+import html as htmlmod
 
 log = logging.getLogger(__name__)
 
