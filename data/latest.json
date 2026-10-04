@@ -1,12 +1,54 @@
 {
- "generado_en": "2026-10-04T10:21:15.022183+00:00",
+ "generado_en": "2026-10-04T15:43:12.228613+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 9,
- "destacados": 6,
+ "candidatos": 12,
+ "destacados": 9,
  "items": [
+  {
+   "id": "8aaa4b741173b837",
+   "url": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
+   "titulo": "Trump unveils his new Super Intelligence Force",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-04T15:15:10+00:00",
+   "resumen": "This new task force is Trump's latest response to the debate over AI safety.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2297764008.jpg?w=1024",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d5a8ffd2dd505a15",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
+   "titulo": "An AI couldn’t beat humans at StarCraft, so it decided to cheat",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-04T15:21:59+00:00",
+   "resumen": "StarSkirmish pits AI-made StarCraft-playing bots against one another, as well as against human-made bots. OpenAI's GPT-6 Astra and Claude Opus 5.5 were essentially tied as the best-performing AI-made bots, but they couldn't top Stardust, the top-rated human-made bot. On Friday, GPT was facing off against Claude and the human-created bot Pluto, but according to Kotaku, […]",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/9020427/swarm_screenshot27_large.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "260f481c2a62124d",
+   "url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+   "titulo": "LeCun has \"zero concerns\" about AI wiping out humanity, recent \"rogue\" incidents",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-03T17:44:29+00:00",
+   "resumen": "https://archive.ph/TyDPf Comments URL: https://news.ycombinator.com/item?id=49946228 Points: 252 # Comments: 381",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://fortune.com/img-assets/wp-content/uploads/2026/09/GettyImages-2197497048-e1790790386809.jpg?resize=1200,600",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
   {
    "id": "8a80da1cc21e70e6",
    "url": "https://www.marktechpost.com/2026/10/03/deepseek-harness-v0-2-brings-official-desktop-apps-to-its-open-source-agent-harness/",
@@ -134,10 +176,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-10-04T10:21:15.022183+00:00",
+ "comprobado_en": "2026-10-04T15:43:12.228613+00:00",
  "pasadas": [
   {
    "hora": "2026-10-04T10:21:15.022183+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-10-04T15:43:12.228613+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
