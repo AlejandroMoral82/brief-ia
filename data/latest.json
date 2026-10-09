@@ -1,12 +1,180 @@
 {
- "generado_en": "2026-10-09T11:04:49.139920+00:00",
+ "generado_en": "2026-10-09T17:23:43.466029+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 22,
- "destacados": 9,
+ "candidatos": 34,
+ "destacados": 15,
  "items": [
+  {
+   "id": "595085953aeea904",
+   "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
+   "titulo": "Let your AI agents paint big arrows, boxes and text on your screen",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-09T11:03:48+00:00",
+   "resumen": "Article URL: https://github.com/franzenzenhofer/big-arrow-on-the-screen Comments URL: https://news.ycombinator.com/item?id=50018817 Points: 282 # Comments: 115",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://opengraph.githubassets.com/7150c0acbed5830290e2061fcfe55ff4bf76a9b5f5141f98637a434b1e5210b9/franzenzenhofer/big-arrow-on-the-screen",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "95fd0fb1a7d9fd74",
+   "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+   "titulo": "A new feature for my blog, built using my voice",
+   "fuente": "Simon Willison",
+   "publicado": "2026-10-09T12:54:06+00:00",
+   "resumen": "I shipped a new feature for my blog today: the Newsletters page, which offers an index of all of the newsletters I've sent out, both my free weekly Substack and my monthly sponsors-only updates. I built the feature almost entirely using my voice, chatting away to my laptop while I cooked dinner. Codex voice mode I used the ChatGPT desktop app for this, in the Codex tab, using the voice conversation mode, running against a local development environment. Here's what that looks like: I started the ",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://static.simonwillison.net/static/2026/codex-voice.webp",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "3e04105beca7661b",
+   "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+   "titulo": "Instinct was the buzziest AI agent around — can it survive Muse?",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-09T14:00:00+00:00",
+   "resumen": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interface and its ability to […]",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DSC04328_processed_1.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "43ef54e74d276082",
+   "url": "https://huggingface.co/blog/allenai/impactful-scheduling",
+   "titulo": "Impactful scheduling for GPU clusters",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-10-09T15:20:29+00:00",
+   "resumen": "",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Kj0n5ea3ItoNIc2ha2SVL.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "8c9077e7ebaff493",
+   "url": "https://simonwillison.net/2026/Oct/9/matthew-green/",
+   "titulo": "Quoting Matthew Green",
+   "fuente": "Simon Willison",
+   "publicado": "2026-10-09T15:02:29+00:00",
+   "resumen": "Everyone is very concerned about being respectable, so I’m going to be the goofball who raises worst-case possibilities. I think there is a 1% chance we live in Minicrypt, and a 15% chance we functionally lose confidence in our existing public-key encryption algorithms. [...] The problem here is that the speed of AI producing surprises, and the speed of human beings replacing standards (even with the very best AI assistance) are just orders of magnitude different. You only recover from a surpris",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "304a6e31805197fa",
+   "url": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/",
+   "titulo": "We can’t help treating AI like it’s human. But should we?",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-09T16:40:14+00:00",
+   "resumen": "\"When we are drawn into even the most primitive exchanges with a relational artifact, we believe it cares for us,\" Dr. Sherry Turkle writes. \"And we are wired to care for it in return.\"",
+   "categoria": "opinion",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1404749040.jpg?resize=1200,675",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "b7942fed5b9fdcb2",
+   "url": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
+   "titulo": "a16z’s Olivia Moore on the state of consumer AI",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-09T15:43:33+00:00",
+   "resumen": "Moore sees a huge opportunity in consumer AI, particularly if the industry can tap into revenue streams beyond just subscriptions and API charges.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "fd6b62e24c31730f",
+   "url": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+   "titulo": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-09T16:56:42+00:00",
+   "resumen": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents access […]",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "3e5144fcace1c1fd",
+   "url": "https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/",
+   "titulo": "Amazon drops data center NDAs, and AI agents want your credit card",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-09T16:53:02+00:00",
+   "resumen": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisco. Meanwhile, a wave of startups is betting that consumers will hand AI agents access […]",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "edf79715fb8e813e",
+   "url": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
+   "titulo": "Danu Robotics’ fight to build a better recycling robot",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-09T16:45:00+00:00",
+   "resumen": "For six years, Danu founder Amy Ma has been working on a better way to sort recyclable waste.",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "e0e3889317150e81",
+   "url": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
+   "titulo": "Trump’s attempt to rename AI is looking awfully artificial",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-09T14:25:43+00:00",
+   "resumen": "President Donald Trump has a knack for turning words against his enemies. His first successful presidential run was built on monikers like \"Little Marco\" and \"Crooked Hillary\"; he changed \"fake news\" from a phrase describing scammy media outlets to a derogatory term for the press at large. Over the past few weeks, he's clearly decided […]",
+   "categoria": "industria",
+   "posicion": 6,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2297777001.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "e6bbf4ee8129244c",
+   "url": "https://techcrunch.com/2026/10/09/techcrunch-disrupt-2026-starts-in-4-days-lock-in-your-pass-savings-of-up-to-100-before-prices-rise/",
+   "titulo": "TechCrunch Disrupt 2026 starts in 4 days — lock in your pass savings of up to $100 before prices rise",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-09T14:00:00+00:00",
+   "resumen": "Four days until TechCrunch Disrupt 2026 starts, when 10,000 founders, investors, and tech leaders gather in San Francisco's Moscone West on October 13-15. Save up to $100 on your price. Plus, save 50% on a second pass of the same type.",
+   "categoria": "industria",
+   "posicion": 7,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
   {
    "id": "fbf536c6935f7de5",
    "url": "https://www.marktechpost.com/2026/10/08/google-cloud-launches-gemini-agent-one-universal-agent-for-enterprise-work/",
@@ -316,10 +484,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-10-09T11:04:49.139920+00:00",
+ "comprobado_en": "2026-10-09T17:23:43.466029+00:00",
  "pasadas": [
   {
    "hora": "2026-10-09T11:04:49.139920+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-10-09T17:23:43.466029+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
