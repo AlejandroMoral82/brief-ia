@@ -1,13 +1,124 @@
 {
- "generado_en": "2026-10-10T10:22:26.618577+00:00",
+ "generado_en": "2026-10-10T16:09:14.921521+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
-  "Import AI: HTTPError",
-  "Hacker News - IA (150+ puntos): ReadTimeout"
+  "Import AI: HTTPError"
  ],
- "candidatos": 18,
- "destacados": 6,
+ "candidatos": 26,
+ "destacados": 12,
  "items": [
+  {
+   "id": "37d5b84c7a91448c",
+   "url": "https://www.latent.space/p/standard-bots",
+   "titulo": "Building AI for Reliable Execution: Lessons From Industrial Robotics",
+   "fuente": "Latent Space",
+   "publicado": "2026-10-10T14:04:11+00:00",
+   "resumen": "Inside Standard Bots’ AI stack, pretrained models learn factory tasks from demonstrations and improve through corrections from real deployments.",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://substackcdn.com/image/fetch/$s_!yzyh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe58f7268-94a0-42f5-b0fc-9ecf300bb03d_2560x1440.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "a893947d303d6bf8",
+   "url": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+   "titulo": "Here are the top AI agents that can live in your text messages",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-10T14:00:00+00:00",
+   "resumen": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-673436934.jpg?resize=1200,813",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "04902b83f5b9f295",
+   "url": "https://typesafe.ai/blog/series-ai",
+   "titulo": "Typesafe AI raises $870M at $7.5B",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-09T17:02:31+00:00",
+   "resumen": "Article URL: https://typesafe.ai/blog/series-ai Comments URL: https://news.ycombinator.com/item?id=50023450 Points: 412 # Comments: 329",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://framerusercontent.com/images/RtIGTDwO43jR4ZDilesXiR5znc.jpg",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "0decde66c5ee642f",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+   "titulo": "Anthropic is cutting off its internal evaluations from the internet",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-10T14:41:16+00:00",
+   "resumen": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model actions,\" including submitting a false tip regarding an unsolved murder, that led to the decision. Although the impact of these behaviors was minimal […]",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "84d5b4b8b9e370c6",
+   "url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
+   "titulo": "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-09T17:42:12+00:00",
+   "resumen": "Article URL: https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/ Comments URL: https://news.ycombinator.com/item?id=50024090 Points: 165 # Comments: 41",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://secure.gravatar.com/blavatar/bd4bda4207561b6998f10dec44b570f04ff4072b20f89162d525b186dfca3e49?s=200&ts=1791648225",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "0ea9d786e45ed9d7",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+   "titulo": "AI agent makers are promising privacy — will they deliver?",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-10T13:00:00+00:00",
+   "resumen": "At this year's OpenAI DevDay, CEO Sam Altman unveiled the company's new AI agent Dots - and told the crowd that the company wants to \"set a new standard for privacy in frontier AI.\" OpenAI would spend the day taking veiled shots at Meta's Muse, its primary competitor, for failing to keep users' data safe. […]",
+   "categoria": "opinion",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25299205/STK453_Privacy_D_CVirginia.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d9ded0e842593759",
+   "url": "https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/",
+   "titulo": "Anthropic AI model submits false tip on unsolved Philly murder, police say",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-09T22:00:35+00:00",
+   "resumen": "Article URL: https://www.nbcphiladelphia.com/news/local/anthropic-ai-model-submits-false-tip-on-unsolved-philly-murder-police-say/4477051/ Comments URL: https://news.ycombinator.com/item?id=50027118 Points: 195 # Comments: 139",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "6801da099eadf383",
+   "url": "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
+   "titulo": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-10T15:00:00+00:00",
+   "resumen": "TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to 10,000 tech leaders. Plus, 250+ speakers are ready to share insights across 200+ sessions. Register before doors open to save up to $100 and get a second pass at 50% off.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
   {
    "id": "78d0f1ff7f2a4860",
    "url": "https://www.marktechpost.com/2026/10/09/openai-decisions-api-hits-public-beta-with-10x-faster-typed-answers/",
@@ -261,7 +372,7 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-10-10T10:22:26.618577+00:00",
+ "comprobado_en": "2026-10-10T16:09:14.921521+00:00",
  "pasadas": [
   {
    "hora": "2026-10-10T10:22:26.618577+00:00",
@@ -269,6 +380,13 @@
    "fuentes_fallidas": [
     "Import AI: HTTPError",
     "Hacker News - IA (150+ puntos): ReadTimeout"
+   ]
+  },
+  {
+   "hora": "2026-10-10T16:09:14.921521+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
    ]
   }
  ]
