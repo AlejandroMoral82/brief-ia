@@ -1,12 +1,40 @@
 {
- "generado_en": "2026-10-11T10:30:25.143474+00:00",
+ "generado_en": "2026-10-11T16:36:13.960248+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 12,
- "destacados": 7,
+ "candidatos": 14,
+ "destacados": 9,
  "items": [
+  {
+   "id": "ba5db8106c64fb8b",
+   "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
+   "titulo": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-11T14:00:00+00:00",
+   "resumen": "Voice AI's often misses important points for its context layer, and causes the whole pipeline to break",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-10-at-2.42.28-PM.jpg?resize=1200,624",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "ea95eacbd85b4f83",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+   "titulo": "Learning to use local AI is exciting, overwhelming, and frustrating",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-11T11:00:00+00:00",
+   "resumen": "I'm embarking on a journey I've so far been hesitant to go on: actually using AI on the regular. Giving my most personal data to cloud services has been a major hold up for me, but it's increasingly possible to run powerful models locally to see what they're capable of. Is this tech so useful […]",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/100926_Asus_TUF_A14_Hermes_local_AI_ADiBenedetto_0001.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
   {
    "id": "6b75dae75d979d91",
    "url": "https://github.com/rociiu/talorys",
@@ -176,10 +204,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-10-11T10:30:25.143474+00:00",
+ "comprobado_en": "2026-10-11T16:36:13.960248+00:00",
  "pasadas": [
   {
    "hora": "2026-10-11T10:30:25.143474+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-10-11T16:36:13.960248+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
