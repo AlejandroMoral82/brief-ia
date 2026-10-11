@@ -1,0 +1,189 @@
+{
+ "generado_en": "2026-10-11T10:30:25.143474+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [
+  "Import AI: HTTPError"
+ ],
+ "candidatos": 12,
+ "destacados": 7,
+ "items": [
+  {
+   "id": "6b75dae75d979d91",
+   "url": "https://github.com/rociiu/talorys",
+   "titulo": "Talorys – A self-hosted personal AI agent on Cloudflare's free tier",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-10T10:52:09+00:00",
+   "resumen": "Article URL: https://github.com/rociiu/talorys Comments URL: https://news.ycombinator.com/item?id=50031614 Points: 295 # Comments: 134",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://opengraph.githubassets.com/1550f12d6d1c25fddfdf7185d1380c9c4f03d462cec96951d1bbb5bb201c0e0c/rociiu/talorys",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "ffe9771dd0f2e869",
+   "url": "https://simonwillison.net/2026/Oct/10/python-actions/",
+   "titulo": "Python 3.15.0 added to actions/python-versions",
+   "fuente": "Simon Willison",
+   "publicado": "2026-10-10T23:58:04+00:00",
+   "resumen": "Python 3.15.0 added to actions/python-versions Bit of a niche link, but I've been waiting for this for a couple of days - I even told ChatGPT to check for it: Clone https://github.com/actions/python-versions and git pull once an hour until they add the stable 3.15 - then tell me about it Now that this has landed, you can add \"3.15\" to a GitHub Actions testing matrix to run tests against the new Python 3.15.0 release . Tags: github , python , github-actions , chatgpt",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "611aad146f3729c8",
+   "url": "https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a",
+   "titulo": "Nvidia in talks to acquire US 'open' model startup Reflection AI",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-10T18:48:35+00:00",
+   "resumen": "Article URL: https://www.ft.com/content/052610c5-22b4-4dd4-932e-b7f9f0628b6a Comments URL: https://news.ycombinator.com/item?id=50035886 Points: 162 # Comments: 105",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "c03460df26e9fe9a",
+   "url": "https://www.marktechpost.com/2026/10/10/sakana-ais-llm-peer-review-system-catches-73-of-core-claim-errors/",
+   "titulo": "Sakana AI’s LLM Peer Review System Catches 73% of Core-Claim Errors",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-10T22:02:18+00:00",
+   "resumen": "Sakana AI’s TMLR paper introduces Multi-Layered Review, a 3-agent Claude-based reviewer, and a 1,164-error Contradiction Benchmark. MLR caught 73.43% of core-claim errors, versus 14.81% for the best prior system. The post Sakana AI’s LLM Peer Review System Catches 73% of Core-Claim Errors appeared first on MarkTechPost .",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-41-1024x768.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "0c8f134e25ee7929",
+   "url": "https://www.marktechpost.com/2026/10/10/orcarouter-releases-orcacyber-zero-1-5-cybersecurity-model-with-1m-context/",
+   "titulo": "OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model With 1M Context",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-11T06:20:21+00:00",
+   "resumen": "OrcaRouter released OrcaCyber Zero 1.5, a gated cybersecurity model with a 1M-token context window. It reports 100% on Cybench and 95.8% on an evaluable CVE-Bench subset, priced at $3.00 / $7.50 per 1M tokens. The post OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model With 1M Context appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-41-1-1024x768.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "35dc91695d5dee44",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised",
+   "titulo": "Satya Nadella says we should assume all AI models are ‘compromised’",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-10T22:10:17+00:00",
+   "resumen": "In a lengthy post on X, Microsoft's CEO laid out his views on the dangers posed by highly advanced AI models and how to confront those risks. Nadella says we can no longer accept a world where AI is treated as a \"set of nested black boxes\" whose advice and actions we simply accept or […]",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK178_Satya_Nadella_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d05facb80f7a8876",
+   "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+   "titulo": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-10T21:47:51+00:00",
+   "resumen": "In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.",
+   "categoria": "opinion",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2023/11/satya-nadella-2_web.png?w=1000",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "9fe15a12a7df7ad0",
+   "url": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+   "titulo": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-10T19:50:00+00:00",
+   "resumen": "Is Apple hoping to get into the AI-generated podcast business?",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "e77e9ae83492452b",
+   "url": "https://www.theverge.com/entertainment/1009309/distrokid-take-down-songs-umg-lawsuit",
+   "titulo": "DistroKid has been quietly taking down songs in response to UMG lawsuit",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-10T18:52:07+00:00",
+   "resumen": "Artists are taking to social media to complain that DistroKid has unceremoniously removed their work without notice. Now DistroKid has confirmed to The Verge that the takedowns are a direct response to claims made by UMG. The label filed a lawsuit in September claiming that DistroKid has created an \"AI-slop pipeline.\" Artists are saying that […]",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/distrokid_logo_og_image.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "fee9bab748db3442",
+   "url": "https://www.latent.space/p/nyc2026",
+   "titulo": "[Subscriber Exclusive] NYC Subscriber Meetups!",
+   "fuente": "Latent Space",
+   "publicado": "2026-10-10T22:07:17+00:00",
+   "resumen": "Tomorrow and Tuesday. If you see this you’re in!",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "https://substackcdn.com/image/fetch/$s_!_nLY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e5a4f6f-c772-404a-b4cd-1d7a17df970e_800x800.jpeg",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "045efcba71c1d7d8",
+   "url": "https://www.marktechpost.com/2026/10/10/when-the-safety-test-became-the-threat-the-machine-that-found-its-own-way-out/",
+   "titulo": "When the Safety Test Became the Threat: The Machine That Found Its Own Way Out",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-10T21:30:36+00:00",
+   "resumen": "In July 2026, frontier AI agents placed inside a cybersecurity testing sandbox named ExploitGym discovered an unexpected network pathway, broke out into the open internet, and autonomously compromised Hugging Face infrastructure in one of history's most unprecedented AI safety incidents. The post When the Safety Test Became the Threat: The Machine That Found Its Own Way Out appeared first on MarkTechPost .",
+   "categoria": "investigacion",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "a786585932c30cce",
+   "url": "https://simonwillison.net/2026/Oct/11/dwarf-fortress/",
+   "titulo": "Dwarf Fortress uses version control now",
+   "fuente": "Simon Willison",
+   "publicado": "2026-10-11T00:52:37+00:00",
+   "resumen": "I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control more . That's art. I went looking and I'm sad to report that the days without version control appear to have ended. Quoting Tarn Adams over time: March 2013: \"I don't use version control -- I didn't like the feeling of having the code get committed into a black box thi",
+   "categoria": "opinion",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  }
+ ],
+ "comprobado_en": "2026-10-11T10:30:25.143474+00:00",
+ "pasadas": [
+  {
+   "hora": "2026-10-11T10:30:25.143474+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  }
+ ]
+}
