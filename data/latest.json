@@ -1,12 +1,40 @@
 {
- "generado_en": "2026-10-18T08:29:11.027683+00:00",
+ "generado_en": "2026-10-18T14:25:26.022290+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 11,
- "destacados": 6,
+ "candidatos": 13,
+ "destacados": 8,
  "items": [
+  {
+   "id": "9454a5de096ba88b",
+   "url": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/",
+   "titulo": "Google Open-Sources Harness2, a Recursive Agent Harnessing Framework",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-18T08:15:04+00:00",
+   "resumen": "Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time. One refinement step lifted GLM-5 by 11.5 points on WorkBuddy-Bench with no weight updates. The post Google Open-Sources Harness2, a Recursive Agent Harnessing Framework appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/25b6.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d3c35db34ec3acb3",
+   "url": "https://sphinx-six-theta.vercel.app/",
+   "titulo": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-18T04:33:49+00:00",
+   "resumen": "FOSS, Basically it plugs into your existing coding agent workflow and every time you push to prod it'll throw up a questionnaire that checks if you understand how the code you're pushing works. Comments URL: https://news.ycombinator.com/item?id=50137950 Points: 184 # Comments: 58",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
   {
    "id": "5a9362b8ddbd78cf",
    "url": "https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models/",
@@ -162,10 +190,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-10-18T08:29:11.027683+00:00",
+ "comprobado_en": "2026-10-18T14:25:26.022290+00:00",
  "pasadas": [
   {
    "hora": "2026-10-18T08:29:11.027683+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-10-18T14:25:26.022290+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
