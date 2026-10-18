@@ -1,0 +1,175 @@
+{
+ "generado_en": "2026-10-18T08:29:11.027683+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [
+  "Import AI: HTTPError"
+ ],
+ "candidatos": 11,
+ "destacados": 6,
+ "items": [
+  {
+   "id": "5a9362b8ddbd78cf",
+   "url": "https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models/",
+   "titulo": "How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-18T05:56:05+00:00",
+   "resumen": "In this tutorial, we implement Structured Data Models, NVIDIA’s new library that puts several pretrained foundation models for tables behind one PyTorch interface, and use it to make predictions without training. The library wraps TabICLv2 and KumoTabular for single tables and KumoRelational for whole relational databases, and each of them answers by in-context learning: we […] The post How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models appeared first on MarkTechPos",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-5-1024x768.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d6c06ffc09a8bd33",
+   "url": "https://simonwillison.net/2026/Oct/17/web-edit/",
+   "titulo": "web-edit 0.1a2",
+   "fuente": "Simon Willison",
+   "publicado": "2026-10-17T13:16:49+00:00",
+   "resumen": "Release: web-edit 0.1a2 web-edit ( previously ) is my tiny web app for browsing and editing files in a folder. I mainly built it for editing files on different machines via Tailscale. I added a \"copy to clipboard\" option for both text and image data. I needed this because I was running pelican prompts on a laptop from my phone (here's DeepSeek 4.1 Flash 1017 ) and I wanted an easy way to copy the resulting logs into a Gist. Tags: projects , pelican-riding-a-bicycle , deepseek",
+   "categoria": "herramientas",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "69ead926e6899b5e",
+   "url": "https://simonwillison.net/2026/Oct/17/document-currentscript/",
+   "titulo": "Inline rendering with document​.currentScript",
+   "fuente": "Simon Willison",
+   "publicado": "2026-10-17T21:11:12+00:00",
+   "resumen": "Inline rendering with document​.currentScript Lean Rada describes a neat trick that takes advantage of the document.currentScript property. You can use that to drop in a tiny inline <script> element that replaces itself when the page loads: The year is <script> document.currentScript.replaceWith( new Date().getFullYear())</script> If you define a shortcut function like this: $=(...n)=>document.currentScript.replaceWith(...n) You get a tiny template language: The year is <script>$(new Date().getF",
+   "categoria": "herramientas",
+   "posicion": 4,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "51c1c9a5e48bf763",
+   "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+   "titulo": "Replit makes OpenAI its default over Anthropic, CEO says",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-17T18:48:08+00:00",
+   "resumen": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/replit-ceo-masad.jpg?resize=1200,800",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "f6161921690106fc",
+   "url": "https://www.marktechpost.com/2026/10/17/meet-kyutai-reki-the-2-4b-vla-model-bringing-efficient-memory-to-robot-manipulation/",
+   "titulo": "Meet Kyutai REKI: The 2.4B VLA Model Bringing Efficient Memory to Robot Manipulation",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-17T20:22:11+00:00",
+   "resumen": "Kyutai, with Inria and École des Ponts, has released REKI, a 2.4B vision-language-action model (VLA) for robot manipulation. The REKI vision-language-action model is pretrained only on public data. It also carries a cheap memory of its recent past. On three out-of-distribution benchmarks, only models about twice its size beat it. All weights are live on […] The post Meet Kyutai REKI: The 2.4B VLA Model Bringing Efficient Memory to Robot Manipulation appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-3-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "987754dece6755c3",
+   "url": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+   "titulo": "Meta shakes up the frontiers, open and closed",
+   "fuente": "Interconnects",
+   "publicado": "2026-10-17T14:06:54+00:00",
+   "resumen": "US open weights are back!",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://substack-post-media.s3.amazonaws.com/public/images/95f73e17-9e3c-49ea-8d4c-e0ae87c89257_3182x1790.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "4f4ae4695b3bbbdb",
+   "url": "https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/",
+   "titulo": "Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-18T04:06:33+00:00",
+   "resumen": "Voxel51 3.0 merges search, curation, annotation and evaluation of multimodal sensor data into one platform for physical AI teams. It adds Voxel51 Agent with 45+ MCP tools, dataset versioning, and a free self-service tier. The post Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "568162b981af2493",
+   "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+   "titulo": "Meta removes language that raised scraping and AI training concerns",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-17T21:31:32+00:00",
+   "resumen": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "ac0eba5f39915c21",
+   "url": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+   "titulo": "Meta removes language that may have allowed it to scrape news sites",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-17T15:04:36+00:00",
+   "resumen": "After backlash, Meta is updating its terms again to remove language that suggested it could scrape content from sites, including news sites, to train its AI. Specifically, the following language no longer appears on the commercial terms page: … Meta may use any content from such domains, web pages, or URLs to provide, develop, improve, […]",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK043_VRG_Illo_N_Barclay_2_Meta.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "ca34855deda27f35",
+   "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
+   "titulo": "Amazon uses AI to monitor union risk in UK warehouses",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-17T16:04:23+00:00",
+   "resumen": "Article URL: https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/ Comments URL: https://news.ycombinator.com/item?id=50132278 Points: 162 # Comments: 58",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "b769f5e984a396b0",
+   "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+   "titulo": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-17T20:21:19+00:00",
+   "resumen": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  }
+ ],
+ "comprobado_en": "2026-10-18T08:29:11.027683+00:00",
+ "pasadas": [
+  {
+   "hora": "2026-10-18T08:29:11.027683+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  }
+ ]
+}
