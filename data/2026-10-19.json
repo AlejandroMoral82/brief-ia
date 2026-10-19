@@ -1,0 +1,149 @@
+{
+ "generado_en": "2026-10-19T09:31:07.028154+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [
+  "Import AI: HTTPError",
+  "Hacker News - IA (150+ puntos): ConnectTimeout"
+ ],
+ "candidatos": 9,
+ "destacados": 5,
+ "items": [
+  {
+   "id": "071096a57136b2f0",
+   "url": "https://www.marktechpost.com/2026/10/18/nvidia-runai-open-source-gpu-orchestration-kubernetes/",
+   "titulo": "NVIDIA Open Sources Run:ai Under Apache 2.0 for Kubernetes GPU Orchestration",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-19T03:19:18+00:00",
+   "resumen": "NVIDIA has released the full Run:ai GPU orchestration platform as open source under Apache 2.0. The release includes KAI Scheduler, CUDA 13.4 GPU fractioning, quota management, and a local Kind dev environment. The post NVIDIA Open Sources Run:ai Under Apache 2.0 for Kubernetes GPU Orchestration appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-9-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "b8a89dddc6c67001",
+   "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+   "titulo": "llm-tools-datasette 0.1.1",
+   "fuente": "Simon Willison",
+   "publicado": "2026-10-18T23:43:09+00:00",
+   "resumen": "Release: llm-tools-datasette 0.1.1 When I switched LLM over to httpx2 in LLM 0.33 I forget that this would break any plugins which used httpx without directly depending on it. llm-tools-datasette was one of those plugins, now fixed. Tags: datasette , llm",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "12899128ec45e6d3",
+   "url": "https://simonwillison.net/2026/Oct/18/llm-echo/",
+   "titulo": "llm-echo 0.5",
+   "fuente": "Simon Willison",
+   "publicado": "2026-10-18T23:16:16+00:00",
+   "resumen": "Release: llm-echo 0.5 I'm working towards a new LLM release, and testing PRs caused me to revisit the llm-echo debug plugin. This plugin provides a \"model\" which doesn't involve an LLM at all - it just repeats back the prompts that have been fed to it. The new release now updates the simulated token usage counts to take tool calls, system prompts, and reasoning tokens into account. Example usage: uvx --with llm-echo llm -m echo 'hi there' -o thinking 1 --usage Outputs: First I consider the promp",
+   "categoria": "herramientas",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "c82b8eb2cf968bbd",
+   "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+   "titulo": "Anthropic gives outside AI watchdog “employee-like” access",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-10-18T16:25:19+00:00",
+   "resumen": "The outside watchdog can publish its findings without Anthropic's approval.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/claudebyanthropic-1024x648.jpg",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "24bcfc655b4214af",
+   "url": "https://www.marktechpost.com/2026/10/18/mistral-timestral-time-series-foundation-model/",
+   "titulo": "Mistral AI Releases Timestral: A 209M Forecasting Model Family That Outperforms Google’s TimesFM-3",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-19T01:18:17+00:00",
+   "resumen": "Mistral released Timestral, a time series foundation model family from 5M to 209M parameters. The 209M model leads GIFT-Eval, TIME and fev-bench among zero-shot models and runs on CPU. The post Mistral AI Releases Timestral: A 209M Forecasting Model Family That Outperforms Google’s TimesFM-3 appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-8-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "6a083a36de897bf0",
+   "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+   "titulo": "Disney agrees to hire the majority of Character.AI’s workforce",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-18T16:30:00+00:00",
+   "resumen": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "cef1d05c75250eda",
+   "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+   "titulo": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-18T20:37:40+00:00",
+   "resumen": "Anthropic said that it will commit 5% of its shares to the fund.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "de6b0c59a9e6b0d3",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+   "titulo": "A woman was arrested in Philly for blocking a delivery robot",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-18T18:28:10+00:00",
+   "resumen": "Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs of human delivery workers and so, I have been protesting them whenever I saw them by standing in front […]",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/avride-uber-delivery.webp?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "a509ece1edb9a332",
+   "url": "https://www.marktechpost.com/2026/10/18/tinyfish-free-search-ai-agent-token-cost/",
+   "titulo": "TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-18T18:20:28+00:00",
+   "resumen": "An AI agent that reads the web pays 2 kinds of cost. The first is the retrieval charge: what a search or fetch API bills per request. The second is model processing: content passed from retrieved pages into an AI model consumes tokens, while reasoning and generated responses add further costs. TinyFish, a web infrastructure […] The post TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web appeared first on MarkTechPost .",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  }
+ ],
+ "comprobado_en": "2026-10-19T09:31:07.028154+00:00",
+ "pasadas": [
+  {
+   "hora": "2026-10-19T09:31:07.028154+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError",
+    "Hacker News - IA (150+ puntos): ConnectTimeout"
+   ]
+  }
+ ]
+}
