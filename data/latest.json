@@ -1,13 +1,124 @@
 {
- "generado_en": "2026-10-19T09:31:07.028154+00:00",
- "modo": "normal",
+ "generado_en": "2026-10-19T17:24:00.474683+00:00",
+ "modo": "degradado",
  "fuentes_fallidas": [
-  "Import AI: HTTPError",
-  "Hacker News - IA (150+ puntos): ConnectTimeout"
+  "Import AI: HTTPError"
  ],
- "candidatos": 9,
- "destacados": 5,
+ "candidatos": 17,
+ "destacados": 13,
  "items": [
+  {
+   "id": "5d37bd28a169e437",
+   "url": "https://arstechnica.com/gaming/2026/10/ai-game-clones-are-making-indie-developers-afraid-to-show-their-work/",
+   "titulo": "AI game clones are making indie developers afraid to show their work",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-10-19T16:59:22+00:00",
+   "resumen": "Delayed Steam Next Fest demo is a sign of a growing problem for indie devs.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-740520525-1152x648.jpg",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "f93d80856f11bb09",
+   "url": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
+   "titulo": "People are using AI to make their smart TVs dumb again",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-19T16:13:22+00:00",
+   "resumen": "Fed up with ads, tracking and sluggish interfaces, some smart TV owners are turning to AI agents to strip away bloatware and take back control of their TVs.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2024/05/Google-TV.jpeg?w=1200",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d88320583f8c2de0",
+   "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+   "titulo": "Nvidia launches new open models to run agents in the enterprise and on PCs",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-19T15:37:09+00:00",
+   "resumen": "Nvidia is leaning hard into the trend of enterprise companies wanting to run their own open models in their own data centers and also trying to make on-device, private AI agents a thing.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-2183848501.jpg?resize=1200,800",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d41776e0c26f77e6",
+   "url": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/",
+   "titulo": "Disney found a way to buy Character.AI without buying its lawsuits",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-10-19T14:45:43+00:00",
+   "resumen": "Character.AI faces claims its bots encouraged minors to self-harm and kill their parents.",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": true,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2018/06/getty-disney-1152x648.jpg",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "fd89b9b5cd5875ba",
+   "url": "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
+   "titulo": "JB Pritzker thinks AI could help us live to 100 — or threaten us like nukes",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-19T14:30:00+00:00",
+   "resumen": "Today, I’m talking with Illinois Gov. JB Pritzker, who has a lot of thoughts about AI, tech, and privacy. If you’ve been listening to the show, you know that one of my running theories is that those issues are driving a big and maybe kind of unexpected political realignment — and with the midterms coming […]",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DCD_20261019_Pritzker.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "c08e28e17ab3caf7",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+   "titulo": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-19T13:58:41+00:00",
+   "resumen": "A hacker broke into more than 100 websites using an army of AI agents that mostly operated on their own, according to findings from the AI security firm Norforge. Though Norforge doesn't name the targets, Reuters reports that the victims included companies like John Deere, SharkNinja, and Cummins. Concerns over AI-powered cybersecurity breaches have grown […]",
+   "categoria": "industria",
+   "posicion": 6,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_A-1.png?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "fcf776a502b8fc5c",
+   "url": "https://www.marktechpost.com/2026/10/19/minimax-m3-1-flash-release/",
+   "titulo": "MiniMax Just Launched M3.1 Flash: 428B MoE Agentic Model at $0.15/M Input",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-19T12:37:58+00:00",
+   "resumen": "MiniMax has released M3.1 Flash, a 428B-parameter MoE model with about 23B active parameters and a 1M-token context. API pricing is $0.15/$0.60 per 1M tokens, with weights due October 23 The post MiniMax Just Launched M3.1 Flash: 428B MoE Agentic Model at $0.15/M Input appeared first on MarkTechPost .",
+   "categoria": "industria",
+   "posicion": 7,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-10-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "9279cf6bb0c3cf64",
+   "url": "https://www.theverge.com/policy/1013113/democrats-ai-midterms",
+   "titulo": "Democrats think cracking down on AI could give them an edge",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-19T12:00:00+00:00",
+   "resumen": "Democrats could win back control of Congress this November, and if they do, they'll need to decide how to approach one of the country's newest and thorniest political issues: AI. Polls predict Democrats will flip at least one chamber of Congress in the midterm elections, which would put committee leadership back in their hands. That […]",
+   "categoria": "industria",
+   "posicion": 8,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25334821/STK466_ELECTION_2024_CVirginia_C.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
   {
    "id": "071096a57136b2f0",
    "url": "https://www.marktechpost.com/2026/10/18/nvidia-runai-open-source-gpu-orchestration-kubernetes/",
@@ -135,7 +246,7 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-10-19T09:31:07.028154+00:00",
+ "comprobado_en": "2026-10-19T17:24:00.474683+00:00",
  "pasadas": [
   {
    "hora": "2026-10-19T09:31:07.028154+00:00",
@@ -143,6 +254,13 @@
    "fuentes_fallidas": [
     "Import AI: HTTPError",
     "Hacker News - IA (150+ puntos): ConnectTimeout"
+   ]
+  },
+  {
+   "hora": "2026-10-19T17:24:00.474683+00:00",
+   "modo": "degradado",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
    ]
   }
  ]
