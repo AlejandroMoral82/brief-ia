@@ -1,12 +1,194 @@
 {
- "generado_en": "2026-10-21T09:03:19.573320+00:00",
- "modo": "normal",
+ "generado_en": "2026-10-21T15:53:36.409258+00:00",
+ "modo": "degradado",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 43,
- "destacados": 10,
+ "candidatos": 56,
+ "destacados": 21,
  "items": [
+  {
+   "id": "2f67d3a79def457f",
+   "url": "https://arstechnica.com/ai/2026/10/the-15-billion-ad-powered-ai-startup-your-doctor-may-already-be-using/",
+   "titulo": "The $15 billion ad-powered AI startup your doctor may already be using",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-10-21T15:14:07+00:00",
+   "resumen": "OpenEvidence is booming despite questions about accuracy and ads.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/openevidencelist-1152x648.jpg",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "1bbb4f6fc3d14211",
+   "url": "https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps",
+   "titulo": "Conversational Gemini navigation comes to Apple CarPlay",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-21T15:00:00+00:00",
+   "resumen": "After introducing its Gemini AI assistant to Android Auto last year, Google is now bringing it to Apple CarPlay users. The conversational Gemini in navigation is available today for US drivers, with \"rollout happening globally too,\" according to Google (we've asked for specific regional availability details). It's taken almost 12 months for Google to bring […]",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK255_Google_Gemini_B_474198.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "9b35c0bfb2f0e3cd",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+   "titulo": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-10-21T14:58:18+00:00",
+   "resumen": "",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/653fb52cbfd890805461d691/M_JJyIOBOWVzHXdy7CVVG.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "0b138e9a1d82325f",
+   "url": "https://techcrunch.com/2026/10/21/ai-promises-productivity-but-for-managers-its-mostly-a-headache-for-now-says-new-survey/",
+   "titulo": "AI promises productivity, but for managers, it’s mostly a headache for now",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-21T14:00:00+00:00",
+   "resumen": "More than 50% of managers say they're finding it harder to evaluate employees' work after adopting AI, according to a new survey.",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-157163369.jpg?resize=1200,900",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "c55b4c3c8ca25718",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
+   "titulo": "OpenAI says an AI agent lied about disabling its safety monitoring system",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-21T13:57:43+00:00",
+   "resumen": "OpenAI disclosed a pair of safety incidents that involved AI agents weakening their safety monitoring systems during internal coding tasks. In one incident, OpenAI says its GPT-6 Astra agent disabled its safety monitor when copying reference code - and then lied about it. \"The reference didn't configure a monitor, and Astra decided that was reason […]",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK155_OPEN_AI_4_CVirginia_C.png?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d31a18ead424650d",
+   "url": "https://www.wiz.io/blog/php2shell-php-rce",
+   "titulo": "PHP2Shell: AI uncovers critical RCE in PHP",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-21T13:43:19+00:00",
+   "resumen": "Article URL: https://www.wiz.io/blog/php2shell-php-rce Comments URL: https://news.ycombinator.com/item?id=50180836 Points: 285 # Comments: 76",
+   "categoria": "industria",
+   "posicion": 6,
+   "destacado": true,
+   "imagen": "https://www.datocms-assets.com/75231/1792534907-img_7274.png?fm=webp",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "0fff47054cc39cd5",
+   "url": "https://www.latent.space/p/claude-mods",
+   "titulo": "Claude Mods: Flipping the Harness Inside Out",
+   "fuente": "Latent Space",
+   "publicado": "2026-10-21T13:04:19+00:00",
+   "resumen": "Claude Mods is an early form of the Attention Interface. It flips the agent harness paradigm from the harness facing the machine, to the harness facing the human.",
+   "categoria": "industria",
+   "posicion": 7,
+   "destacado": true,
+   "imagen": "https://substackcdn.com/image/fetch/$s_!Kjjn!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc61f4d99-31a9-4e4c-aa02-65e5b5db1799_1280x720.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "74fcf21eca7add4a",
+   "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+   "titulo": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+   "fuente": "OpenAI News",
+   "publicado": "2026-10-21T13:00:00+00:00",
+   "resumen": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+   "categoria": "industria",
+   "posicion": 8,
+   "destacado": true,
+   "imagen": "https://images.ctfassets.net/kftzwdyauwt9/6Fq2uj7xCpKHENjyeojn9c/d3771e7cecdfb77c28c7560de9413de1/chatgpt-ads-expands-26-new-countries-social.png?w=1600&h=900&fit=fill",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "38715d90bd30f009",
+   "url": "https://huggingface.co/blog/nvidia/kumo-forecast",
+   "titulo": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-10-21T12:51:24+00:00",
+   "resumen": "",
+   "categoria": "industria",
+   "posicion": 9,
+   "destacado": true,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/660f5683b710b57b115a5483/pFl0vhvFrc-oZjk5qE8_0.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "61f4d0141ff303c0",
+   "url": "https://openai.com/index/openai-models-google-cloud",
+   "titulo": "OpenAI models are coming to Google Cloud",
+   "fuente": "OpenAI News",
+   "publicado": "2026-10-21T12:00:00+00:00",
+   "resumen": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+   "categoria": "industria",
+   "posicion": 10,
+   "destacado": true,
+   "imagen": "https://images.ctfassets.net/kftzwdyauwt9/659u0DsrtDQd9LxI8L4J9M/0b95908d6a9ed46ffe20b23d081574b4/openai-models-coming-to-google-cloud-social.png?w=1600&h=900&fit=fill",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d3f519557f32dd3d",
+   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+   "titulo": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+   "fuente": "OpenAI News",
+   "publicado": "2026-10-21T07:00:00+00:00",
+   "resumen": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
+   "categoria": "industria",
+   "posicion": 11,
+   "destacado": true,
+   "imagen": "https://images.ctfassets.net/kftzwdyauwt9/xq2rRszwLvIAxOynZi2qa/b1cf094a0d095f67821bf4b8cfaba0b9/coordinated-disclosure-of-critical-vulnerabilities-social.png?w=1600&h=900&fit=fill",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "edef63b51aedc012",
+   "url": "https://openai.com/index/building-chatgpt-ad-stack",
+   "titulo": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+   "fuente": "OpenAI News",
+   "publicado": "2026-10-21T07:00:00+00:00",
+   "resumen": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+   "categoria": "industria",
+   "posicion": 12,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "1de8e62ff715d1f1",
+   "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+   "titulo": "Using thousands of AI agents to uncover new leads in biological data",
+   "fuente": "OpenAI News",
+   "publicado": "2026-10-21T04:50:00+00:00",
+   "resumen": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
+   "categoria": "industria",
+   "posicion": 13,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
   {
    "id": "69e5c5e0b8bc3b01",
    "url": "https://www.marktechpost.com/2026/10/20/deepseek-deepinfer-open-source-inference-framework/",
@@ -610,11 +792,18 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-10-21T09:03:19.573320+00:00",
+ "comprobado_en": "2026-10-21T15:53:36.409258+00:00",
  "pasadas": [
   {
    "hora": "2026-10-21T09:03:19.573320+00:00",
    "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-10-21T15:53:36.409258+00:00",
+   "modo": "degradado",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
    ]
