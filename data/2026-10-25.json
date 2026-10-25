@@ -1,12 +1,110 @@
 {
- "generado_en": "2026-10-25T08:53:06.485446+00:00",
+ "generado_en": "2026-10-25T14:54:55.727380+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 12,
- "destacados": 7,
+ "candidatos": 19,
+ "destacados": 12,
  "items": [
+  {
+   "id": "2325af3360e06716",
+   "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+   "titulo": "Cerebras Deploys Trillion-Parameter AI Models",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-25T01:33:49+00:00",
+   "resumen": "Article URL: https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras Comments URL: https://news.ycombinator.com/item?id=50227356 Points: 248 # Comments: 83",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://cdn.sanity.io/images/e4qjo92p/production/1796e3cccda1454e97d262833fb0bb0d6015032f-2786x1567.png?rect=0,53,2786,1463&w=1200&h=630&fit=max&auto=format",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "b7ca3dd28f26a141",
+   "url": "https://www.marktechpost.com/2026/10/25/anthropic-launches-oss-scanner-a-free-ai-vulnerability-scanner/",
+   "titulo": "Anthropic Launches OSS Scanner, a Free AI Vulnerability Scanner",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-25T11:32:29+00:00",
+   "resumen": "Anthropic has launched OSS Scanner, a free, opt-in vulnerability scanner for critical open-source projects. The Anthropic OSS Scanner runs the company’s strongest models, including Claude Mythos, against enrolled codebases. Reports go straight to maintainers without human review. That trade delivers faster findings, but shifts triage work onto project teams. 11 days after the October 8 […] The post Anthropic Launches OSS Scanner, a Free AI Vulnerability Scanner appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/123WP-BLOG-BANNER-454-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "99c99157c7fa1579",
+   "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+   "titulo": "Google’s AI search changes upended online publishing",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-25T12:00:00+00:00",
+   "resumen": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more about AI's impact on the web, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started The digital publishing industry has relied on […]",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STK414_STK480_AI_DIS_MISINFO_CVIRGINIA_D.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "1a4147d6e8f37270",
+   "url": "https://www.marktechpost.com/2026/10/25/stanford-berkeley-tokengate-learned-token-pruning-llm-prefill/",
+   "titulo": "Researchers from Stanford and UC Berkeley Introduce TokenGate: Token-Gated Attention Makes Long-Context Prefill Up to 11.3x Faster",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-25T12:12:18+00:00",
+   "resumen": "Stanford and UC Berkeley researchers released TokenGate, a drop-in learned token pruning module for LLMs. It cuts long-context prefill time-to-first-token by 1.4x to 11.3x and peak memory by 1.5x to 3.4x without accuracy loss. The post Researchers from Stanford and UC Berkeley Introduce TokenGate: Token-Gated Attention Makes Long-Context Prefill Up to 11.3x Faster appeared first on MarkTechPost .",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/blog-banner897-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "cb0e6541c41d00d8",
+   "url": "https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber",
+   "titulo": "Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings",
+   "fuente": "Interconnects",
+   "publicado": "2026-10-25T11:49:00+00:00",
+   "resumen": "#20",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://substackcdn.com/image/fetch/$s_!Wj1Y!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F221950500%2F453c4998-6c82-4d10-9385-aa3487ee5b62%2Ftranscoded-1792927989.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "b366ba776fde8cd4",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+   "titulo": "r/opensource just banned AI, non-English speakers, and more",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-25T13:25:32+00:00",
+   "resumen": "The mods at r/opensource posted new submission rules that, among other things, banned projects that use AI. The post made Saturday evening opens by saying, \"If your project uses AI, is made by AI, or is intended for AI, it's not welcome on r/opensource. AI, as it exists today, is incongruent to this Open Source […]",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK115_Reddit_01.jpg.webp?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "4262d71f08be8cda",
+   "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+   "titulo": "The hottest AI wearables and gadgets you should know about",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-25T14:10:00+00:00",
+   "resumen": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
   {
    "id": "40aec43715a5556c",
    "url": "https://www.marktechpost.com/2026/10/24/microsoft-agensh-multi-agent-harness-1024-agents/",
@@ -176,10 +274,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-10-25T08:53:06.485446+00:00",
+ "comprobado_en": "2026-10-25T14:54:55.727380+00:00",
  "pasadas": [
   {
    "hora": "2026-10-25T08:53:06.485446+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-10-25T14:54:55.727380+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
