@@ -1,0 +1,189 @@
+{
+ "generado_en": "2026-10-25T08:53:06.485446+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [
+  "Import AI: HTTPError"
+ ],
+ "candidatos": 12,
+ "destacados": 7,
+ "items": [
+  {
+   "id": "40aec43715a5556c",
+   "url": "https://www.marktechpost.com/2026/10/24/microsoft-agensh-multi-agent-harness-1024-agents/",
+   "titulo": "Microsoft Open-Sources Agensh: A Multi-Agent Harness for 1,024 Agents",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-25T03:32:59+00:00",
+   "resumen": "Microsoft Research open-sourced Agensh, a multi-agent harness with no central orchestrator. Self-organizing workers share a Git repo, chat and a findings board, scaling from 1 to 1,024 agents on ProgramBench under a 6-hour budget. The post Microsoft Open-Sources Agensh: A Multi-Agent Harness for 1,024 Agents appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/1WP-BLOG-BANNER-454-1-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "db66727afb7fc5d4",
+   "url": "https://www.marktechpost.com/2026/10/24/cognition-devin-vulnerability-fixes-plugin-php2shell-nodejs-gitlab/",
+   "titulo": "Cognition Open-Sources an Agent Plugin that Helps Secure Systems against Recent Cybersecurity Threats",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-25T02:59:08+00:00",
+   "resumen": "Cognition released the Devin Vulnerability Fixes plugin, 3 MIT-licensed agent skills that inventory, patch and test PHP, Node.js and self-managed GitLab deployments hit by this week’s critical RCE flaws, then open 1 PR per repo. The post Cognition Open-Sources an Agent Plugin that Helps Secure Systems against Recent Cybersecurity Threats appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-454-37-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "074b7d5e1602db74",
+   "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+   "titulo": "No signs of AI payoff outside the tech sector",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-24T19:47:19+00:00",
+   "resumen": "Article URL: https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector Comments URL: https://news.ycombinator.com/item?id=50224463 Points: 548 # Comments: 572",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.apollo.com/content/dam/apolloaem/apollo-default-page-share-image/apollo-og-image.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "81c8fd74d5e2c7e1",
+   "url": "https://arxiv.org/abs/2610.29162",
+   "titulo": "Why is AI generated language so hard to understand?",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-24T18:04:57+00:00",
+   "resumen": "Article URL: https://arxiv.org/abs/2610.29162 Comments URL: https://news.ycombinator.com/item?id=50223647 Points: 195 # Comments: 167",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "/static/browse/0.3.4/images/arxiv-logo-fb.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "110fd09f65f25a52",
+   "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+   "titulo": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-24T15:00:00+00:00",
+   "resumen": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
+   "categoria": "investigacion",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1777713346.jpg?resize=1200,900",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "35d668020c863316",
+   "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+   "titulo": "Block’s new voice model sounds eerily human",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-24T16:00:00+00:00",
+   "resumen": "Block said that the voice model can run locally on a MacBook M4 Max",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2025/07/jack-dorsey.jpg?resize=1200,822",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "0509c80e85fbace7",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+   "titulo": "Blue Planet III is keeping the rough edges in the age of AI",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-24T21:29:12+00:00",
+   "resumen": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost too good to be real. But one dead giveaway of AI is when things look too polished and seamless. To counter that, Blue […]",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/blue_planet_iii_episode_03_051_screengrab.avif?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "c2e8b57f2c91781d",
+   "url": "https://www.marktechpost.com/2026/10/24/underdog-saluki-27b-coding-guide-llama-cpp/",
+   "titulo": "How to Run Underdog Saluki 27B: 2-Bit Qwen3.8-27B Tool-Calling Guide",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-25T02:30:18+00:00",
+   "resumen": "Explore a complete coding guide comparing Underdog Saluki 27B with ISTA's GSQ-RCO quantization, examining GGUF headers, memory usage, and BFCL tool-calling performance in stock llama.cpp The post How to Run Underdog Saluki 27B: 2-Bit Qwen3.8-27B Tool-Calling Guide appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "0d4ae8a7dd392962",
+   "url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+   "titulo": "Here are the top AI agents that can live in your text messages",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-24T14:00:00+00:00",
+   "resumen": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+   "categoria": "herramientas",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "8f5707e9a13cb370",
+   "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+   "titulo": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-24T23:11:54+00:00",
+   "resumen": "Article URL: https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class Comments URL: https://news.ycombinator.com/item?id=50226419 Points: 340 # Comments: 336",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "b0af889ad05fbb7f",
+   "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+   "titulo": "The AI graveyard: a running list of projects and startups that didn’t make it",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-24T19:00:00+00:00",
+   "resumen": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "09a5dda451583962",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+   "titulo": "Pennsylvania will require labels on AI-generated ads",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-24T18:32:21+00:00",
+   "resumen": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image, video, audio, or text - that \"has been significantly modified or generated by artificial intelligence\" to include a label in the same format as […]",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK445_ADVERTISING_STK093_GOOGLE_C.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  }
+ ],
+ "comprobado_en": "2026-10-25T08:53:06.485446+00:00",
+ "pasadas": [
+  {
+   "hora": "2026-10-25T08:53:06.485446+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  }
+ ]
+}
