@@ -1,0 +1,119 @@
+{
+ "generado_en": "2026-10-26T09:35:02.808594+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [
+  "Import AI: HTTPError"
+ ],
+ "candidatos": 7,
+ "destacados": 5,
+ "items": [
+  {
+   "id": "3fb44a491dd633de",
+   "url": "https://www.marktechpost.com/2026/10/26/tsinghua-akv-kv-cache-engineering-llm-agents/",
+   "titulo": "Tsinghua AI Open-Sources AKV, a Cache Engineering Server for LLM Agents on SGLang",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-26T07:56:45+00:00",
+   "resumen": "Tsinghua researchers released AKV, an SGLang-based serving system for cache engineering. LLM agents drop and reposition KV cache instead of summarizing history, cutting average cost 27.7% across 4 agent benchmarks. The post Tsinghua AI Open-Sources AKV, a Cache Engineering Server for LLM Agents on SGLang appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/25b6.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "0c0ce1d91251a58f",
+   "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+   "titulo": "Seam Cutter",
+   "fuente": "Simon Willison",
+   "publicado": "2026-10-25T15:10:19+00:00",
+   "resumen": "Tool: Seam Cutter I built this weird and very specific cropping tool - it lets you create a horizontal or vertical cut across an image, then slide the two sides relative to each other. Effectively it lets you crop out a section in the middle of an image. I wanted this because I often use Tailor on my iPhone to stitch several screenshots together into lot long image, but sometimes I find myself wanting to crop out a section in the middle - to redact an irrelevant prompt from a transcript, for exa",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "71334093a413753d",
+   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+   "titulo": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-25T16:57:32+00:00",
+   "resumen": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\"",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2023/08/GettyImages-1308803174.jpg?resize=1200,800",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "c932414b7eb961ad",
+   "url": "https://www.marktechpost.com/2026/10/25/nanbeige-releases-nanbeige4-3-33b-open-agentic-coding-model/",
+   "titulo": "Nanbeige Releases Nanbeige4.3-33B, a 33B Open Agentic Coding Model",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-25T21:15:21+00:00",
+   "resumen": "Nanbeige LLM Lab released Nanbeige4.3-33B, a 33B dense Apache 2.0 model with 512K context. It reports 80.9 on Terminal-Bench 2.1 and will teach the upcoming Nanbeige4.3-3B. The post Nanbeige Releases Nanbeige4.3-33B, a 33B Open Agentic Coding Model appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/25c0.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "2af7003f0e2faf2b",
+   "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
+   "titulo": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-10-25T16:28:26+00:00",
+   "resumen": "Article URL: https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html Comments URL: https://news.ycombinator.com/item?id=50233304 Points: 218 # Comments: 319",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "a6feae291b1a855a",
+   "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+   "titulo": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-25T21:31:16+00:00",
+   "resumen": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "4cd8b15dd649b7e4",
+   "url": "https://www.marktechpost.com/2026/10/25/hugging-face-carbon-x-14b-dna-language-model/",
+   "titulo": "Hugging Face Releases Carbon-X, a 14B Open DNA Language Model that Brings DNA and Natural Language Together for the First Time",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-25T16:53:40+00:00",
+   "resumen": "Hugging Face released Carbon-X, an open 14.8B DNA language model built on Qwen3-14B. It reads raw DNA in chat, answers in English, and averages 66.7% across 5 DNA benchmarks under Apache 2.0. The post Hugging Face Releases Carbon-X, a 14B Open DNA Language Model that Brings DNA and Natural Language Together for the First Time appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/25b6.png",
+   "texto_disponible": false,
+   "sin_fecha": false
+  }
+ ],
+ "comprobado_en": "2026-10-26T09:35:02.808594+00:00",
+ "pasadas": [
+  {
+   "hora": "2026-10-26T09:35:02.808594+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  }
+ ]
+}
