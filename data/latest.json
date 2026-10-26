@@ -1,12 +1,166 @@
 {
- "generado_en": "2026-10-26T09:35:02.808594+00:00",
- "modo": "normal",
+ "generado_en": "2026-10-26T17:14:08.291519+00:00",
+ "modo": "degradado",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 7,
- "destacados": 5,
+ "candidatos": 18,
+ "destacados": 16,
  "items": [
+  {
+   "id": "4a8f41d180d7e408",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
+   "titulo": "Five weird details from Anthropic’s IPO filing",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-26T17:10:23+00:00",
+   "resumen": "Anthropic has finally filed its S-1 prospectus with the SEC, a document designed to give investors a look under the hood of its business, from how much its executives are making and plans for spending its IPO billions to the risks that could derail its ambitions. At more than 300 pages, there's a lot to […]",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STK202_DARIO_AMODEI_CVIRGINIA_C.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "0c7a0e584035924b",
+   "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+   "titulo": "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-26T16:49:42+00:00",
+   "resumen": "Anthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party app, a cross-selling playbook reminiscent of Amazon that’s making enterprise customers stickier.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2278152325.jpg?w=1024",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "4a24365e960e7ca3",
+   "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+   "titulo": "SpaceX locks in $40B GPU financing deal with Apollo",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-26T16:46:36+00:00",
+   "resumen": "SpaceX has locked in a binding commitment for roughly $40 billion in financing to pay for AI chips and related data center equipment, the company disclosed in a regulatory filing Monday. In a statement, SpaceX called it the “largest committed GPU financing” ever.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-20-at-2.40.46-PM-e1793033116950.png?resize=1200,911",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "ed13d16bbdfade49",
+   "url": "https://www.marktechpost.com/2026/10/26/nace-ai-releases-drex-for-search-for-ai-agents/",
+   "titulo": "Nace AI Releases Drex for Search for AI Agents: 92.05% on BrowseComp-Plus With 12.6 Search Calls",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-26T16:46:09+00:00",
+   "resumen": "Nace AI has released Drex for Search, bringing its Drex decision models to document search for AI agents. Nace reports 92.05% on BrowseComp-Plus with 12.6 search calls, and fewer agent turns on OfficeQA Pro. The post Nace AI Releases Drex for Search for AI Agents: 92.05% on BrowseComp-Plus With 12.6 Search Calls appeared first on MarkTechPost .",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/10/WP-BLOG-BANNER-1215-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "b8f740314eab2229",
+   "url": "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible",
+   "titulo": "Microsoft offers buyouts to 60,000 employees",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-26T15:58:27+00:00",
+   "resumen": "Microsoft is offering voluntary buyouts to up to 60,000 employees across the US, UK, Canada, and India. In a message to employees, Microsoft chief people officer Amy Coleman writes that this gives staff members \"the opportunity to leave Microsoft with financial support and career planning resources\" as the company looks to trim staff without another […]",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25832915/STK095_MICROSOFT_2_CVirginia_D.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "2c43c284058f6166",
+   "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+   "titulo": "Anthropic officially files for its public debut",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-26T14:35:22+00:00",
+   "resumen": "Anthropic has officially filed for an IPO, revealing soaring revenue, mounting losses, major enterprise adoption, and an unusual governance structure designed to preserve founder control and its AI safety mission.",
+   "categoria": "industria",
+   "posicion": 6,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2295579000.jpg?resize=1200,800",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "6a47f3e0c8812311",
+   "url": "https://arstechnica.com/cars/2026/10/tesla-wants-ai-and-software-to-be-its-next-profit-engine/",
+   "titulo": "Tesla gave up the EV crown. Now it wants to win the autonomy race.",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-10-26T14:30:27+00:00",
+   "resumen": "Tesla hopes autonomy subscriptions can deliver the margins car sales cannot.",
+   "categoria": "industria",
+   "posicion": 7,
+   "destacado": true,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/roadster-1152x648.jpg",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "df88ce95d957f878",
+   "url": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
+   "titulo": "Kevin Roose is AGI-pilled. Why aren’t you?",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-26T14:00:00+00:00",
+   "resumen": "Today, I’m talking to Kevin Roose, journalist and author of the new book The AGI Chronicles, which details the recent and explosive transformation of the AI industry. Kevin was a longtime New York Times reporter and host of the popular podcast Hard Fork, but he and friend of the show Casey Newton just left the […]",
+   "categoria": "industria",
+   "posicion": 8,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DCD_Kevin_Roose.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "a0064ee100f0c0b3",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+   "titulo": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-26T13:32:49+00:00",
+   "resumen": "Anthropic has filed its S-1 prospectus with the Securities and Exchange Commission, preparing the company behind Claude to beat OpenAI to the punch with an IPO. In a filing with the SEC, Anthropic said it plans to list on the Nasdaq exchange under the ticker symbol \"ANT.\" The AI company confidentially filed with the SEC […]",
+   "categoria": "industria",
+   "posicion": 9,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK202_DARIO_AMODEI_CVIRGINIA_D.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "9c0a98fa46a8163e",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
+   "titulo": "Can AI help solve the COBOL code crisis?",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-26T13:15:00+00:00",
+   "resumen": "What do the IRS, banks, airlines, and government infrastructure around the world have in common? They're all running on systems propped up by antique computer code that nobody dares touch, lest everything come crashing down. OpenAI thinks it may have a solution. On October 19th, the company touted \"substantial improvements\" in its latest AI models' […]",
+   "categoria": "industria",
+   "posicion": 10,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-1246435991.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "eb7708c5f537ab79",
+   "url": "https://openai.com/index/fanatics-streamline-fan-experience",
+   "titulo": "How Fanatics and OpenAI streamline the fan experience",
+   "fuente": "OpenAI News",
+   "publicado": "2026-10-26T07:00:00+00:00",
+   "resumen": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.",
+   "categoria": "industria",
+   "posicion": 11,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
   {
    "id": "3fb44a491dd633de",
    "url": "https://www.marktechpost.com/2026/10/26/tsinghua-akv-kv-cache-engineering-llm-agents/",
@@ -106,11 +260,18 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-10-26T09:35:02.808594+00:00",
+ "comprobado_en": "2026-10-26T17:14:08.291519+00:00",
  "pasadas": [
   {
    "hora": "2026-10-26T09:35:02.808594+00:00",
    "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-10-26T17:14:08.291519+00:00",
+   "modo": "degradado",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
    ]
