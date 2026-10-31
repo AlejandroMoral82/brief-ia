@@ -1,12 +1,40 @@
 {
- "generado_en": "2026-10-31T10:07:31.807559+00:00",
+ "generado_en": "2026-10-31T15:59:53.943250+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 42,
- "destacados": 10,
+ "candidatos": 44,
+ "destacados": 12,
  "items": [
+  {
+   "id": "a5c6759870e7a107",
+   "url": "https://www.marktechpost.com/2026/10/31/factory-droid-1-0-frontier-harness/",
+   "titulo": "Meet Factory Droid 1.0: A Model-Independent Coding Agent Harness Built on Script Mode",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-31T10:38:14+00:00",
+   "resumen": "Factory released Droid 1.0, a model-independent coding agent harness that makes programmatic tool calling the default. On Factory’s own Terminal-Bench 4 runs, Droid scores 65.2% with Claude Opus 5.5 at $4.73 per passed task. The post Meet Factory Droid 1.0: A Model-Independent Coding Agent Harness Built on Script Mode appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/25b6.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "78c1c1a14c878c2e",
+   "url": "https://www.marktechpost.com/2026/10/31/vercel-labs-agent-desktop-computer-use/",
+   "titulo": "Vercel Labs Open-Sources agent-desktop for Agent Computer Use",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-10-31T10:10:28+00:00",
+   "resumen": "Vercel Labs released agent-desktop, an Apache-2.0 Rust CLI that gives any AI agent computer use on macOS, Windows and Linux by reading OS accessibility trees and acting on stable refs instead of pixels. The post Vercel Labs Open-Sources agent-desktop for Agent Computer Use appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/25b6.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
   {
    "id": "00aeec5afb00c990",
    "url": "https://www.marktechpost.com/2026/10/30/microsoft-tokeneconomizer-coding-agent-cost-control/",
@@ -596,10 +624,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-10-31T10:07:31.807559+00:00",
+ "comprobado_en": "2026-10-31T15:59:53.943250+00:00",
  "pasadas": [
   {
    "hora": "2026-10-31T10:07:31.807559+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-10-31T15:59:53.943250+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
