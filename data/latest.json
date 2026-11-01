@@ -1,12 +1,40 @@
 {
- "generado_en": "2026-11-01T10:58:47.889032+00:00",
+ "generado_en": "2026-11-01T17:03:45.981007+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 10,
- "destacados": 7,
+ "candidatos": 12,
+ "destacados": 9,
  "items": [
+  {
+   "id": "fe548f5497379fbf",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "titulo": "The AI cost of JavaScript frameworks",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-11-01T06:06:19+00:00",
+   "resumen": "Article URL: https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/ Comments URL: https://news.ycombinator.com/item?id=50323088 Points: 195 # Comments: 138",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://nolanlawson.com/_astro/frameworks.B14_z7MF_2lv3q1.webp",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "835fd1406315e6b3",
+   "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+   "titulo": "Quoting Kyle Kingsbury",
+   "fuente": "Simon Willison",
+   "publicado": "2026-11-01T16:49:04+00:00",
+   "resumen": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users? — Kyle Kingsbury , Jepsen results fo",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
   {
    "id": "3cc4ce3d743f12b3",
    "url": "https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent/",
@@ -148,10 +176,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-11-01T10:58:47.889032+00:00",
+ "comprobado_en": "2026-11-01T17:03:45.981007+00:00",
  "pasadas": [
   {
    "hora": "2026-11-01T10:58:47.889032+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-11-01T17:03:45.981007+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
