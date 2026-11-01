@@ -1,0 +1,161 @@
+{
+ "generado_en": "2026-11-01T10:58:47.889032+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [
+  "Import AI: HTTPError"
+ ],
+ "candidatos": 10,
+ "destacados": 7,
+ "items": [
+  {
+   "id": "3cc4ce3d743f12b3",
+   "url": "https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent/",
+   "titulo": "DeepSeek Open-Sources dsh-superagent, a Router-Worker Coding Agent",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-01T07:47:17+00:00",
+   "resumen": "DeepSeek released dsh-superagent, an MIT-licensed research prototype that turns GitHub and Feishu requests into parallel worker sessions. In DeepSeek’s own simulation, p95 task completion fell to 15.7 minutes from 29.5 minutes. The post DeepSeek Open-Sources dsh-superagent, a Router-Worker Coding Agent appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-88881-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "9350ae34d964b422",
+   "url": "https://latent.space/p/arca/",
+   "titulo": "Agents Prompt People: Using Agents for Long-Horizon Financial Work",
+   "fuente": "Latent Space",
+   "publicado": "2026-10-31T16:05:00+00:00",
+   "resumen": "Arca's head of AI discusses persistent memory, the benefits of a custom harness, and agentic workflows that span days.",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://i.ytimg.com/vi/KM3VQZKjpiY/maxresdefault.jpg",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "bc9463905bbd6e7a",
+   "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+   "titulo": "datasette-llm 0.1a9",
+   "fuente": "Simon Willison",
+   "publicado": "2026-10-31T22:10:01+00:00",
+   "resumen": "Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM , which means you can start using Datasette Agent without needing to explicitly configure a default model: uvx --with datasette-agent datasette content.db --internal internal.db Previously you would also need to specify a model with -s plugins.datasette-agent.de",
+   "categoria": "herramientas",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "89c6cb6d29717113",
+   "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+   "titulo": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-31T21:41:00+00:00",
+   "resumen": "Apple's new CEO defended the company's current position in the AI landscape.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2302418320.jpg?w=1024",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "0def4a2fca6b3a20",
+   "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+   "titulo": "How We Took Over ChatGPT Accounts",
+   "fuente": "Simon Willison",
+   "publicado": "2026-10-31T23:15:22+00:00",
+   "resumen": "How We Took Over ChatGPT Accounts Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive custom HTML apps are displayed in a sandboxed iframe. It's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and accessing private data. Parameter found quite a complex attack chain. OpenA",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "b78eced8d414e07d",
+   "url": "https://www.marktechpost.com/2026/11/01/nace-ai-open-sources-drex-max-v1-local-inference/",
+   "titulo": "Nace AI Open-Sources Drex Max v1: A 27B Decision Model That Runs Locally on Apple Silicon",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-01T08:10:07+00:00",
+   "resumen": "Nace AI open-sources Drex Max v1, a 27B multimodal decision model scoring 67.52 that runs on Apple Silicon. The post Nace AI Open-Sources Drex Max v1: A 27B Decision Model That Runs Locally on Apple Silicon appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-88881-1-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "ed0268fa6e325c7b",
+   "url": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+   "titulo": "I built an AI Tamagotchi before Meta could",
+   "fuente": "The Verge AI",
+   "publicado": "2026-10-31T16:05:00+00:00",
+   "resumen": "Mark Zuckerberg's Meta made AI look so stinking cute by giving it a squishy little face - and this holiday season, he wants to sell you a Muse Charm so you can carry your jolly AI helper around like a Tamagotchi. But I won't be buying one, because we have Muse Charm at home. It […]",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/verge-sean-hollister-muse-gadget-331A2564-01-3.jpg?quality=90&strip=all&crop=4,0,96,94.899920311255",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "344dcf79744aa216",
+   "url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+   "titulo": "OpenAI reportedly lowers funding target for new round",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-31T16:12:55+00:00",
+   "resumen": "OpenAI’s latest funding round doesn't seem to be living up to expectations.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "bc398a80a0dffe88",
+   "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+   "titulo": "Judge allows NAACP lawsuit over xAI data center pollution to move forward",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-31T21:17:03+00:00",
+   "resumen": "An NAACP lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "cefcb0bd2478e838",
+   "url": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+   "titulo": "4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-10-31T21:36:07+00:00",
+   "resumen": "On November 4 at Boston’s SoWa Power Station, get ready for a full day packed with meaningful networking opportunities, actionable insights, and connections that could change the trajectory of your idea and startup. Register before all prices go up at the door.",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  }
+ ],
+ "comprobado_en": "2026-11-01T10:58:47.889032+00:00",
+ "pasadas": [
+  {
+   "hora": "2026-11-01T10:58:47.889032+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  }
+ ]
+}
