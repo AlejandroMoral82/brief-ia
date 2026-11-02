@@ -1,0 +1,119 @@
+{
+ "generado_en": "2026-11-02T11:56:45.297031+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [
+  "Import AI: HTTPError"
+ ],
+ "candidatos": 7,
+ "destacados": 7,
+ "items": [
+  {
+   "id": "6eb1302ea527f246",
+   "url": "https://www.marktechpost.com/2026/11/01/nvidia-auto-ontology-open-source-semantic-layer-ai-agents/",
+   "titulo": "NVIDIA Releases Auto Ontology: An Open Semantic Layer That Grounds AI Agent SQL",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-02T07:47:12+00:00",
+   "resumen": "NVIDIA released Auto Ontology, an Apache 2.0 library that generates a semantic layer from enterprise metadata. It grounds agent SQL in certified definitions and serves context through MCP, CLI and API. The post NVIDIA Releases Auto Ontology: An Open Semantic Layer That Grounds AI Agent SQL appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-88881-3-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "ffb30fef9594cc91",
+   "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
+   "titulo": "If in doubt, delete the uv.lock file",
+   "fuente": "Simon Willison",
+   "publicado": "2026-11-01T23:24:22+00:00",
+   "resumen": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is: If in doubt, delete the uv.lock file Most of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it. Running uv run pytest etc tends to leave uv.lock files lying around, which are listed in .gitignore and so do not get committed to my repositories. But... somet",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "33c086ca1438f528",
+   "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+   "titulo": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-01T21:55:23+00:00",
+   "resumen": "Data centers are deeply unpopular. But what if we called them something else?",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2283113936-maller.jpg?w=1024",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "8f7e0709d34eb152",
+   "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+   "titulo": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-11-01T13:47:24+00:00",
+   "resumen": "Article URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy Comments URL: https://news.ycombinator.com/item?id=50325662 Points: 171 # Comments: 82",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://cdn.mos.cms.futurecdn.net/SCYhnjqyKUaWNuCxFpW8m9-1920-80.jpg",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "f2dd5ffff01232a9",
+   "url": "https://www.marktechpost.com/2026/11/01/qwengpu-simt-gpu-compiled-into-qwen3-5-2b-weights-runs-cuda/",
+   "titulo": "Meet qwenGPU: Qwen3.5-2B With 45 Compiled GPU Layers That Run CUDA",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-02T07:28:29+00:00",
+   "resumen": "qwenGPU compiles a 4-lane SIMT GPU into Qwen3.5-2B as 45 untrained layers. The model writes every step of real CUDA launches itself, using Gated DeltaNet state as registers and memory. The post Meet qwenGPU: Qwen3.5-2B With 45 Compiled GPU Layers That Run CUDA appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-88881-2-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "2fe1a46c58aa5273",
+   "url": "https://blog.raed.dev/posts/proton-loser-thinking/",
+   "titulo": "It wasn't AI that flipped Proton's charge",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-11-01T18:53:55+00:00",
+   "resumen": "Article URL: https://blog.raed.dev/posts/proton-loser-thinking/ Comments URL: https://news.ycombinator.com/item?id=50328488 Points: 159 # Comments: 90",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://blog.raed.dev/It%20wasn",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "0ae10264665c4816",
+   "url": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
+   "titulo": "AI can make tech CEOs’ lives easier. What about everyone else?",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-01T20:57:58+00:00",
+   "resumen": "On Equity, we discuss why tech CEO statements can seem so tone deaf.",
+   "categoria": "opinion",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-1481617564.jpg?resize=1200,680",
+   "texto_disponible": true,
+   "sin_fecha": false
+  }
+ ],
+ "comprobado_en": "2026-11-02T11:56:45.297031+00:00",
+ "pasadas": [
+  {
+   "hora": "2026-11-02T11:56:45.297031+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  }
+ ]
+}
