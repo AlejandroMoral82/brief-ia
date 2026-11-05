@@ -1,12 +1,251 @@
 {
- "generado_en": "2026-11-05T11:46:35.067284+00:00",
+ "generado_en": "2026-11-05T18:37:55.232409+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
-  "Import AI: HTTPError"
+  "Import AI: HTTPError",
+  "Hacker News - IA (150+ puntos): ReadTimeout"
  ],
- "candidatos": 41,
- "destacados": 9,
+ "candidatos": 58,
+ "destacados": 15,
  "items": [
+  {
+   "id": "b0e121b3a461c115",
+   "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/",
+   "titulo": "Claude can now analyze your spending with its new Personal Finance tool",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-05T18:00:00+00:00",
+   "resumen": "With Personal Finance in Claude, users can connect their bank and card accounts through Plaid and ask questions about their finances.",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Claude-Personal-Finance-2.png?resize=1200,675",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "6dad7a604d398d82",
+   "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+   "titulo": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-05T15:19:05+00:00",
+   "resumen": "The deal is expected to support the development of DBX Agent Cloud, a new storage platform aimed at developers building AI models and agents.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2021/03/GettyImages-1211180751.jpg?w=1024",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "b529285c262b3aff",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch",
+   "titulo": "OpenAI says its new cybersecurity model is better at not hacking other companies",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-05T17:00:00+00:00",
+   "resumen": "OpenAI is launching GPT-6 Cyber, the latest version of its cybersecurity AI model, which it says is better at finding vulnerabilities and less likely to go rogue and hack other platforms in the process. OpenAI says that during testing, GPT-6 Cyber went out of bounds less than 1 percent of the time, down from around […]",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK155_OPEN_AI_2025_CVirgiia_D.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "825a50d1c0ad7f36",
+   "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+   "titulo": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+   "fuente": "Google DeepMind Blog",
+   "publicado": "2026-11-05T17:05:16+00:00",
+   "resumen": "",
+   "categoria": "modelos",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.width-1300.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "56c190950731d79b",
+   "url": "https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book",
+   "titulo": "The hidden supply chain costs of the AI boom",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-05T15:00:00+00:00",
+   "resumen": "Today, I’m talking with Willy Shih, an economist, a professor of management practice at Harvard Business School, and the author of the upcoming book, Where Does My Stuff Come From? The Powerful Economics Behind Global Supply Chains. Willy is one of my all-time favorite Decoder guests — his way of looking at the world through […]",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24792604/The_Verge_Decoder_Tileart.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "3089c4e12a10528f",
+   "url": "https://simonwillison.net/2026/Nov/5/paul-ford/",
+   "titulo": "Quoting Paul Ford",
+   "fuente": "Simon Willison",
+   "publicado": "2026-11-05T17:34:03+00:00",
+   "resumen": "The web browser is very, very, very powerful software for applications, and the cost of accessing that power is going down seemingly every day . — Paul Ford , The Web Is More Than Enough Tags: browsers , paul-ford , web-development",
+   "categoria": "opinion",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "f49d817c3fd35c35",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance",
+   "titulo": "Claude AI can plug directly into your bank account",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-05T18:00:00+00:00",
+   "resumen": "Anthropic has a new pitch for managing your personal finances: let Claude do it instead, with a new Personal Finance feature that connects it to your bank and card accounts via the Plaid bank bridging platform. You can ask the chatbot \"where did my money go this month,\" for example, and it'll create an overview […]",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Personal-Finance-in-Claude-hed.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "f8f8c085e2e5be1c",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
+   "titulo": "You can post AI music straight to SoundCloud from ElevenLabs",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-05T15:00:00+00:00",
+   "resumen": "After partnering with Moises earlier this year, SoundCloud is now adding integration with another AI music platform, ElevenLabs. Now, rather than having to export and download your outputs from ElevenLabs and then upload them to SoundCloud, you can publish them directly. As part of the partnership, SoundCloud Artist Pro subscribers are also getting three months […]",
+   "categoria": "herramientas",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-1083228772.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "bf7e9a38adde5887",
+   "url": "https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/",
+   "titulo": "OpenAI president Greg Brockman says company could be IPO ready in 2027",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-05T18:02:27+00:00",
+   "resumen": "OpenAI President Greg Brockman says the company could be ready to go public in 2027, pointing to accelerating enterprise revenue and a turnaround in its business.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "b06af2d45cd2abb5",
+   "url": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
+   "titulo": "A YC startup is putting $1M behind 5 unsolved materials science problems for AI",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-05T13:00:00+00:00",
+   "resumen": "While frontier AI models have solved a remarkable series of outstanding mathematics problems and made progress in the life sciences, they have yet to truly plumb the complex physics in advanced materials.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "23696f011bd98b05",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1026927/total-repudiation-the-blue-wave-is-about-to-hit-ai",
+   "titulo": "‘Total repudiation’: The blue wave is about to hit AI",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-05T17:51:52+00:00",
+   "resumen": "On Tuesday night, Democrats made history as they took control of the House and the Senate, and a blue wave swept through traditionally red and swing states - with the nation's first Black woman governor elected in Georgia, the country's first Native American woman governor elected in New Mexico, and a Maine Senator ceding to […]",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STK423_ELECTIONS2.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "956cb223c580c4f0",
+   "url": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/",
+   "titulo": "Agility is the first pure humanoid robot company on the stock market. Are you buying?",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-05T12:00:00+00:00",
+   "resumen": "Agility arrives on the Nasdaq today as the first publicly traded pure-play humanoid robotics company.",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "f050bc895e36e285",
+   "url": "https://arstechnica.com/ai/2026/11/agility-robotics-nasdaq-debut-invites-scrutiny-of-humanoid-robot-market/",
+   "titulo": "Agility Robotics' Nasdaq debut invites scrutiny of humanoid robot market",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-11-05T12:00:41+00:00",
+   "resumen": "US leader in deploying humanoid robots goes public on the Nasdaq stock exchange.",
+   "categoria": "industria",
+   "posicion": 6,
+   "destacado": false,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Agility-Digit-5-humanoid-robots-at-work-1152x648.jpg",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "0f2052ea73f7a4c1",
+   "url": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
+   "titulo": "Aina’s smart ring has a screen, a joystick, and a mic so you can talk to AI agents",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-05T14:42:00+00:00",
+   "resumen": "Aina's ring can also take calls and help you dictate notes on your Mac.",
+   "categoria": "industria",
+   "posicion": 7,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "4dac3d0c60c6510e",
+   "url": "https://www.theverge.com/entertainment/1026282/grimes-ai-movie",
+   "titulo": "Grimes is going to star in an AI movie that’s coming to theaters",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-05T17:00:00+00:00",
+   "resumen": "The AI-generated sci-fi film Gods Don't Give Gifts has added a bit of star power: Pop star Grimes is going to appear in the movie. Billed as \"the first AI film to come to theatres,\" Gods Don't Give Gifts is a notable test case for the commercial potential of AI films, and it releases on […]",
+   "categoria": "industria",
+   "posicion": 8,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/GDGG_Grimes_2.png?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "d51f62aa0d3ca8ee",
+   "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
+   "titulo": "Box taps Nvidia’s Nemotron for new agent-first content retrieval system",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-05T14:00:00+00:00",
+   "resumen": "The system can supposedly answer queries four times faster, with 20% fewer errors and 90% fewer tokens used.",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "c2788911aa715e52",
+   "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
+   "titulo": "Axiom Math wants to keep AI slop out of mathematics",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-05T16:16:45+00:00",
+   "resumen": "As AI floods math with unchecked proofs, Axiom Math is betting on verification. The startup’s AI agents just formally verified the Stacks Project, one of the field’s biggest libraries.",
+   "categoria": "investigacion",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
   {
    "id": "61db06d8bd2a39b3",
    "url": "https://www.marktechpost.com/2026/11/05/together-ai-together-compiler-continual-compilation-ai-inference/",
@@ -582,13 +821,21 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-11-05T11:46:35.067284+00:00",
+ "comprobado_en": "2026-11-05T18:37:55.232409+00:00",
  "pasadas": [
   {
    "hora": "2026-11-05T11:46:35.067284+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-11-05T18:37:55.232409+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError",
+    "Hacker News - IA (150+ puntos): ReadTimeout"
    ]
   }
  ]
