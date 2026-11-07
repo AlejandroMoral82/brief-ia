@@ -1,0 +1,189 @@
+{
+ "generado_en": "2026-11-07T10:50:38.264742+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [
+  "Import AI: HTTPError"
+ ],
+ "candidatos": 12,
+ "destacados": 6,
+ "items": [
+  {
+   "id": "d8e02d11382d5b18",
+   "url": "https://www.marktechpost.com/2026/11/07/buoyant-kinference-open-source-inference-control-plane-kubernetes-vllm/",
+   "titulo": "Buoyant Releases Kinference: An Open Source Inference Control Plane for Kubernetes and vLLM",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-07T08:16:33+00:00",
+   "resumen": "Buoyant has released Kinference, an Apache 2.0 inference control plane for vLLM on Kubernetes. It adds declarative routing policies, KV-cache-aware load balancing and per-tenant metrics, and cut median TTFT 95% in Buoyant’s own benchmark. The post Buoyant Releases Kinference: An Open Source Inference Control Plane for Kubernetes and vLLM appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "52e0623fab799a21",
+   "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+   "titulo": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-06T18:10:10+00:00",
+   "resumen": "Meta will now allow you to build customized, app-like experiences within Muse. The new feature, called \"spaces,\" allows its AI assistant to build things like a shopping hub, school dashboard, music tracker, trivia game, and more, which you can interact with directly in the Muse app. Meta says you can create a new space by […]",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/meta-muse-spaces.png?quality=90&strip=all&crop=8.0752843063528,0,91.924715693647,74.471659887186",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "46e88a02e03424f2",
+   "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+   "titulo": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-06T18:44:20+00:00",
+   "resumen": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
+   "categoria": "herramientas",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/09/muse-ai-meta.jpg?w=1200",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "c0641eb0de56205a",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+   "titulo": "All the latest updates on AI data centers",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-06T20:02:22+00:00",
+   "resumen": "Massive new data centers are the physical foundation for tech companies’ hopes and dreams for AI. But the rush to expand warehouses full of energy-hungry servers has also kicked up fights across the world over their impact on power grids, utility bills, nearby communities, and the environment. Data centers were a major bipartisan issue ahead […]",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STKS528_DATA_CENTERS_C.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "5072f0d6af005438",
+   "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+   "titulo": "AI is dramatically accelerating AI research",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-11-06T20:27:23+00:00",
+   "resumen": "Article URL: https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai Comments URL: https://news.ycombinator.com/item?id=50397994 Points: 311 # Comments: 264",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://substackcdn.com/image/fetch/$s_!u_X_!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdd74ff70-df26-4e1a-be31-4fc3543bada8_2048x1072.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d8b2a306eae7a955",
+   "url": "https://latent.space/p/ainews-anthropic-ipo-whither-now/",
+   "titulo": "[AINews] Anthropic IPO: Whither Now?",
+   "fuente": "Latent Space",
+   "publicado": "2026-11-07T03:04:53+00:00",
+   "resumen": "November 6, 2026 — ARC Prize tests Inkling 2 Small, and Thinking Machines explains how it caught early checkpoints bypassing guardrails.",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://latent.space/og/card/post/ainews-anthropic-ipo-whither-now/a988e7348ab7aaeea30f4fae450c8e83699ed9386342a65eec69e71a86326ee1.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "4758b3e084074531",
+   "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+   "titulo": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-06T18:44:38+00:00",
+   "resumen": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
+   "categoria": "herramientas",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "36231604b2886429",
+   "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+   "titulo": "Crusoe sells troubled Wyoming data center project to Google",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-07T01:40:28+00:00",
+   "resumen": "The deal highlights the challenges of developing massive AI data centers.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "860444638104df4b",
+   "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+   "titulo": "How a Blue Wave midterm might reshape the AI industry",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-06T18:00:00+00:00",
+   "resumen": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development. And even when data centers weren’t on the ballot directly, they were a […]",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "314bd089789a0995",
+   "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+   "titulo": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-06T22:53:46+00:00",
+   "resumen": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "6813d62fd92533cd",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+   "titulo": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-06T23:46:18+00:00",
+   "resumen": "OpenAI is now valued at $1.25 trillion in a new round of funding that has raised another $11 billion, according to Bloomberg. That would make it one of the world's most valuable companies, not long after raising $122 billion from investors in March at a valuation of $852 billion. Echoing FT and Wall Street Journal […]",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK155_OPEN_AI_CVirginia_2_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "1bc7ba2a28c4372d",
+   "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+   "titulo": "China reportedly recruited AI exec to spy on Jensen Huang",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-06T23:00:44+00:00",
+   "resumen": "China's intelligence agency recruited Megaspeed executive Alice Huang to spy on Nvidia CEO Jensen Huang, according to The New York Times. The Ministry of State Security (MSS) enlisted her to glean information about American AI chips and \"potentially influence the company to push for its most advanced chips to be made available to China.\" Megaspeed […]",
+   "categoria": "industria",
+   "posicion": 6,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKP210_JENSEN_HUANG_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  }
+ ],
+ "comprobado_en": "2026-11-07T10:50:38.264742+00:00",
+ "pasadas": [
+  {
+   "hora": "2026-11-07T10:50:38.264742+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  }
+ ]
+}
