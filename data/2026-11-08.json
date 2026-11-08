@@ -1,12 +1,26 @@
 {
- "generado_en": "2026-11-08T10:59:19.409625+00:00",
+ "generado_en": "2026-11-08T16:58:38.058998+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 8,
- "destacados": 4,
+ "candidatos": 9,
+ "destacados": 5,
  "items": [
+  {
+   "id": "6ec91eb53be5a835",
+   "url": "https://www.marktechpost.com/2026/11/08/google-elephant-goldfish-model-plugin-spec-review-coding-agents/",
+   "titulo": "Google AI Releases Elephant-Goldfish Model Plugin for Spec-First Coding",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-08T10:46:18+00:00",
+   "resumen": "Google's Elephant-Goldfish Model plugin makes coding agents draft specs, then runs 5 zero-context review stages before any code. The post Google AI Releases Elephant-Goldfish Model Plugin for Spec-First Coding appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-10001-18-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
   {
    "id": "3880bf849bb943e9",
    "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
@@ -120,10 +134,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-11-08T10:59:19.409625+00:00",
+ "comprobado_en": "2026-11-08T16:58:38.058998+00:00",
  "pasadas": [
   {
    "hora": "2026-11-08T10:59:19.409625+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-11-08T16:58:38.058998+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
