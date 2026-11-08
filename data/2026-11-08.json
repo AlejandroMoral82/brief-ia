@@ -1,0 +1,133 @@
+{
+ "generado_en": "2026-11-08T10:59:19.409625+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [
+  "Import AI: HTTPError"
+ ],
+ "candidatos": 8,
+ "destacados": 4,
+ "items": [
+  {
+   "id": "3880bf849bb943e9",
+   "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
+   "titulo": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+   "fuente": "Simon Willison",
+   "publicado": "2026-11-07T23:57:46+00:00",
+   "resumen": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. This was happening because Datasette pages serve an HTTP link header like this: link: <https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv>; rel=\"next\" This is bad. A tiny fraction of the visitors to one of thos",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "1eeaf5457cb1a01a",
+   "url": "https://hunch.net/?p=13764006",
+   "titulo": "The end of Microsoft Research's AI Frontiers group",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-11-07T18:02:17+00:00",
+   "resumen": "https://archive.is/AaY5O https://businessexaminer.ca/victoria-articles/item/microsoft... Comments URL: https://news.ycombinator.com/item?id=50406563 Points: 463 # Comments: 277",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "5d18d08c21555360",
+   "url": "https://www.marktechpost.com/2026/11/07/moe-routing-strategies-explained/",
+   "titulo": "MoE Routing Strategies Explained: Top-K, Expert-Choice, Sigmoid Gating and Dynamic Routing (2026 Guide)",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-08T06:18:33+00:00",
+   "resumen": "MoE routing strategies decide which experts process each token. This guide explains 7 methods, from Mixtral's top-2 softmax to DeepSeek-V4's hash routing, with the models that use each one. The post MoE Routing Strategies Explained: Top-K, Expert-Choice, Sigmoid Gating and Dynamic Routing (2026 Guide) appeared first on MarkTechPost .",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-10001-16-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "15fd7ad56b7bc89c",
+   "url": "https://www.marktechpost.com/2026/11/07/nous-research-arete-27b-qwen3-8-27b-propaganda-fine-tune/",
+   "titulo": "Nous Research Releases Arete-27B that Cuts Qwen3.8-27B Propaganda From 22% to 0.9%",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-08T04:45:59+00:00",
+   "resumen": "Nous Research released Arete-27B, an Apache 2.0 fine-tune of Qwen3.8-27B. On Nous’s 803-prompt eval, propaganda answers fell from 22% to 0.9% while Hermes Bench stayed flat at 65.60%. The post Nous Research Releases Arete-27B that Cuts Qwen3.8-27B Propaganda From 22% to 0.9% appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-10001-15-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "92f859ede504dd33",
+   "url": "https://www.marktechpost.com/2026/11/07/coding-guide-nvidia-dory-4b-llama-cpp/",
+   "titulo": "How to Run NVIDIA Dory 4B with llama.cpp: Loop by Loop Guide",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-07T19:22:44+00:00",
+   "resumen": "Explore a comprehensive coding guide for NVIDIA's Dory 1.0 4B looped language model. Learn how to build the pinned llama.cpp branch, analyze loop-by-loop compute costs, test memory caching, and run paired evaluations. The post How to Run NVIDIA Dory 4B with llama.cpp: Loop by Loop Guide appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "ed263cbbe1a45523",
+   "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+   "titulo": "After the midterms, things are looking rocky for Elon Musk and data centers",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-07T22:07:22+00:00",
+   "resumen": "On Equity, we unpacked what the midterms mean for the tech industry.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "69c75581d56ff5e1",
+   "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+   "titulo": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-07T21:17:08+00:00",
+   "resumen": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "0d6adb4565b62d21",
+   "url": "https://www.marktechpost.com/2026/11/08/moe-model-routing-comparison/",
+   "titulo": "Which Routing Does Each MoE Model Use? DeepSeek, Qwen, Mixtral, Llama 4, gpt-oss Compared",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-08T10:27:27+00:00",
+   "resumen": "A config-verified comparison of how 10 open MoE models route tokens: total and active parameters, expert counts, top-k, shared experts, gating functions and load-balancing methods. The post Which Routing Does Each MoE Model Use? DeepSeek, Qwen, Mixtral, Llama 4, gpt-oss Compared appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  }
+ ],
+ "comprobado_en": "2026-11-08T10:59:19.409625+00:00",
+ "pasadas": [
+  {
+   "hora": "2026-11-08T10:59:19.409625+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  }
+ ]
+}
