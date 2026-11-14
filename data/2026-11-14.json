@@ -1,12 +1,82 @@
 {
- "generado_en": "2026-11-14T11:09:07.936140+00:00",
+ "generado_en": "2026-11-14T16:55:09.590501+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 15,
- "destacados": 7,
+ "candidatos": 20,
+ "destacados": 11,
  "items": [
+  {
+   "id": "075bbfb634c2a8a5",
+   "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+   "titulo": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-14T16:34:15+00:00",
+   "resumen": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Jensen-Huang.jpg?w=1024",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "ad306b16c1bb8d28",
+   "url": "https://www.marktechpost.com/2026/11/14/stanford-memorilla-memory-system-16-memory-tokens/",
+   "titulo": "Stanford Research Open-Sources Memorilla, a Latent Memory Module for Frozen LLMs",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-14T10:21:21+00:00",
+   "resumen": "Stanford researchers released Memorilla, an open-source memory system that compresses a document collection into 16 memory tokens for a frozen Qwen3-8B. It reaches 84.33% on FactKG using 108x fewer document tokens than full context. The post Stanford Research Open-Sources Memorilla, a Latent Memory Module for Frozen LLMs appeared first on MarkTechPost .",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-19999-5-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "8479f47633fa8f96",
+   "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+   "titulo": "Open-source AI without Jensen",
+   "fuente": "Interconnects",
+   "publicado": "2026-11-14T12:23:15+00:00",
+   "resumen": "A decapitation. It’s time to rebuild.",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://substack-post-media.s3.amazonaws.com/public/images/ecd978b1-9b6a-4a7d-9324-356397d10839_3182x1790.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d46b516a4c8344dc",
+   "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+   "titulo": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-14T15:00:00+00:00",
+   "resumen": "Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life. Helen is a well-known figure in the AI safety and policy community, though she is perhaps best known for having served on […]",
+   "categoria": "opinion",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DCD-Helen-Toner.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "567fa298898a17ca",
+   "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
+   "titulo": "Jensen Huang and the decline of the visionary showman founder CEO",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-14T12:00:00+00:00",
+   "resumen": "On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packed with influencers and fans, their faces awash in blue glow, as he made his entrance in a black leather jacket that […]",
+   "categoria": "opinion",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2194622930.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
   {
    "id": "87b8686439b2776f",
    "url": "https://www.marktechpost.com/2026/11/13/vercel-ui-sdk-agent-ui-behaviors/",
@@ -218,10 +288,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-11-14T11:09:07.936140+00:00",
+ "comprobado_en": "2026-11-14T16:55:09.590501+00:00",
  "pasadas": [
   {
    "hora": "2026-11-14T11:09:07.936140+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-11-14T16:55:09.590501+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
