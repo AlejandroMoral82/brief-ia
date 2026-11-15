@@ -1,12 +1,68 @@
 {
- "generado_en": "2026-11-15T11:42:43.139891+00:00",
+ "generado_en": "2026-11-15T17:37:59.894162+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 6,
- "destacados": 4,
+ "candidatos": 10,
+ "destacados": 8,
  "items": [
+  {
+   "id": "4c525e5e54fa3645",
+   "url": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation",
+   "titulo": "An overview of Jensen Huang’s messy days",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-15T13:00:00+00:00",
+   "resumen": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on Jensen Huang's resignation and the fallout from Nvidia's leadership crisis, follow Terrence O'Brien. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started On October […]",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2301620664.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "950ac38f23f2d5a7",
+   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+   "titulo": "Understanding Positional Embeddings in Modern LLMs",
+   "fuente": "Sebastian Raschka",
+   "publicado": "2026-11-15T12:10:37+00:00",
+   "resumen": "The Methods Behind How LLMs Represent Token Positions",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://substackcdn.com/image/fetch/$s_!8RKL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb461a2cb-11ab-474a-affe-0ee99e5a8782_2850x2777.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d2e63c5f2661d937",
+   "url": "https://www.marktechpost.com/2026/11/15/bland-tofu-1-full-duplex-speech-to-speech-model/",
+   "titulo": "Bland Launches Tofu-1, a Full-Duplex Speech-to-Speech Model for Calls",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-15T10:06:21+00:00",
+   "resumen": "Bland has released Tofu-1, a full-duplex speech-to-speech model for noisy, high-stakes phone calls. It is in enterprise research preview, with no published benchmarks, size or pricing yet. The post Bland Launches Tofu-1, a Full-Duplex Speech-to-Speech Model for Calls appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-19999-7-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "df7a37179ad8aadd",
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "titulo": "All AI-generated code should be Open Source",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-11-15T14:46:58+00:00",
+   "resumen": "Article URL: https://jakub.jankiewicz.org/blog/ai-code-open-source/ Comments URL: https://news.ycombinator.com/item?id=50507303 Points: 456 # Comments: 280",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://jakub.jankiewicz.org/img/en/ai-code-open-source.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
   {
    "id": "eb6c9f2667bf3c7c",
    "url": "https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming/",
@@ -92,10 +148,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-11-15T11:42:43.139891+00:00",
+ "comprobado_en": "2026-11-15T17:37:59.894162+00:00",
  "pasadas": [
   {
    "hora": "2026-11-15T11:42:43.139891+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-11-15T17:37:59.894162+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
