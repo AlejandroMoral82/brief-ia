@@ -1,0 +1,189 @@
+{
+ "generado_en": "2026-11-21T11:59:04.750099+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [
+  "Import AI: HTTPError"
+ ],
+ "candidatos": 12,
+ "destacados": 7,
+ "items": [
+  {
+   "id": "790fce6927eb43ee",
+   "url": "https://latent.space/p/formal-verification/",
+   "titulo": "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification",
+   "fuente": "Latent Space",
+   "publicado": "2026-11-20T21:18:41+00:00",
+   "resumen": "Proving software correct with math has traditionally required specialist work. Now AI and Lean are helping automate the process.",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/b6f560cd-a37a-4d62-8d6b-da5b59cf4790/formal-verification-feature.png?t=1795207886",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "5a49fd4a2d776cb4",
+   "url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
+   "titulo": "Google rolls out new search homepage with AI chat history and no search button",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-11-20T21:58:29+00:00",
+   "resumen": "Google search is making it even easier to access AI tools on the search page.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/06/google-sign-logo-1152x648.jpg",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "99727b65c29013d0",
+   "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+   "titulo": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-11-20T20:59:08+00:00",
+   "resumen": "Test using prompts with unique, trackable secrets proves that data doesn't stay private.",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/ai-privacy-leakage-1152x648.jpg",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "3ea993db7e3c60d1",
+   "url": "https://openai.com/index/combatting-adversarial-distillation",
+   "titulo": "Combatting adversarial distillation",
+   "fuente": "OpenAI News",
+   "publicado": "2026-11-20T10:00:00+00:00",
+   "resumen": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.",
+   "categoria": "investigacion",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://images.ctfassets.net/kftzwdyauwt9/5SUtPGdssrttC7LfP1yoJ1/b6b000846ab3576c1735c29534ab20b0/combatting-adversarial-distillation-social.png?w=1600&h=900&fit=fill",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "cdc6e41e55534ec8",
+   "url": "https://www.marktechpost.com/2026/11/20/baseten-bison-1-groundhog-1-gemma-4-decision-models/",
+   "titulo": "Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-21T04:01:04+00:00",
+   "resumen": "Baseten released bison-1 and groundhog-1, open-weight decision models built on Gemma 4. bison-1 scores 76 on the AA Decision Index v2.1, and both models support 128k context and image input. The post Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/25b6.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "45149ab56aed8c28",
+   "url": "https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/",
+   "titulo": "[AINews] Riemann Hypothesis proved...twice independently",
+   "fuente": "Latent Space",
+   "publicado": "2026-11-21T05:02:13+00:00",
+   "resumen": "November 20 2026 —",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/46cbd562-7369-4863-b0a8-00306043d65a/image.png?t=1795236179",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "6a73fdd651f90d83",
+   "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+   "titulo": "Quoting Ravi Vakil",
+   "fuente": "Simon Willison",
+   "publicado": "2026-11-20T19:21:49+00:00",
+   "resumen": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford for a year to polish the writing and then announce it after running it by enough people. Now it seems best to put out the current draft. — Ravi Vakil , Hurried Announcement: Alessandro Masullo GRH Tags:",
+   "categoria": "opinion",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "c4b0222f29f2f6ae",
+   "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/",
+   "titulo": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-11-20T21:47:10+00:00",
+   "resumen": "Meta is “re-evaluating” 2030 sustainability goals. Will others follow?",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/Meta-El-Paso-data-center-1152x648.jpg",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "3a0cb236fd3220da",
+   "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+   "titulo": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-20T18:50:19+00:00",
+   "resumen": "President Donald Trump promised to put a \"tremendous tax\" on companies that build data centers outside of the US, even as states and cities around the country are placing restrictions on new applications to build them. \"We're not going to allow our companies to build data centers outside of our country,\" Trump said at a […]",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "321223b3abbe72dc",
+   "url": "https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/",
+   "titulo": "Google workers tell their employer not to punish schools that don't want AI",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-11-20T16:59:27+00:00",
+   "resumen": "Article URL: https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/ Comments URL: https://news.ycombinator.com/item?id=50577901 Points: 276 # Comments: 214",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "340614cb1d4599fc",
+   "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+   "titulo": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-20T19:53:41+00:00",
+   "resumen": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "d6bff5841b5a64e7",
+   "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+   "titulo": "AI claimed a solution to the 167-year-old Riemann hypothesis — and a human did, too",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-20T19:32:08+00:00",
+   "resumen": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
+   "categoria": "investigacion",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  }
+ ],
+ "comprobado_en": "2026-11-21T11:59:04.750099+00:00",
+ "pasadas": [
+  {
+   "hora": "2026-11-21T11:59:04.750099+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  }
+ ]
+}
