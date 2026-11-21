@@ -1,12 +1,96 @@
 {
- "generado_en": "2026-11-21T11:59:04.750099+00:00",
+ "generado_en": "2026-11-21T17:55:22.686002+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 12,
- "destacados": 7,
+ "candidatos": 18,
+ "destacados": 12,
  "items": [
+  {
+   "id": "01945f6a907c7618",
+   "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+   "titulo": "Here are the top AI agents that can live in your text messages",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-21T17:00:00+00:00",
+   "resumen": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2017/12/gettyimages-673436934.jpg?resize=1200,813",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "a9f34b76fcc6d54c",
+   "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+   "titulo": "Can Anthropic afford to put safety first?",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-21T15:00:00+00:00",
+   "resumen": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but not really that important for this conversation, except to […]",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRG_DCD_1121_Site.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "cc5c5c9af1c50828",
+   "url": "https://www.marktechpost.com/2026/11/21/thinking-machines-inkling-2-mini-looped-transformer/",
+   "titulo": "Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-21T12:13:50+00:00",
+   "resumen": "Thinking Machines released Inkling 2 Mini, a 26.4B-parameter looped MoE transformer with 3.4B active parameters. It runs on a 32GB Mac or one DGX Spark and scores 79.2% on SWE-bench Verified. The post Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/11/mj1-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "1be0cb9ade493f4c",
+   "url": "https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/",
+   "titulo": "OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-21T11:46:17+00:00",
+   "resumen": "OpenAI has released GPT-Live-1.1 in the API. The full-duplex voice model improves multilingual accents and transcription, and a new standby mode bills idle WebRTC time at $0.02 per minute instead of $0.05. The post OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/25b6.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "89298d3b7fb05770",
+   "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+   "titulo": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-21T16:00:00+00:00",
+   "resumen": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Inevitable-Key-Art_3x4-full-size.jpg?resize=899,1200",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "e74727ec8af70116",
+   "url": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+   "titulo": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-21T14:00:00+00:00",
+   "resumen": "Chess.com is ready to go a lot bigger than chess. After launching Gambit, a gambling-free poker site, earlier this year, the company is now adding 10 more games: backgammon, checkers, go, hearts, mahjong, shogi, sudoku, solitaire, xiangqi, and a Scrabble alternative called word. They're all part of Chess's new Classic Games platform, which is launching […]",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/classic-games-home-page-trimmed.jpeg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
   {
    "id": "790fce6927eb43ee",
    "url": "https://latent.space/p/formal-verification/",
@@ -176,10 +260,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-11-21T11:59:04.750099+00:00",
+ "comprobado_en": "2026-11-21T17:55:22.686002+00:00",
  "pasadas": [
   {
    "hora": "2026-11-21T11:59:04.750099+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-11-21T17:55:22.686002+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
