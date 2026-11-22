@@ -1,0 +1,115 @@
+{
+ "generado_en": "2026-11-22T12:12:48.739392+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [],
+ "candidatos": 7,
+ "destacados": 4,
+ "items": [
+  {
+   "id": "c907589fe764c7dc",
+   "url": "https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval/",
+   "titulo": "Google AI Previews Tool Retrieval in the Gemini API for Large Tool Libraries",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-22T10:03:54+00:00",
+   "resumen": "Google launched Gemini API Tool Retrieval in preview. Agents keep a large tool library on standby and load each parameter schema only when needed, inside one Interactions API request. The post Google AI Previews Tool Retrieval in the Gemini API for Large Tool Libraries appeared first on MarkTechPost .",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://s.w.org/images/core/emoji/17.0.2/72x72/25b6.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "0ceef4b235ec12c3",
+   "url": "https://simonwillison.net/2026/Nov/21/muru/",
+   "titulo": "Muru",
+   "fuente": "Simon Willison",
+   "publicado": "2026-11-21T23:56:28+00:00",
+   "resumen": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production. As he did with wrapture , he's been publishing an extraordinarily detailed account of the project as he works on it - as part of his development process. Here's everything he's published",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "127326b87b53e7a9",
+   "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+   "titulo": "A tale of two Nvidias",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-21T21:07:42+00:00",
+   "resumen": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "4d4ae651aed9b944",
+   "url": "https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/",
+   "titulo": "A Team of Researchers from Columbia and CertiK Introduce TensorLean for Formal Verification of GPU Kernels",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-22T01:51:43+00:00",
+   "resumen": "TensorLean, from Columbia University and CertiK, formally verifies production GPU kernels at the PTX level using Lean. It checked 149 kernel instances, proved 83 correct, and found 38 bugs in FlashAttention, DeepGEMM and more. The post A Team of Researchers from Columbia and CertiK Introduce TensorLean for Formal Verification of GPU Kernels appeared first on MarkTechPost .",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://www.marktechpost.com/wp-content/uploads/2026/11/WP-BLOG-BANNER-119999-4-scaled.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "8d54d4add32f2fcc",
+   "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+   "titulo": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-21T21:37:10+00:00",
+   "resumen": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "234da3fc18675af9",
+   "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+   "titulo": "The UN fails to agree on rules regulating ‘killer robots’",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-21T20:03:37+00:00",
+   "resumen": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing to \"start discussing options\" after a largely fruitless week of negotiations. According to NPR: Before the negotiations got underway, the […]",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13611631/503831564.jpg.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "3e3659d6d4ef44cb",
+   "url": "https://www.marktechpost.com/2026/11/22/best-personal-ai-agents-2026/",
+   "titulo": "Best Personal AI Agents in 2026: OpenClaw, Hermes Agent, Gemini Spark and More, Compared on Memory, Security and Cost",
+   "fuente": "MarkTechPost",
+   "publicado": "2026-11-22T10:36:17+00:00",
+   "resumen": "Hermes Agent, OpenClaw, Gemini Spark, OpenAI dots, Meta Muse and Perplexity Personal Computer ranked on memory, security defaults and real cost. The post Best Personal AI Agents in 2026: OpenClaw, Hermes Agent, Gemini Spark and More, Compared on Memory, Security and Cost appeared first on MarkTechPost .",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  }
+ ],
+ "comprobado_en": "2026-11-22T12:12:48.739392+00:00",
+ "pasadas": [
+  {
+   "hora": "2026-11-22T12:12:48.739392+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": []
+  }
+ ]
+}
