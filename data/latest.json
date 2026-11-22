@@ -1,10 +1,68 @@
 {
- "generado_en": "2026-11-22T12:12:48.739392+00:00",
+ "generado_en": "2026-11-22T18:22:33.843731+00:00",
  "modo": "normal",
- "fuentes_fallidas": [],
- "candidatos": 7,
- "destacados": 4,
+ "fuentes_fallidas": [
+  "Import AI: HTTPError"
+ ],
+ "candidatos": 11,
+ "destacados": 7,
  "items": [
+  {
+   "id": "74f939e081ec8d04",
+   "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
+   "titulo": "Why data centers are at the center of the Big Tech backlash",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-22T18:08:43+00:00",
+   "resumen": "Journalist Paris Marx unpacks his new book \"Hyperscale.\"",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2283113936-maller.jpg?w=1024",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "de5cd1a6d51dc917",
+   "url": "https://openai.com/index/perplexity-and-intelligence",
+   "titulo": "Perplexity and Intelligence",
+   "fuente": "OpenAI News",
+   "publicado": "2026-11-22T00:00:00+00:00",
+   "resumen": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://images.ctfassets.net/kftzwdyauwt9/6rIIhCRSKrhIfe385Onmcz/aca2d190553c62fd5d49efb5d5ce1eb6/perplexity-and-intelligence-social.png?w=1600&h=900&fit=fill",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "0f50037c76f25ff3",
+   "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+   "titulo": "The vibe-coding revolution is coming to all the gadgets",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-22T13:00:00+00:00",
+   "resumen": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the vibe-hacking of everything, follow David Pierce. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started Like so many things with AI, it's not […]",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/AI_vibe_coding_hacker_hardware.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "265c68ec3a4cc76b",
+   "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+   "titulo": "Binding of Isaac developer removes AI music from Repentance Plus",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-22T17:25:20+00:00",
+   "resumen": "The Binding of Isaac: Repentance Plus has spent the last few days getting review-bombed on Steam after it was discovered that a particular segment of the game used AI music. Reddit user ShweetsStuff discovered the songs used during a Grand Theft Auto-themed section. They found several audio files with Suno metadata that pointed back to […]",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/j7yPmbNCP4I-HD.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
   {
    "id": "c907589fe764c7dc",
    "url": "https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval/",
@@ -104,12 +162,19 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-11-22T12:12:48.739392+00:00",
+ "comprobado_en": "2026-11-22T18:22:33.843731+00:00",
  "pasadas": [
   {
    "hora": "2026-11-22T12:12:48.739392+00:00",
    "modo": "normal",
    "fuentes_fallidas": []
+  },
+  {
+   "hora": "2026-11-22T18:22:33.843731+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
   }
  ]
 }
