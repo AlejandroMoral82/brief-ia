@@ -1,12 +1,194 @@
 {
- "generado_en": "2026-11-25T13:48:28.644665+00:00",
+ "generado_en": "2026-11-25T20:25:31.969284+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 16,
- "destacados": 9,
+ "candidatos": 29,
+ "destacados": 13,
  "items": [
+  {
+   "id": "d8d6777ecf090783",
+   "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+   "titulo": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-11-25T00:00:00+00:00",
+   "resumen": "",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://huggingface.co/blog/assets/inkling-2-mini-inference-hillclimb/thumbnail.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "dc85126b0ac71765",
+   "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+   "titulo": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-25T20:03:27+00:00",
+   "resumen": "OpenAI will introduce a single usage meter across ChatGPT as it combines the Chat and Work experiences.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/openai-chatgpt.jpg?resize=1200,800",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "37b5c9ba93266751",
+   "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+   "titulo": "Where scientists draw the line on AI agents",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-11-25T18:52:55+00:00",
+   "resumen": "",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/F32BgZC_rj0kg99apJlto.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "00d3c793baf99b8f",
+   "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
+   "titulo": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-25T19:44:24+00:00",
+   "resumen": "Anthropic CEO Dario Amodei pushes back against rivals’ accusations that he favors surrendering human agency to AI, even as leading AI companies increasingly automate their own research and model development.",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/03/Dario-Amodei-Anthropic-viva-tech.jpg?w=1024",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "b47f021e12d7c019",
+   "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+   "titulo": "AI data centers are becoming harder to build, and neoclouds are feeling it",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-25T15:41:43+00:00",
+   "resumen": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power, and a finished building matter more than a pitch deck. ⁠Anita Verma-Lallian⁠ has been selling exactly that. […]",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "61cb6e1f95ec64ca",
+   "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+   "titulo": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-25T14:10:18+00:00",
+   "resumen": "Amazon and Meta are discussing a potential deal that would end a two-month-long blockade of Muse.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "e1845ee0b548d25f",
+   "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+   "titulo": "Amazon is reportedly in talks to end Muse AI shopping block",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-25T14:12:33+00:00",
+   "resumen": "Amazon has held talks about letting Meta's Muse AI agent shop on its online marketplace, according to a report from Fortune. The discussions, which could end Amazon's block on Muse, reportedly center on the kinds of products the AI agent recommends and the potential impact on the ecommerce giant's advertising revenue. As reported by Fortune, […]",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB394_MUSE_AI_CVIRGINIA_D.png?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "6359c2ce09004373",
+   "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+   "titulo": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-25T17:44:51+00:00",
+   "resumen": "In an announcement on Wednesday, the FCC says it authorized SpaceX to deploy up to 1 million AI chip-equipped satellites as part of the Elon Musk-owned company's \"Starmind\" initiative. With several others also pursuing the idea of putting AI data centers in space, including Google and Blue Origin, this is the first approval the agency […]",
+   "categoria": "industria",
+   "posicion": 5,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/gettyimages-2269580650.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "16ddaf7683c8da25",
+   "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+   "titulo": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-25T17:35:58+00:00",
+   "resumen": "The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said.",
+   "categoria": "industria",
+   "posicion": 6,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "4f0b7bfbd5a5d08e",
+   "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+   "titulo": "Want to buy your kid an AI toy this Christmas? Not in New York",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-25T18:11:46+00:00",
+   "resumen": "New York has banned AI chatbot toys for five years as new research from Common Sense Media reveals troubling safety failures, including exposure to inappropriate content and risks to emotional development.",
+   "categoria": "industria",
+   "posicion": 7,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "6b1c4ab3d056003c",
+   "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+   "titulo": "Nothing offers a full look at its AI earbuds and charging case",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-25T16:00:59+00:00",
+   "resumen": "Nothing is showing off a much more detailed look at its upcoming AI earbuds ahead of their December 8th release. The Ear Note buds can record your calls, while their charging case can record, transcribe, and summarize your conversations. Like the Ear 3, the Ear Note's microphone-equipped case comes with a \"Talk\" button that you […]",
+   "categoria": "industria",
+   "posicion": 8,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/ear-note-nothing.jpeg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "fb5a7d58c9a946b0",
+   "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+   "titulo": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-25T19:54:57+00:00",
+   "resumen": "Most codes of conduct serve as a reflection of corporate culture. In Nvidia's case, that could have consequences.",
+   "categoria": "industria",
+   "posicion": 9,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "148a75b422c2ea8b",
+   "url": "https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/",
+   "titulo": "Ars Live recap: Don’t expect military attacks on data centers to stop",
+   "fuente": "Ars Technica AI",
+   "publicado": "2026-11-25T16:47:14+00:00",
+   "resumen": "Militaries have many reasons to target data centers and the cloud in wartime.",
+   "categoria": "industria",
+   "posicion": 10,
+   "destacado": false,
+   "imagen": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/yandex-data-center_sasovo-ryazan-russia.jpg",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
   {
    "id": "a20caa5f2b42fa7f",
    "url": "https://www.marktechpost.com/2026/11/24/bytedance-seed-laminar-async-rl-post-training-framework/",
@@ -232,10 +414,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-11-25T13:48:28.644665+00:00",
+ "comprobado_en": "2026-11-25T20:25:31.969284+00:00",
  "pasadas": [
   {
    "hora": "2026-11-25T13:48:28.644665+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-11-25T20:25:31.969284+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
