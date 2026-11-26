@@ -1,0 +1,175 @@
+{
+ "generado_en": "2026-11-26T13:28:16.835880+00:00",
+ "modo": "normal",
+ "fuentes_fallidas": [
+  "Import AI: HTTPError"
+ ],
+ "candidatos": 11,
+ "destacados": 7,
+ "items": [
+  {
+   "id": "c01600d4160315a4",
+   "url": "https://huggingface.co/blog/training-swarms",
+   "titulo": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-11-26T00:00:00+00:00",
+   "resumen": "",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://huggingface.co/blog/assets/training-swarms/thumbnail.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "9a5f91905dabf645",
+   "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+   "titulo": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+   "fuente": "Simon Willison",
+   "publicado": "2026-11-26T06:08:25+00:00",
+   "resumen": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood one of its most attractive characteristics. Normally, if you want to grab a snapshot copy of a SQLite database, you need to use either the backup API or VACUUM INTO . In both cases you need enough disk space to create a duplicate copy of your",
+   "categoria": "herramientas",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "707319c903aa5aba",
+   "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+   "titulo": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-25T22:44:32+00:00",
+   "resumen": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "e9eadcd028c200d9",
+   "url": "https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/",
+   "titulo": "[AINews] Math Proofs Are Landing Faster Than We Can Read Them",
+   "fuente": "Latent Space",
+   "publicado": "2026-11-25T22:23:41+00:00",
+   "resumen": "November 25, 2026 — From Erdős problems to new bounds for matrix multiplication and Fourier transforms.",
+   "categoria": "investigacion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/9012dd90-9472-4478-9577-604433c3a9e1/ai-math-2026.png?t=1795644634",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "d3aa48daa62df585",
+   "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+   "titulo": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-11-26T05:05:36+00:00",
+   "resumen": "",
+   "categoria": "modelos",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://cdn-uploads.huggingface.co/production/uploads/6365c3f398da81987e2753f2/zArpuP9uLsLz9luMW0K2g.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "bb9905a025a95ec6",
+   "url": "https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/",
+   "titulo": "The Revolution vs The Renaissance — Thariq Shihipar, OpenAI",
+   "fuente": "Latent Space",
+   "publicado": "2026-11-25T22:28:01+00:00",
+   "resumen": "AI can make software cheap enough to produce by the thousand and still give you more time to make one thing feel right. At AI Engineer CODE, Thariq Shihipar shows how those two futures can coexist. In his fighting game, he edits the size of a rock in t...",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://i.ytimg.com/vi/Qe9d9dWyED0/maxresdefault.jpg",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "2c33c3cedb6545ec",
+   "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+   "titulo": "Quoting Scott Aaronson",
+   "fuente": "Simon Willison",
+   "publicado": "2026-11-25T23:26:32+00:00",
+   "resumen": "It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondwater, or Galileo first training his telescope on the stars. That might give you some idea of how our resolution into the complexity-theoretic universe, and the whole universe of mathematical truth beyond it, has now improved. — Scott Aarons",
+   "categoria": "opinion",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "02a088434703556c",
+   "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+   "titulo": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+   "fuente": "Hugging Face Blog",
+   "publicado": "2026-11-26T11:37:17+00:00",
+   "resumen": "",
+   "categoria": "herramientas",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "cd16924426fb73da",
+   "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+   "titulo": "datasette-charts 0.3a0",
+   "fuente": "Simon Willison",
+   "publicado": "2026-11-25T18:16:50+00:00",
+   "resumen": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in Datasette Lite , where you can tweak the annotations using the chart builder UI: If you also install Datasette Agent the agent can build annotated charts for you. Here's what I got on the agent.datasette.io demo for this prompt: Show a cha",
+   "categoria": "herramientas",
+   "posicion": 4,
+   "destacado": false,
+   "imagen": "https://static.simonwillison.net/static/2026/chart-with-annotations.webp",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "c0f2de19f05669ce",
+   "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+   "titulo": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-26T09:54:40+00:00",
+   "resumen": "A coalition of 42 state attorneys general is trying to prevent Character.AI from selling off user data as it navigates Chapter 11 bankruptcy proceedings. In a deluge of nearly identical press releases, the various AGs accuse the company of planning to auction off \"the private chat histories of more than 21 million U.S. accounts - […]",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25557391/STK278_character_ai_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": false,
+   "sin_fecha": false
+  },
+  {
+   "id": "ceecf9e348f1c1f1",
+   "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+   "titulo": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-25T21:51:26+00:00",
+   "resumen": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users. The patent has been rejected, but unfortunately, Google might appeal or resubmit an amended version, and we could see this monstrosity come […]",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": false,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Screenshot-2026-11-25-at-11.34.07-AM.png?quality=90&strip=all&crop=2.859375,3.7218027238494,93.788122558594,91.658221639303",
+   "texto_disponible": false,
+   "sin_fecha": false
+  }
+ ],
+ "comprobado_en": "2026-11-26T13:28:16.835880+00:00",
+ "pasadas": [
+  {
+   "hora": "2026-11-26T13:28:16.835880+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  }
+ ]
+}
