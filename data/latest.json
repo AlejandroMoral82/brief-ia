@@ -1,12 +1,68 @@
 {
- "generado_en": "2026-11-26T13:28:16.835880+00:00",
- "modo": "normal",
+ "generado_en": "2026-11-26T20:03:28.166899+00:00",
+ "modo": "degradado",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 11,
- "destacados": 7,
+ "candidatos": 15,
+ "destacados": 11,
  "items": [
+  {
+   "id": "280fc6b8ee711812",
+   "url": "https://diseasescuredbyai.com/",
+   "titulo": "Tracking Diseases Cured by AI",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-11-26T17:16:41+00:00",
+   "resumen": "Article URL: https://diseasescuredbyai.com/ Comments URL: https://news.ycombinator.com/item?id=50657307 Points: 279 # Comments: 163",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "e5c5d8632474a2a0",
+   "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+   "titulo": "Grand Theft Auto VI proves why efficiency isn’t a virtue",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-26T16:00:00+00:00",
+   "resumen": "On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time.",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/Jason_and_Lucia_17.117_b11r13mg5.jpg?resize=1200,675",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "316e60a88e0f2ae8",
+   "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+   "titulo": "Quoting Jack Despain Zhou",
+   "fuente": "Simon Willison",
+   "publicado": "2026-11-26T15:09:31+00:00",
+   "resumen": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find pitches and articles from ostensibly serious people with ostensibly serious credentials attached to ostensibly serious institutions who want to publish things attached to their reputations and mine, and I see Claude . — Jack Despain Zhou , Spitting in the Face of Glaude Tags: ai-mis",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "7822140280bf2636",
+   "url": "https://simonwillison.net/2026/Nov/26/hn-50651685/",
+   "titulo": "The New York Times warns photographers not to update Photoshop over AI features",
+   "fuente": "Simon Willison",
+   "publicado": "2026-11-26T05:08:46+00:00",
+   "resumen": "My comment on The New York Times warns photographers not to update Photoshop over AI features — Hacker News. I had a NYT photographer take my picture at my home earlier this year (for a story about Moltbook, oddly enough). At one point I asked if they could fix things up if I had a stain on my shirt and they said absolutely not - they present photographs as they were taken, with cropping and balancing applied but no edits beyond that. He did spend a bunch of time trying to find the best possible",
+   "categoria": "industria",
+   "posicion": 4,
+   "destacado": true,
+   "imagen": "",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
   {
    "id": "c01600d4160315a4",
    "url": "https://huggingface.co/blog/training-swarms",
@@ -162,11 +218,18 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-11-26T13:28:16.835880+00:00",
+ "comprobado_en": "2026-11-26T20:03:28.166899+00:00",
  "pasadas": [
   {
    "hora": "2026-11-26T13:28:16.835880+00:00",
    "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-11-26T20:03:28.166899+00:00",
+   "modo": "degradado",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
    ]
