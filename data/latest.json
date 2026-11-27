@@ -1,12 +1,40 @@
 {
- "generado_en": "2026-11-27T13:24:36.604073+00:00",
+ "generado_en": "2026-11-27T19:51:31.920716+00:00",
  "modo": "normal",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 11,
- "destacados": 7,
+ "candidatos": 13,
+ "destacados": 9,
  "items": [
+  {
+   "id": "24644713102c0e39",
+   "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+   "titulo": "Android’s DIY widgets are a bit of vibe-coding fun",
+   "fuente": "The Verge AI",
+   "publicado": "2026-11-27T14:00:00+00:00",
+   "resumen": "Aside from dealing with my calendar, there's one thing I want AI to do: tell me if I'm about to miss the bus. What I need is a widget. It needs to tell me real-time arrivals for the bus stop near my house. Tapping around on my phone screen to open the right app and […]",
+   "categoria": "herramientas",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DSC04405_processed.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "f21d90605390562e",
+   "url": "https://thesoapbox.email/archive/3",
+   "titulo": "I'm Scared of AI",
+   "fuente": "Hacker News - IA (150+ puntos)",
+   "publicado": "2026-11-27T17:45:31+00:00",
+   "resumen": "Article URL: https://thesoapbox.email/archive/3 Comments URL: https://news.ycombinator.com/item?id=50669561 Points: 176 # Comments: 187",
+   "categoria": "opinion",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://thesoapbox.email/og.png",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
   {
    "id": "d9534e56c25c30c3",
    "url": "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/",
@@ -162,10 +190,17 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-11-27T13:24:36.604073+00:00",
+ "comprobado_en": "2026-11-27T19:51:31.920716+00:00",
  "pasadas": [
   {
    "hora": "2026-11-27T13:24:36.604073+00:00",
+   "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-11-27T19:51:31.920716+00:00",
    "modo": "normal",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
