@@ -1,12 +1,54 @@
 {
- "generado_en": "2026-11-28T12:38:29.879259+00:00",
- "modo": "normal",
+ "generado_en": "2026-11-28T18:45:15.857439+00:00",
+ "modo": "degradado",
  "fuentes_fallidas": [
   "Import AI: HTTPError"
  ],
- "candidatos": 5,
- "destacados": 3,
+ "candidatos": 8,
+ "destacados": 6,
  "items": [
+  {
+   "id": "5abb7c7837008dae",
+   "url": "https://techcrunch.com/2026/11/28/openais-new-countersuit-accuses-apple-of-unlawfully-pressuring-vendors/",
+   "titulo": "OpenAI’s new countersuit accuses Apple of ‘unlawfully pressuring vendors’",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-28T17:46:47+00:00",
+   "resumen": "After Apple sued OpenAI this summer, OpenAI has fired back with a countersuit of its own.",
+   "categoria": "industria",
+   "posicion": 1,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/GettyImages-2297209338.jpg?w=1024",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "8b6b82f76dc9d661",
+   "url": "https://simonwillison.net/2026/Nov/28/code-driven-ai-illustrations/",
+   "titulo": "Code-driven AI illustrations are more useful than images from dedicated image models",
+   "fuente": "Simon Willison",
+   "publicado": "2026-11-28T17:45:40+00:00",
+   "resumen": "An interesting trend in frontier LLMs released in the second half of 2026 is that they tend to be much better at visual reasoning and creative \"design\" than their predecessors. If you ask these text-output models to create a 2D image (or a 3D model, as discussed here previously ), you're very likely to get a useful result, and you may even get one that's aesthetically impressive. Most importantly, because these images are defined using code you (or the model) can make further edits to them witho",
+   "categoria": "industria",
+   "posicion": 2,
+   "destacado": true,
+   "imagen": "https://static.simonwillison.net/static/2026/kakapo-poster-neon.webp",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
+  {
+   "id": "765ab0a36bed52be",
+   "url": "https://techcrunch.com/2026/11/28/sakana-ais-ceo-says-its-homegrown-models-are-about-more-than-japans-national-security/",
+   "titulo": "Sakana AI’s CEO says its homegrown models are about more than Japan’s national security",
+   "fuente": "TechCrunch AI",
+   "publicado": "2026-11-28T14:00:00+00:00",
+   "resumen": "Sakana AI aims to strengthen Japan’s industrial competitiveness with homegrown AI models.",
+   "categoria": "industria",
+   "posicion": 3,
+   "destacado": true,
+   "imagen": "https://techcrunch.com/wp-content/uploads/2026/11/david-ha-Sakana-AI-.jpg?resize=1200,1200",
+   "texto_disponible": true,
+   "sin_fecha": false
+  },
   {
    "id": "c91c032e523155a5",
    "url": "https://simonwillison.net/2026/Nov/27/datasette-charts/",
@@ -78,11 +120,18 @@
    "sin_fecha": false
   }
  ],
- "comprobado_en": "2026-11-28T12:38:29.879259+00:00",
+ "comprobado_en": "2026-11-28T18:45:15.857439+00:00",
  "pasadas": [
   {
    "hora": "2026-11-28T12:38:29.879259+00:00",
    "modo": "normal",
+   "fuentes_fallidas": [
+    "Import AI: HTTPError"
+   ]
+  },
+  {
+   "hora": "2026-11-28T18:45:15.857439+00:00",
+   "modo": "degradado",
    "fuentes_fallidas": [
     "Import AI: HTTPError"
    ]
